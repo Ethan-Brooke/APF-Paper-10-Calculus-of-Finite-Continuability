@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apf-paper10"
+version = "1.12"
+description = "Calculus Finite Continuability — executable mathematical appendix"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+  {name = "Ethan Brooke", email = "brooke.ethan@gmail.com"}
+]
+keywords = ["continuation calculus", "finite continuability", "primitive judgment", "PLEC derivation", "capacity monotonicity", "finite-physical-regime", "marginal floor", "Hilbert-Born representation gates", "language layer", "ontology capstone"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = ["numpy>=1.20", "scipy>=1.7"]
+
+[project.urls]
+Homepage = "https://github.com/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability"
+"Bug Tracker" = "https://github.com/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability/issues"
+"Zenodo" = "https://doi.org/"
+
+[tool.setuptools.packages.find]
+include = ["apf*"]

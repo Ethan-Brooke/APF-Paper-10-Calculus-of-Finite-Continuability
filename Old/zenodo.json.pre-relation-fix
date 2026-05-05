@@ -1,0 +1,33 @@
+{
+  "title": "APF Paper 10 — The Calculus of Finite Continuability",
+  "description": "<p>Continuation-first re-foundation of APF.  The primitive judgment Γ ⊨_C D ⇝ E (in context Γ, distinction-expression D can continue as E using capacity at most C) is bedrock; enforcement, cost, BCD, recruitment profiles, fields, radiation, quantum anchors, gauge, conservation, geometry, entropy, time, action all become specializations or downstream readings of the continuation calculus.  Continuation/Dynamics separation as central simplification: continuation defines admissible possibility; dynamics is a further selection rule.  PLEC's four features (A1, MD, A2, BW) collapse to one continuation primitive + one capacity-monotonicity axiom + one finite-physical-regime hypothesis + two derived lemmas (Lemma A2 for argmin, Lemma BW for cost-spectrum non-degeneracy).</p><p>This repository is the executable mathematical appendix for Paper 10 of the Admissibility Physics Framework (APF). All theorems trace to named check functions in the bundled <code>apf/</code> package.</p>",
+  "creators": [
+    {
+      "name": "Brooke, Ethan",
+      "affiliation": "Independent Researcher, San Anselmo, California, USA",
+      "orcid": "0009-0001-2261-4682"
+    }
+  ],
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": ["continuation calculus", "finite continuability", "primitive judgment", "PLEC derivation", "capacity monotonicity", "finite-physical-regime", "marginal floor", "Hilbert-Born representation gates", "language layer", "ontology capstone"],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "",
+      "relation": "isVersionOf",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.18604548",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "version": "1.12"
+}
