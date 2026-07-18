@@ -30,7 +30,7 @@ Expected output: one line per check, then a summary `Paper 10 (The Calculus of F
 Pick the check name from `ai_context/THEOREMS.md` (use `grep` to filter by module, or by epistemic tag, or by keyword). Then:
 
 ```bash
-python -c "from apf import core; r = core.check_T_CPTP(); print(r)"
+python -c "from apf import core; r = core.check_T_finite_operational_basis_scope_contract(); print(r)"
 ```
 
 The returned dict has fields:

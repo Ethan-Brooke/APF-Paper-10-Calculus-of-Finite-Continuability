@@ -8,7 +8,7 @@ Grouped by intent:
 
 ## Verification — "show me this passes"
 
-> Verify `check_T_CPTP` in this repository. Run `python run_checks.py`, then read the function in `apf/core.py`, then explain in 200 words what it proves, what its dependencies are, and what its epistemic tag means.
+> Verify `check_T_finite_operational_basis_scope_contract` in this repository. Run `python run_checks.py`, then read the function in `apf/core.py`, then explain in 200 words what it proves, what its dependencies are, and what its epistemic tag means.
 
 > Walk through the vendored `apf/core.py`. For each `check_*` function, extract: the name, the claim (summary), the epistemic tag ([P] / [P]+[I] / [P_structural] / [Pred]), and the dependencies. Output as a markdown table.
 
@@ -20,7 +20,7 @@ Grouped by intent:
 
 > Using `ai_context/FRAMEWORK_OVERVIEW.md` and `ai_context/theorems.json`, trace the chain from Axiom A1 to the Born rule step by step. For each step, cite the check function that establishes it.
 
-> What's the shortest derivation chain from A1 to `check_T_CPTP`? List the intermediate theorems with their epistemic tags.
+> What's the shortest derivation chain from A1 to `check_T_finite_operational_basis_scope_contract`? List the intermediate theorems with their epistemic tags.
 
 > Read `Paper_10_Calculus_of_Finite_Continuability_v1.21.tex` and produce a 500-word summary. Preserve all `\coderef{}{}` anchors. Distinguish internally-derived claims ([P]) from imported closures ([P]+[I]) and from structural identifications ([P_structural]).
 
@@ -38,7 +38,7 @@ Grouped by intent:
 
 ## Cross-referencing — "how does this relate to external work?"
 
-> Position `check_T_CPTP` against the mainstream comparator(s). Distinguish APF-internal derivation from reinterpretation. If the claim is an [I] import, name the imported theorem and its canonical reference.
+> Position `check_T_finite_operational_basis_scope_contract` against the mainstream comparator(s). Distinguish APF-internal derivation from reinterpretation. If the claim is an [I] import, name the imported theorem and its canonical reference.
 
 > The Technical Supplement uses [Solèr / Gleason / HKM / Malament / Lovelock / other]. For each import, explain what APF-internal preparation makes the import applicable, and what the import closes. Use the language of "prepared class" vs "closure theorem."
 

@@ -20,14 +20,14 @@ This file is structured in three tiers. **Tier 1** (§0 below) is the 60-second 
 
 **What this paper contributes.** Continuation-first re-foundation of APF.  The primitive judgment Γ ⊨_C D ⇝ E (in context Γ, distinction-expression D can continue as E using capacity at most C) is bedrock; enforcement, cost, BCD, recruitment profiles, fields, radiation, quantum anchors, gauge, conservation, geometry, entropy, time, action all become specializations or downstream readings of the continuation calculus.  Continuation/Dynamics separation as central simplification: continuation defines admissible possibility; dynamics is a further selection rule.  PLEC's four features (A1, MD, A2, BW) collapse to one continuation primitive + one capacity-monotonicity axiom + one finite-physical-regime hypothesis + two derived lemmas (Lemma A2 for argmin, Lemma BW for cost-spectrum non-degeneracy).
 
-**What this repo verifies vs what it imports.** This repo locally verifies 0 theorem checks drawn from Paper 10's own dependency subset. Results from no other papers are imported, not re-derived here. The full APF corpus (and which paper owns which result) is in §1 below.
+**What this repo verifies vs what it imports.** This repo locally verifies 3 theorem checks drawn from Paper 10's own dependency subset. Results from no other papers are imported, not re-derived here. The full APF corpus (and which paper owns which result) is in §1 below.
 
 **Scope — after reading only this repo:**
 
-- **You may:** summarize Paper 10's argument and results; explain the local 0-theorem subset; run all bundled checks to verify them; cite the paper by its DOI.
+- **You may:** summarize Paper 10's argument and results; explain the local 3-theorem subset; run all bundled checks to verify them; cite the paper by its DOI.
 - **You may not:** claim mastery of the full APF corpus on the basis of this repo alone; re-derive results that belong to other papers using only material here; present imported results as locally derived in this repo; treat the bundled check subset as the whole engine (the canonical bank is 3918 theorems / 3918 checks; this repo contains a subset).
 
-**Canonical state (one source of truth).** Codebase **v24.3.427**, frozen 2026-05-04. Full engine: **3918** verify_all checks, **3918** bank-registered theorems, **48** quantitative predictions. This repo bundles 0 of those checks for Paper 10's dependency subset. If you see a different count anywhere, this line is canonical.
+**Canonical state (one source of truth).** Codebase **v24.3.427**, frozen 2026-05-04. Full engine: **3918** verify_all checks, **3918** bank-registered theorems, **48** quantitative predictions. This repo bundles 3 of those checks for Paper 10's dependency subset. If you see a different count anywhere, this line is canonical.
 
 ---
 
@@ -107,7 +107,7 @@ Skim, don't memorize. Must know by sight:
 
 ### Step 5 — Load the theorem catalog (`ai_context/theorems.json`)
 
-Not mandatory to read end-to-end, but make sure you know it exists and how to query it. The full bank has 3918 entries; this paper bundles **0 of 3918** for local execution. Each entry has name, module, epistemic tag, dependencies, and one-line summary.
+Not mandatory to read end-to-end, but make sure you know it exists and how to query it. The full bank has 3918 entries; this paper bundles **3 of 3918** for local execution. Each entry has name, module, epistemic tag, dependencies, and one-line summary.
 
 Querying examples (use when you need to cite a specific theorem):
 

@@ -1,6 +1,6 @@
 """apf/bank.py — Paper 10 registry.
 
-Lightweight registry for the 0-check subset bundled in this
+Lightweight registry for the 3-check subset bundled in this
 paper-companion repo. Mirrors the canonical apf.bank API: REGISTRY (dict),
 get_check(name), run_all(verbose=False).
 """
@@ -12,7 +12,7 @@ from apf import core as _core
 
 def _build_registry():
     reg = OrderedDict()
-    for name in []:
+    for name in ['check_T_finite_operational_basis_scope_contract', 'check_T_finite_operational_basis', 'check_T_finite_minimal_joint_realization_atom_cover']:
         fn = getattr(_core, name, None)
         if fn is None:
             # Function couldn't be extracted — skip with a warning attribute
@@ -22,7 +22,7 @@ def _build_registry():
 
 
 REGISTRY = _build_registry()
-EXPECTED_CHECK_COUNT = 0
+EXPECTED_CHECK_COUNT = 3
 
 
 def get_check(name):

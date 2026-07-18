@@ -2,7 +2,7 @@
 
 Full catalog of **3918** bank-registered theorems in the canonical APF codebase (at the time of this release).
 
-**Bundled in this Paper 10 repo:** 0 of 3918. Bundled checks are runnable locally via `python run_checks.py`; non-bundled checks are referenced by name only and require the full canonical codebase at `__APF Library/Codebase/APF_Codebase_v<version>/` to execute.
+**Bundled in this Paper 10 repo:** 3 of 3918. Bundled checks are runnable locally via `python run_checks.py`; non-bundled checks are referenced by name only and require the full canonical codebase at `__APF Library/Codebase/APF_Codebase_v<version>/` to execute.
 
 ## Legend
 
@@ -333,7 +333,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `L_QG_consistency` | lemma | `P` | 10/10 consistency checks passed across three routes to gravity: (1) Geometric: L_lovelock → G_μν unique in d=4. (2) Thermodynamic: δQ=TdS → same G_μν from entanglement. (3) Quantum: CPTP dynamics + capacity excitations → graviton. Key identifications: DOF=2=κ in all three; G_N=l_P²/(4ln2) unique;... |
 | · | `L_RG_lambda` | lemma | `P` | SUPERSEDED by L_Higgs_corrected (123 GeV, 1.6% error). CCM initial condition lambda(M_GUT) = g_2^2/2 = 0.1360. APF d/c^2 = 0.33311 confirms this to 0.07% (L_SA_sector_dominance [P]). 1-loop SM RG (import: T6B beta coefficients): lambda(M_GUT) -> lambda(M_Z) = 0.1832. Prediction: m_H = 149.1 GeV. ... |
 | · | `L_RT_capacity` | lemma | `P` | S(A) = k·ln(102) = (k/61)·S_dS for k types in A — the MARGINAL entropy of the maximally-mixed saturation state ρ = I/d_eff^61 (L_equip [P], L_KMS_trace_state [P]). The maximally-mixed state factorizes (I/d^n = ⊗ I/d) → zero mutual info → partial trace gives a k-type trace state → S = k·S_1 [P]. T... |
-| · | `L_RT_two_sided_reading_no_go` | lemma | `P` | The entanglement/holographic reading of L_RT_capacity cannot be upgraded by any internal purification: pure-state marginals are equal (Schmidt) while the banked marginals are 19*sigma != 42*sigma, and every internal cut is capped at min(k,61-k)*sigma <= 30*sigma < 61*sigma = S_dS (61 odd: no bala... |
+| · | `L_RT_two_sided_reading_no_go` | lemma | `—` | (no summary) |
 | · | `L_SA_Higgs` | lemma | `P` | SUPERSEDED by L_Higgs_corrected (123 GeV, 1.6% error). Physical Yukawa d/c^2 = 0.333106 vs 1/N_c = 0.333333, err = -0.0227%. APF confirms CCM (2007): top-dominated d/c^2 -> 1/3 to 0.07%. CCM spectral action formula: m_H = sqrt(8/3)*m_t = 282.7 GeV (GUT-scale). APF correction factor = 0.999659 -> ... |
 | · | `L_SA_moments` | lemma | `P` | Physical Yukawa spectral action coefficients from APF D_F (L_ST_Dirac [P]). Normalization: Y_s = lambda_s * M_s^APF where lambda_s = y_s^heaviest/sv_s[0]. APF structural ratio sv_d/sv_u = 1.8871 (derived: M_d[2,2]/M_u[2,2] = 2/1.125). c = 2.630437, d = 2.304827, N_f = 48. Top dominates c at 99.97... |
 | · | `L_SA_sector_dominance` | lemma | `P` | Within each fermion sector, d_s/c_s^2 = 1/N_c to precision eps^2. Up: err=7.77e-08 (eps^2_u=1.17e-07). Down: err=3.95e-08 (eps^2_d=5.90e-08). nu: exact 1/1 (rank-1). lepton: err~1e-5. Result is SCALE-INVARIANT: identical in APF internal units and physical Yukawa units. Analytic: d_s/c_s^2 = (1/N_... |
@@ -944,7 +944,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `L_codef_aggregation_argmin` | lemma | `P` | Corollary of T_sep [P] + A2 (NAMED constitutive axiom): for CoDef pairs (overlapping anchors, contained joint threat) under K3-additive support-billing, the named FD3 coverage premise, and the rider eps_joint <= C, the aggregated configuration is the unique GLOBAL argmin -- eps_joint = cost(M1\|M2... |
+| · | `L_codef_aggregation_argmin` | lemma | `—` | (no summary) |
 
 ## `apf/codomain_selection_engine.py` — 3 checks (0 bundled)
 
@@ -985,14 +985,14 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 |---|---|---|---|---|
 | · | `T_confinement_scale_rides_single_anchor` | theorem | `P_structural_seam` | Closes the single-anchor theorem (v24.3.187) open [C] corollary, using machinery already banked. L_alpha_s ([P+alpha_EM]) fixes alpha_s(M_Z) from capacity structure (Route A fully-native 0.1197 / 1.6%, Route B 0.1179 / 0.02%) and computes the confinement scale by dimensional transmutation Lambda_... |
 
-## `apf/continuation_calculus.py` — 5 checks (0 bundled)
+## `apf/continuation_calculus.py` — 5 checks (3 bundled)
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `T_admissibility_greedoid_structure` | theorem | `—` | (no summary) |
-| · | `T_finite_minimal_joint_realization_atom_cover` | theorem | `P_structural` | On every exercised closed finite atom-cover model, a complete inclusion-minimal basis is represented by one concrete joint carrier containing exactly the union of its atoms. Exact atom cost makes that carrier minimum and no-excess; deterministic subset projections recover every basis class and ev... |
-| · | `T_finite_operational_basis` | theorem | `—` | (no summary) |
-| · | `T_finite_operational_basis_scope_contract` | theorem | `P_structural_instrument` | The finite-basis bank node is scoped to a finite atom-cover model: finite content atoms, subset-coded operational classes, union closure/joint carrier, and exact no-excess atom cost. Exact Fraction arithmetic rejects the former +1e-9 boundary enlargement. A finite closed-ledger countermodel with ... |
+| ✓ | `T_finite_minimal_joint_realization_atom_cover` | theorem | `—` | (no summary) |
+| ✓ | `T_finite_operational_basis` | theorem | `—` | (no summary) |
+| ✓ | `T_finite_operational_basis_scope_contract` | theorem | `P_structural_instrument` | The finite-basis bank node is scoped to a finite atom-cover model: finite content atoms, subset-coded operational classes, union closure/joint carrier, and exact no-excess atom cost. Exact Fraction arithmetic rejects the former +1e-9 boundary enlargement. A finite closed-ledger countermodel with ... |
 | · | `T_selection_approximate_A2` | theorem | `—` | (no summary) |
 
 ## `apf/continuation_sum_measure.py` — 1 checks (0 bundled)
@@ -1226,7 +1226,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `T_drawn_content_readings_functional` | theorem | `P_structural_instrument` | PASS |
+| · | `T_drawn_content_readings_functional` | theorem | `—` | (no summary) |
 | · | `T_gluonic_content_readings` | theorem | `P_structural_instrument` | PASS |
 | · | `T_lr_divisibility_extended_scan` | theorem | `P_structural_instrument` | LR-divisibility extended scan: zero firers to 13x-600x the .334 bounds; mod-12 DP validated against commutant_profile; detector negative-tested; the open stays open |
 | · | `T_magic_square_solution_group_rep_forces_4n` | theorem | `P_structural_instrument` | PASS |
@@ -1502,7 +1502,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `L_frustrated_witness` | lemma | `P_structural | P-dangling (open, named, adjudicated) + codef support-billing convention (consumed-banked) + A1 endpoint gating; frustration witness class` | Under P-dangling (adjudicated named premise: configuration-dependent, contained, sector-clean defence supports) + the consumed codef support-billing convention + A1 endpoint gating, a frustrated ch... |
+| · | `L_frustrated_witness` | lemma | `—` | (no summary) |
 
 ## `apf/frustration_center_partition.py` — 1 checks (0 bundled)
 
@@ -1530,7 +1530,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `T_gapless_serial_floor` | theorem | `P_structural` | all-Sep structure formation is serial + floor-billed: K1 no free switch (Bennett excluded by L_cost per-transition uniqueness) [P]; K2 no joint hold (T_sep + codef union floor; drawn clause = Sep-b... |
+| · | `T_gapless_serial_floor` | theorem | `—` | (no summary) |
 
 ## `apf/gauge_beta_capacity_tiling.py` — 2 checks (0 bundled)
 
@@ -1578,7 +1578,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `T_evaluator_canonicity_kills_noncanonical_storage` | theorem | `P` | The (i)-campaign advance, stated per the 2026-06-10 combined audit: the fork is RELOCATED into GQL-5a/5b, with the rivals given an executable death GIVEN the frame. DERIVED sector-neutrally: the fact has exactly ONE evaluator (Schur-canonical pairing, dim 1 exact; U(1)-invariance is VACUOUS on th... |
 | · | `T_ew_load_placement_P` | theorem | `P` | The +1 in gamma_2 = a_22 + n_radial (the single radial Higgs record, n_radial = 4-3 = 1, T_Higgs) is billed to SU(2)'s row -- forced, not adopted -- by FD1 structural completeness composed with the Schur asymmetry.  Structural completeness (the adopted foundational clause, check_FD1_structural_co... |
 | · | `T_gql1a_reduced_by_co_movement` | theorem | `P` | GQL-1a (billing-completeness) is REDUCED to GQL-1b, not dissolved: an orbit-variant 'fact' cannot be STORED at a gauged interface as a well-defined fact, GIVEN (i') action-totality (the template action is defined on all interface content -- canonically anchored via the V_61/rho_SM realization, fo... |
-| · | `T_orientation_ew_route_priced` | theorem | `P_structural` | The orientation->EW cell's standing pin, per the 2026-07-02 note SS5. (a) The block-D/E adjudication lemmas are quarantined to the two quotient ledgers (bare-name scan, per-file count-pinned); the route checks (T_record_demand_is_quotient_codim, T_ew_load_placement_P) are outside the clause by de... |
+| · | `T_orientation_ew_route_priced` | theorem | `—` | (no summary) |
 | · | `T_record_demand_is_quotient_codim` | theorem | `P` | GIVEN GQL-1/2/3 (named identifications, see L_gauge_orbit_unpinnable + module docstring): a record class pinning k independent quotient facts has pinned demand Delta = k, priced k * epsilon (L_cost uniformity) -- objects of the type the banked access-partition floor governs (routing claim; the to... |
 | · | `UB_usage_billing_adopted` | other | `P_structural_reading` | UB ADOPTED-WITH-FALSIFIER (principal ruling 2026-06-10; MD/BW precedent), named SEVERALLY per the tenth adoption audit: (UB-r) routing-as-billing semantics (the Gram FORM is banked [P]; the draws READING is the adopted clause); (UB-b) the diag(A) baseline (supersedes the eighth audit's not-absorb... |
 
@@ -1726,7 +1726,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `check_T_interface_atlas_P` | theorem | `—` | Interface Atlas is P: many route/claim/codomain graphs aggregate into APF-wide bottleneck and repair-strategy reports across engine axes. |
+| · | `check_T_interface_atlas_P` | theorem | `—` | (no summary) |
 | · | `check_T_interface_atlas_axis_typing_P` | theorem | `P_atlas_axis_typing` | Atlas engine-axis typing operational: mixed-axis input set produces per-axis summary with ROUTE + CODOMAIN axes; SC codomain row classified as COHERENT_CODOMAIN_SELECTED with export_global_P; cross-axis advisory note present (Reference doc Q2 starting position). |
 | · | `check_T_interface_atlas_bottlenecks_P` | theorem | `—` | Interface atlas ranks repeated obstructions and failed structure kinds. |
 | · | `check_T_interface_atlas_construction_P` | theorem | `—` | Interface atlas constructs route summaries across canonical claims and payloads. |
@@ -1776,8 +1776,8 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `check_T_EW_counterterm_evidence_candidate_P` | theorem | `—` | (no summary) |
-| · | `check_T_EW_counterterm_uncertainty_intake_P` | theorem | `—` | EW counterterm and uncertainty live blockers have candidate evidence packets, with no route promotion. |
-| · | `check_T_EW_intake_does_not_promote_route_P` | theorem | `—` | EW intake surfaces candidate evidence while preserving no-target guards and no-new-physical-W boundary. |
+| · | `check_T_EW_counterterm_uncertainty_intake_P` | theorem | `—` | (no summary) |
+| · | `check_T_EW_intake_does_not_promote_route_P` | theorem | `—` | (no summary) |
 | · | `check_T_EW_uncertainty_evidence_candidate_P` | theorem | `—` | (no summary) |
 
 ## `apf/interface_factor_native.py` — 1 checks (0 bundled)
@@ -1791,8 +1791,8 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `check_T_CI_module_target_coverage_P` | theorem | `—` | CI orchestrator covers the full interface-intelligence stack through atlas and real adapters. |
-| · | `check_T_CI_report_generation_P` | theorem | `—` | CI orchestrator emits module, atlas, and live-adapter reports. |
-| · | `check_T_CI_top_checks_pass_P` | theorem | `—` | CI orchestrator can run all top checks and confirm expected P statuses. |
+| · | `check_T_CI_report_generation_P` | theorem | `—` | (no summary) |
+| · | `check_T_CI_top_checks_pass_P` | theorem | `—` | (no summary) |
 | · | `check_T_interface_intelligence_CI_orchestrator_P` | theorem | `—` | (no summary) |
 
 ## `apf/interface_intelligence_E2E_artifact_pipeline.py` — 4 checks (0 bundled)
@@ -1801,17 +1801,17 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 |---|---|---|---|---|
 | · | `check_T_e2e_artifact_pipeline_collects_files_P` | theorem | `—` | E2E pipeline collects artifact files deterministically. |
 | · | `check_T_e2e_artifact_pipeline_empty_safe_P` | theorem | `—` | E2E pipeline handles empty artifact folders without overclaiming. |
-| · | `check_T_e2e_artifact_pipeline_runs_P` | theorem | `—` | E2E artifact pipeline produces candidates, batch certification, reviewer report, and zip. |
-| · | `check_T_interface_intelligence_E2E_artifact_pipeline_P` | theorem | `—` | Interface Intelligence E2E Artifact Pipeline is P: artifact folders become payloads, batch certifications, reviewer reports, and zipped diagnostics. |
+| · | `check_T_e2e_artifact_pipeline_runs_P` | theorem | `—` | (no summary) |
+| · | `check_T_interface_intelligence_E2E_artifact_pipeline_P` | theorem | `—` | (no summary) |
 
 ## `apf/interface_intelligence_engineering_command_center.py` — 4 checks (0 bundled)
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `check_T_command_center_dashboard_P` | theorem | `—` | Command center renders an integrator dashboard with boundary language. |
-| · | `check_T_command_center_dry_run_P` | theorem | `—` | Command center dry-run fails gracefully with missing-script diagnostics. |
+| · | `check_T_command_center_dry_run_P` | theorem | `—` | (no summary) |
 | · | `check_T_command_center_structure_P` | theorem | `—` | Engineering command center exposes runner and structured report objects. |
-| · | `check_T_interface_intelligence_engineering_command_center_P` | theorem | `—` | Interface Intelligence Engineering Command Center is P: live diagnostics can be orchestrated and dashboarded in one command. |
+| · | `check_T_interface_intelligence_engineering_command_center_P` | theorem | `—` | (no summary) |
 
 ## `apf/interface_intelligence_failure_triage_assistant.py` — 4 checks (0 bundled)
 
@@ -1826,8 +1826,8 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `check_T_interface_intelligence_live_smoke_harness_P` | theorem | `—` | Interface Intelligence Live Smoke Harness is P: one diagnostic target for installed-stack reporting. |
-| · | `check_T_live_smoke_harness_dry_run_P` | theorem | `—` | Dry-run in empty root fails gracefully with structured missing-script diagnostics. |
+| · | `check_T_interface_intelligence_live_smoke_harness_P` | theorem | `—` | (no summary) |
+| · | `check_T_live_smoke_harness_dry_run_P` | theorem | `—` | (no summary) |
 | · | `check_T_live_smoke_harness_structure_P` | theorem | `—` | Live smoke harness exposes required steps and structured summary objects. |
 | · | `check_T_live_smoke_harness_text_summary_P` | theorem | `—` | Live smoke harness emits human-readable summary with boundary language. |
 
@@ -1835,10 +1835,10 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `check_T_acceptance_auditor_accepts_complete_P` | theorem | `—` | Acceptance auditor accepts a complete synthetic integration. |
+| · | `check_T_acceptance_auditor_accepts_complete_P` | theorem | `—` | (no summary) |
 | · | `check_T_acceptance_auditor_blocks_failures_P` | theorem | `—` | Acceptance auditor blocks explicit failure evidence. |
 | · | `check_T_acceptance_auditor_holds_missing_P` | theorem | `—` | Acceptance auditor holds empty/missing integrations. |
-| · | `check_T_interface_intelligence_post_install_acceptance_auditor_P` | theorem | `—` | Post-Install Acceptance Auditor is P: live integration is accepted, held, or blocked by explicit evidence criteria. |
+| · | `check_T_interface_intelligence_post_install_acceptance_auditor_P` | theorem | `—` | (no summary) |
 
 ## `apf/interface_intelligence_registry_bridge.py` — 6 checks (0 bundled)
 
@@ -1942,10 +1942,10 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `check_T_interface_live_blocker_work_queue_P` | theorem | `—` | Interface Live Blocker Work Queue v3 is P: live blockers are explicit evidence tasks, dark evaluator-map admission is visible, and no route is promoted by the queue. |
-| · | `check_T_live_blocker_inventory_P` | theorem | `—` | Live EW and dark target structures are captured as six explicit work-queue items, including EW and dark candidate-present evidence. |
-| · | `check_T_queue_does_not_promote_routes_P` | theorem | `—` | Work queue is operational only: it creates evidence tasks but does not close or promote EW/dark routes. |
-| · | `check_T_work_items_have_evidence_requirements_P` | theorem | `—` | Every live work item has evidence requirements, acceptance gate, rerun command, and no-smuggling guard. |
+| · | `check_T_interface_live_blocker_work_queue_P` | theorem | `—` | (no summary) |
+| · | `check_T_live_blocker_inventory_P` | theorem | `—` | (no summary) |
+| · | `check_T_queue_does_not_promote_routes_P` | theorem | `—` | (no summary) |
+| · | `check_T_work_items_have_evidence_requirements_P` | theorem | `—` | (no summary) |
 
 ## `apf/interface_movement_graph_repair_planner.py` — 5 checks (0 bundled)
 
@@ -2219,7 +2219,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 |---|---|---|---|---|
 | · | `L_local_removability` | lemma | `P` | A distinction's committed capacity is recoverable by local operations iff no Moebius joint line containing it is billed at >= 2 interfaces. Forward = L_irr [P] (the check-4 simultaneity obstruction, reproduced in the line model on the bank's own tables). Backward = L_operational_completeness: foo... |
 | · | `L_operational_completeness` | lemma | `P` | The operation set available to the observer at interface Gamma is exactly the set of admissibility-data REMOVALS billed solely at Gamma, within global admissibility (additions/general modifications not claimed -- row 6's license). UPPER bound: L_loc -- no cross-interface modification, no multi-in... |
-| · | `L_recoverability_is_orbit_reachability` | lemma | `P` | Cost-ledger recoverability (the v24.3.230 clause semantics) and P_Gamma-orbit reachability (compositions of interface-local admissible operators on the FD2/FD3-refined product space) compute the SAME floor functional: verified on the bank's worlds plus the W5 countermodel (field 7) and exhaustive... |
+| · | `L_recoverability_is_orbit_reachability` | lemma | `—` | (no summary) |
 | · | `T_fusion_scope_dissolved` | theorem | `P` | The fusion-scope fork (Paper 3 supp red-team H5; the named non-claim of the v24.3.231/232 translation landing) dissolves: the all-bits and billing-scope arms are ONE per-interface-activation operator semantics handed two different pin-sets. All-bits floor == billing-scope floor of the class pinni... |
 | · | `T_ledger_rent_excluded` | theorem | `P` | Every booked cost is a transition-booked level: a formation/realignment commitment standing thereafter as committed capacity (locked iff in a multiply-billed joint line), or a per-activation charge. No third kind: a standing-rent term (cost of merely persisting, accruing at fixed structure) is ex... |
 | · | `T_transition_log_residue_readable` | theorem | `P` | The ledger basis grants observable status to the state-borne residue of its own transition log: commitment bookings are transition-toggled and residue-materialized (row 9 [P]); the residue is pin-indexed because the configuration space IS the product of per-interface holding bits (refined product... |
@@ -2234,10 +2234,10 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `check_T_payload_batch_certification_runner_P` | theorem | `—` | Payload Batch Certification Runner is P: payload candidates batch-run through interface gates with atlas/report outputs. |
+| · | `check_T_payload_batch_certification_runner_P` | theorem | `—` | (no summary) |
 | · | `check_T_payload_batch_runner_certifies_items_P` | theorem | `—` | Payload batch runner certifies canonical held/P/provenance cases. |
 | · | `check_T_payload_batch_runner_loads_candidates_P` | theorem | `—` | Payload batch runner loads artifact adapter candidate reports. |
-| · | `check_T_payload_batch_runner_writes_outputs_P` | theorem | `—` | Payload batch runner writes report/atlas/templates and zips outputs. |
+| · | `check_T_payload_batch_runner_writes_outputs_P` | theorem | `—` | (no summary) |
 
 ## `apf/phase_14d3_completions.py` — 3 checks (0 bundled)
 
@@ -2270,7 +2270,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `T_pi_gammagamma_2L_moment_native` | theorem | `P_pi_gammagamma_2L_photon_vp_native_master_route_reproduction` | Native master-route two-loop photon vacuum polarization: renormalized slope = 41/162 = KS M(0)=82/81, exact. Pole and EulerGamma cancel for the correct 2 SE + 1 V diagram combination; the 2-V miscount leaves +8/(15 eps) (negative control). Bank-touch: local (m,m,0) master identical to chetyrkin_t... |
+| · | `T_pi_gammagamma_2L_moment_native` | theorem | `—` | (no summary) |
 
 ## `apf/planck_magnitude_single_anchor.py` — 2 checks (0 bundled)
 
@@ -2306,7 +2306,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `H2_locality_from_recruitment_kernels` | other | `P` | The closure conditions A9.1–A9.5 that drive Lovelock uniqueness are interface-local because the cost-curvature K(x) of the recruitment cost functional inherits locality from the local kernel ε_local(x, d) and the exponentially-decaying cooperative kernel I_int(x, x') by L_loc applied to substrate... |
 | · | `T_DCE_Q_dependence_prediction` | theorem | `P_structural_reading` | In the high-Q DCE regime, the recruitment-radius master equation predicts photon production rate dN/dt ∝ (v/c)² ω_d / Q, contrasting with the standard moving-boundary calculation's Q-independent rate. This is the framework's one quantitative discriminating prediction in the radiation domain. Veri... |
 | · | `T_cross_branch_matrix_element_form` | theorem | `P_structural_reading` | In the substrate-anchor entangled state, the within-branch mismatch is identically zero (M_mm = 0); the mismatch field's quantum analog lives in cross-branch matrix elements M_mn of the recruitment cost operator. The diagonal vanishing follows from each branch sitting at its branch-conditioned eq... |
-| · | `T_master_equation_form` | theorem | `P_structural_reading` | The master equation dN/dt = ∫ K(x) μ(x,t)^2 / (2 τ_rec(x) ℏ ω_typ(x)) dx with ∂_t μ = -μ/τ_rec - ∂_t φ_eq has linear-quadratic + first-order-relaxation form forced by three structural commitments: cost-functional quadratic at equilibrium minimum (H2 positive-definite K(x)); cost conservation (Cap... |
+| · | `T_master_equation_form` | theorem | `—` | (no summary) |
 | · | `T_purcell_DCE_consistency` | theorem | `P_structural_reading` | The Purcell factor F_P = 3 Q λ³ / (4π² V) and the DCE 1/Q scaling both arise from the same cavity-modified-substrate mechanism: finite τ_rec ∝ Q/ω in regime (c) (lossy quantum vacuum). The product F_P × (dN/dt)_DCE is Q-independent — algebraic confirmation that Q enters both observables via the s... |
 | · | `T_quantum_anchor_einstein_A` | theorem | `P` | The recruitment-radius quantum master equation reduces, under three structural identifications (squared dipole-vacuum coupling, EM-vacuum density of states, Fermi-rule rate factor in the lossless-vacuum regime), to the standard Einstein A coefficient A_{e→g} = ω_{eg}^3 \|⟨g\|d̂\|e⟩\|^2 / (3π ε_0 ℏ c^... |
 | · | `T_sixteen_case_unification_structural` | theorem | `P_structural_reading` | Sixteen previously-disjoint radiation phenomena reduce to the recruitment-radius master equation (or its quantum extension) under appropriate substrate kernels and anchor types. Cases group as: 4 moving-charge (classical anchors) + 4 moving-boundary (classical anchors) + 4 classical-anchor extens... |
@@ -2582,7 +2582,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `T_stern_phase_custodial_exclusion_conditional` | theorem | `P_structural_instrument` | Exact certificates for the custodially-protected Stern phase (SChSB with vanishing bilinear) at N_f = 3: ABJ remnant U(1)_A -> Z_6 (coefficient 2 N_f = 6); the bilinear k-table (trivial {0, 3} -- k = 3 is fermion parity -- nontrivial {1, 2, 4, 5}; effective group on bilinears Z_3 = Z_6/Z_2, three... |
 | · | `T_thooft_matching_symmetric_vacuum_no_go_conditional` | theorem | `P_structural_instrument` | Exact 't Hooft matching certificates for three-flavour chiral-limit QCD (N_c = 3): UV anomalies [SU(3)_L]^3 = 3, doubled mixed = 1; the minimal qqq spectrum fails the baryon equation by an exact mod-3 certificate (cubic alone satisfiable -- the kill is the baryon equation's); the triality selecti... |
 | · | `T_vafa_witten_selects_su3v_pattern_conditional` | theorem | `—` | (no summary) |
-| · | `T_vafa_witten_strong_parity_not_spontaneously_broken_conditional` | theorem | `P_structural_instrument` | Exact certificates for Vafa-Witten strong parity at N_c = 3: (A) the banked T_field colour content (no nu_R) is exactly vector-like -- three-generation multiset {(1,0): 6, (0,1): 6, (0,0): 9}, self-conjugate under (p,q) -> (q,p), net cubic anomaly 0, net triality 0 mod 3, and the N_f = 3 chiral-l... |
+| · | `T_vafa_witten_strong_parity_not_spontaneously_broken_conditional` | theorem | `—` | (no summary) |
 
 ## `apf/top_msr_R_star_real_adapter.py` — 5 checks (0 bundled)
 
@@ -2665,9 +2665,9 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `check_T_no_inverse_fit_transport_theorem` | theorem | `P_transport_theorem | no-smuggling` | Transport may use external constants and counterterms, but not the quantity being predicted as an inverse calibration input. |
 | · | `check_T_residuals_are_transport_observables_not_contradictions` | theorem | `P_transport_theorem` | Validation residuals are now assigned to the transport theorem's open finite-map slots. |
 | · | `check_T_route_specific_theorem_clauses_enumerated` | theorem | `P_transport_theorem` | The theorem specializes to W, charged-lepton, colored-MSbar, colored-pole, and light-quark routes. |
-| · | `check_T_trace_to_scheme_transport_theorem_bank_closure` | theorem | `P_transport_theorem` | v14.9 proves what must be true for physical export and why the present results remain validation/trace claims only. |
+| · | `check_T_trace_to_scheme_transport_theorem_bank_closure` | theorem | `—` | (no summary) |
 | · | `check_T_transport_export_iff_certificate_complete` | theorem | `P_transport_theorem` | The theorem closes the export predicate while proving that no current route satisfies it. |
-| · | `check_T_transport_theorem_upstream_banks_closed` | theorem | `P_transport_theorem` | The transport theorem rests on closed trace, boundary, ledger, route, composition, and completion-gate banks. |
+| · | `check_T_transport_theorem_upstream_banks_closed` | theorem | `—` | (no summary) |
 | · | `check_T_w_trace_on_shell_route_theorem_obligations` | theorem | `P_transport_theorem` | W_TRACE is the cleanest first physical-export route, but current paper status remains validation-only. |
 
 ## `apf/trace_transport_completion.py` — 12 checks (0 bundled)
@@ -2834,10 +2834,10 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `T_banked_registration_coherent_recovery_no_go` | theorem | `P_structural_instrument` | Measure-and-prepare is entanglement-breaking: output separable with any reference; separable overlap with the maximally entangled state <= 1/d (computed, attained); hence F_e <= 1/d = 1/42 and F_avg <= 2/43 at banked constants -- classical-guess level; identity on any dim >= 2 subspace impossible... |
-| · | `T_vacuum_label_code_no_leakage` | theorem | `P_structural_instrument` | On the banked skeleton (61 channels, 102 = 60 + 42 second-epsilon options, alphabet = the 42 Sector-B modes = dim V_global), ON THE COMMON-MODE SLICE of the Step-3 configuration family (42 of 42^61 configurations; the correlation is construction-supplied, its register form the OPEN a=b identity [... |
+| · | `T_vacuum_label_code_no_leakage` | theorem | `—` | (no summary) |
 | · | `T_vacuum_logical_sector_classical_ceiling` | theorem | `P_structural_instrument` | The privacy requirement of P1 admits NO subspace-coherent (pure-isometric) logical sector of dim >= 2: the uniform superposition of the 42 private label states IS the product state \|0>^x61 (exact Fourier collapse, single-channel leak 1 - 1/42); no 2-dim subspace of the common-mode carrier has sta... |
 | · | `T_vacuum_mixed_42dim_secret_scheme_exists` | theorem | `P_structural_instrument` | The clause-(c) fit question closes EXISTS at abstract-encoding strength: 60 applications of the mixed ((2,2)) polynomial-code scheme (base \|s> -> p^{-1/2} sum_a \|a, a+s, a+2s>, third register to the environment; p = 43) yield a perfect ((61,61)) scheme for a coherent 42-dim secret with all 61 sha... |
-| · | `T_vacuum_sector_aligned_scheme_share_dim_42` | theorem | `P_structural_instrument` | The check-3 open pin (42 <= d_share <= 43) settles at 42: tensoring the polynomial cascades at p = 3, 7 with a qubit factor built from the five-qubit code [[5,1,3]] (a pure ((3,5)) threshold structure; discard two positions -> mixed ((3,3)) all-qubit-shares; re-share +2 per step; 61 odd reaches (... |
+| · | `T_vacuum_sector_aligned_scheme_share_dim_42` | theorem | `—` | (no summary) |
 
 ## `apf/vacuum_o1_fork.py` — 2 checks (0 bundled)
 
@@ -3043,7 +3043,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `T_w_component_sum_certificate_attempt_gate_shape_path_not_real` | theorem | `—` | (no summary) |
-| · | `T_w_component_sum_certificate_bank_closure` | theorem | `P_w_component_sum_certificate_harness` | (no summary) |
+| · | `T_w_component_sum_certificate_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_component_sum_certificate_computes_decimal_sum` | theorem | `—` | (no summary) |
 | · | `T_w_component_sum_certificate_depends_on_v103_attempt_gate` | theorem | `—` | (no summary) |
 | · | `T_w_component_sum_certificate_dry_path_within_tolerance` | theorem | `—` | (no summary) |
@@ -3080,8 +3080,8 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `T_w_constants_preserve_W_TRACE_input` | theorem | `P_w_constants_source_ledger` | M_W_TRACE remains the upstream APF_TRACE quantity, not a fitted physical input. |
 | · | `T_w_constants_publication_claim_ladder` | theorem | `P_w_constants_source_ledger` | v9.2 is a constants-source ledger bank, not a physical W transport bank. |
 | · | `T_w_constants_record_schema_complete` | theorem | `P_w_constants_source_ledger` | constant records carry value, unit, uncertainty, source, convention, and W-exclusion fields. |
-| · | `T_w_constants_source_ledger_bank_closure` | theorem | `P_w_constants_source_ledger` | W_TRACE constants-source ledger is numerically filled for allowed non-W inputs; W physical transport remains open and gated. |
-| · | `T_w_constants_source_ledger_status_declared` | theorem | `P_w_constants_source_ledger` | v9.2 fills allowed constant sources without closing W transport. |
+| · | `T_w_constants_source_ledger_bank_closure` | theorem | `—` | (no summary) |
+| · | `T_w_constants_source_ledger_status_declared` | theorem | `—` | (no summary) |
 | · | `T_w_constants_symbols_match_v91_allowed_basis` | theorem | `P_w_constants_source_ledger` | only alpha_em_reference, G_F_reference, and M_Z_on_shell_reference are numerically filled. |
 | · | `T_w_constants_uncertainties_positive_and_source_tagged` | theorem | `P_w_constants_source_ledger` | all filled constants have uncertainty strings, relative-uncertainty tags, and source URLs. |
 | · | `T_w_constants_units_and_dimensions_declared` | theorem | `P_w_constants_source_ledger` | unit contracts are explicit before any W comparison equation can be evaluated. |
@@ -3108,11 +3108,11 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `T_w_counterterm_convention_bank_closure` | theorem | `P_w_counterterm_convention_certificate` | (no summary) |
+| · | `T_w_counterterm_convention_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_counterterm_convention_charge_condition_declared` | theorem | `P_w_counterterm_convention_certificate` | (no summary) |
 | · | `T_w_counterterm_convention_component_order_preserved` | theorem | `P_w_counterterm_convention_certificate` | (no summary) |
 | · | `T_w_counterterm_convention_default_contract_certifies_schema_only` | theorem | `P_w_counterterm_convention_certificate` | (no summary) |
-| · | `T_w_counterterm_convention_depends_on_export_lock` | theorem | `P_w_counterterm_convention_certificate` | (no summary) |
+| · | `T_w_counterterm_convention_depends_on_export_lock` | theorem | `—` | (no summary) |
 | · | `T_w_counterterm_convention_dry_release_still_requires_other_flags` | theorem | `P_w_counterterm_convention_certificate` | (no summary) |
 | · | `T_w_counterterm_convention_export_request_blocked` | theorem | `P_w_counterterm_convention_certificate` | (no summary) |
 | · | `T_w_counterterm_convention_finite_part_normalization_declared` | theorem | `P_w_counterterm_convention_certificate` | (no summary) |
@@ -3200,7 +3200,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `T_w_delta_r_publication_claim_ladder` | theorem | `—` | (no summary) |
 | · | `T_w_delta_r_relation_template_on_shell_form` | theorem | `—` | (no summary) |
 | · | `T_w_delta_r_slots_decomposed_not_fit_residual` | theorem | `—` | (no summary) |
-| · | `T_w_delta_r_symbolic_map_bank_closure` | theorem | `P_w_delta_r_symbolic_map` | W Delta_r finite map is typed and symbolic; physical W transport remains open and gated. |
+| · | `T_w_delta_r_symbolic_map_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_delta_r_symbolic_map_status_declared` | theorem | `P_w_delta_r_symbolic_map` | (no summary) |
 
 ## `apf/w_trace_delta_r_pull_diagnostics.py` — 13 checks (0 bundled)
@@ -4060,7 +4060,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `T_w_external_ingestion_completion_gate_remains_locked` | theorem | `—` | (no summary) |
 | · | `T_w_external_ingestion_component_order_preserved_all_formats` | theorem | `—` | (no summary) |
 | · | `T_w_external_ingestion_csv_parser_roundtrip` | theorem | `—` | (no summary) |
-| · | `T_w_external_ingestion_dryrun_bank_closure` | theorem | `P_w_external_ingestion_dryrun` | (no summary) |
+| · | `T_w_external_ingestion_dryrun_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_external_ingestion_dryrun_depends_on_v100_adapter` | theorem | `—` | (no summary) |
 | · | `T_w_external_ingestion_dryrun_formats_match_adapter` | theorem | `—` | (no summary) |
 | · | `T_w_external_ingestion_dryrun_record_schema_preserved` | theorem | `—` | (no summary) |
@@ -4086,7 +4086,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `T_w_external_source_adapter_bank_closure` | theorem | `P_w_external_source_adapter` | (no summary) |
+| · | `T_w_external_source_adapter_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_external_source_adapter_completion_gate_remains_locked` | theorem | `—` | (no summary) |
 | · | `T_w_external_source_adapter_covers_all_components` | theorem | `—` | (no summary) |
 | · | `T_w_external_source_adapter_depends_on_v99_source_pack` | theorem | `—` | (no summary) |
@@ -4124,11 +4124,11 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `T_w_final_export_readiness_covariance_required` | theorem | `P_w_final_export_readiness_aggregator` | (no summary) |
 | · | `T_w_final_export_readiness_current_state_matches_locked_flags` | theorem | `P_w_final_export_readiness_aggregator` | (no summary) |
 | · | `T_w_final_export_readiness_default_locked` | theorem | `P_w_final_export_readiness_aggregator` | (no summary) |
-| · | `T_w_final_export_readiness_depends_on_v105_uncertainty_harness` | theorem | `P_w_final_export_readiness_aggregator` | (no summary) |
-| · | `T_w_final_export_readiness_depends_on_v106_export_lock` | theorem | `P_w_final_export_readiness_aggregator` | (no summary) |
-| · | `T_w_final_export_readiness_depends_on_v107_counterterm_convention` | theorem | `P_w_final_export_readiness_aggregator` | (no summary) |
-| · | `T_w_final_export_readiness_depends_on_v109_bundle_admission` | theorem | `P_w_final_export_readiness_aggregator` | (no summary) |
-| · | `T_w_final_export_readiness_depends_on_v110_sum_bridge` | theorem | `P_w_final_export_readiness_aggregator` | (no summary) |
+| · | `T_w_final_export_readiness_depends_on_v105_uncertainty_harness` | theorem | `—` | (no summary) |
+| · | `T_w_final_export_readiness_depends_on_v106_export_lock` | theorem | `—` | (no summary) |
+| · | `T_w_final_export_readiness_depends_on_v107_counterterm_convention` | theorem | `—` | (no summary) |
+| · | `T_w_final_export_readiness_depends_on_v109_bundle_admission` | theorem | `—` | (no summary) |
+| · | `T_w_final_export_readiness_depends_on_v110_sum_bridge` | theorem | `—` | (no summary) |
 | · | `T_w_final_export_readiness_depends_on_v111_covariance_bridge` | theorem | `P_w_final_export_readiness_aggregator` | (no summary) |
 | · | `T_w_final_export_readiness_dry_rows_do_not_set_current_flags` | theorem | `P_w_final_export_readiness_aggregator` | (no summary) |
 | · | `T_w_final_export_readiness_forbidden_inputs_named` | theorem | `P_w_final_export_readiness_aggregator` | (no summary) |
@@ -4157,7 +4157,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `T_w_finite_part_covariance_uncertainty_still_block_export` | theorem | `—` | (no summary) |
 | · | `T_w_finite_part_evaluator_completion_gate_remains_locked` | theorem | `—` | (no summary) |
 | · | `T_w_finite_part_evaluator_depends_on_v94_ledger` | theorem | `—` | (no summary) |
-| · | `T_w_finite_part_evaluator_gate_bank_closure` | theorem | `P_w_finite_part_evaluator_gate` | (no summary) |
+| · | `T_w_finite_part_evaluator_gate_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_finite_part_evaluator_gate_status_declared` | theorem | `P_w_finite_part_evaluator_gate` | (no summary) |
 | · | `T_w_finite_part_evaluator_next_requirements_explicit` | theorem | `—` | (no summary) |
 | · | `T_w_finite_part_evaluator_no_fit_or_backsolve_allowed` | theorem | `—` | (no summary) |
@@ -4184,7 +4184,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `T_w_finite_part_counterterm_component_required_not_filled` | theorem | `—` | (no summary) |
 | · | `T_w_finite_part_covariance_and_uncertainty_gate_open` | theorem | `—` | (no summary) |
 | · | `T_w_finite_part_depends_on_v93_symbolic_map` | theorem | `—` | (no summary) |
-| · | `T_w_finite_part_ledger_bank_closure` | theorem | `P_w_finite_part_ledger` | W finite-part ledger is ready for independent component evaluation; physical W transport remains open and gated. |
+| · | `T_w_finite_part_ledger_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_finite_part_ledger_status_declared` | theorem | `P_w_finite_part_ledger` | (no summary) |
 | · | `T_w_finite_part_next_completion_requirements_explicit` | theorem | `—` | (no summary) |
 | · | `T_w_finite_part_no_observed_W_or_residual_inputs` | theorem | `—` | (no summary) |
@@ -4197,7 +4197,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `T_w_finite_part_skeleton_allowed_numeric_leaves_source_filled` | theorem | `—` | (no summary) |
-| · | `T_w_finite_part_skeleton_bank_closure` | theorem | `P_w_finite_part_skeleton` | (no summary) |
+| · | `T_w_finite_part_skeleton_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_finite_part_skeleton_codomain_not_physical_export` | theorem | `—` | (no summary) |
 | · | `T_w_finite_part_skeleton_completion_gate_remains_locked` | theorem | `—` | (no summary) |
 | · | `T_w_finite_part_skeleton_component_schema_complete` | theorem | `—` | (no summary) |
@@ -4443,9 +4443,9 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `T_w_trace_native_bosonic_drho_pole` | theorem | `P` | The native bosonic custodial pole Delta rho_bos = Sigma^W_bos(0)/MW^2 - Sigma^ZZ_bos(0)/MZ^2 has UV pole +4 (affine k^2-extrapolation of the mu-running to k^2=0, max dev 8.4e-07) and is M_H-independent (checked M_H = 125, 200, 600 GeV) -- reproducing the banked bosonic Delta rho bare pole (v24.3.... |
+| · | `T_w_trace_native_bosonic_drho_pole` | theorem | `—` | (no summary) |
 | · | `T_w_trace_native_bosonic_photon_pole` | theorem | `P` | The native bosonic photon self-energy Sigma^AA_bos = -(a/4pi){[3k^2+4MW^2]B0(k^2,MW,MW) - 4MW^2 B0(0,MW,MW)} has UV pole 3 k^2 (read off the mu-running to 4.9e-10), i.e. photon vacuum-polarization coefficient -3 -- reproducing the banked bosonic photon pole (v24.3.88: Goldstone +1/3, W+ghost -10/... |
-| · | `T_w_trace_native_bosonic_regularity` | theorem | `P` | Sigma^ZZ_bos has no massless line: the (MZ^2-MH^2)^2/k^2 (B0(k^2)-B0(0)) regulator term cancels cleanly and Sigma^ZZ_bos converges to a finite limit as k^2 -> 0 (relative spread 1.0e-05 over k^2 1e-2..1e-4). Sigma^W_bos contains the photon loop, whose (MW^4/k^2) term is analytically regular but a... |
+| · | `T_w_trace_native_bosonic_regularity` | theorem | `—` | (no summary) |
 | · | `T_w_trace_native_bosonic_scope_partial` | theorem | `P_structural_partial` | Denner's reviewed bosonic Sigma^AA_T / Sigma^ZZ_T / Sigma^W_T (App.B) are now native functions on the PV toolkit, validated by the banked poles (photon -3, bosonic Delta rho +4, M_H-independent) and k^2->0 regularity -- the v24.3.87-held W-sector bosonic piece done from the checked vertex algebra... |
 
 ## `apf/w_trace_native_bosonic_photon_vp.py` — 5 checks (0 bundled)
@@ -4586,7 +4586,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 |---|---|---|---|---|
 | · | `T_w_trace_native_os_renorm_mu_independence` | theorem | `—` | (no summary) |
 | · | `T_w_trace_native_os_renorm_os_conditions` | theorem | `P` | The twice-subtracted Sigma_hat(p^2)=A(p^2)-A(M^2)-(p^2-M^2)A'(M^2) satisfies the OS conditions Sigma_hat(M^2)=0 (max 0.0e+00) and Sigma_hat'(M^2)=0 (max 0.0e+00) for the W(t,b), W(c,s) and Z(t,t) fermion loops -- the renormalized self-energy entering the OS Delta r, by construction free of the ba... |
-| · | `T_w_trace_native_os_renorm_running_matches_pole` | theorem | `P` | The bare self-energy mu-shift A(p^2;4 mu^2)-A(p^2;mu^2) reproduces the analytic affine running P(p^2) ln 4, P(p^2)=-(N_c/16 pi^2)[(gL^2+gR^2)(2 p^2/3-m1^2-m2^2)+4 gL gR m1 m2], to max rel err 1.6e-10. The running is affine in p^2 -- the same linear-pole structure that makes the UV divergence OS-r... |
+| · | `T_w_trace_native_os_renorm_running_matches_pole` | theorem | `—` | (no summary) |
 | · | `T_w_trace_native_os_renorm_scope_partial` | theorem | `P_structural_partial` | The OS-renormalized transverse self-energy Sigma_hat(p^2) is native and proven mu-independent (per fermion loop), OS conditions Sigma_hat(M^2)=Sigma_hat'(M^2)=0 built in -- closing the bare term-by-term scale-dependence that spoiled the precision attempt. OPEN toward Delta r_rem: the full SM ferm... |
 
 ## `apf/w_trace_native_pv_massless_safe.py` — 5 checks (0 bundled)
@@ -4633,7 +4633,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `T_two_loop_phase2_coefficient_surface_no_smuggling_current_depth` | theorem | `P_two_loop_phase2_coefficient_surface_no_smuggling_current_depth` | Sibling-AI delivery via APF_TWO_LOOP_PHASE2_PUSH_BUNDLE_v11 (5 packs: TP5 degree-5 native coefficient output, TP5 sector / no-smuggling ledger, SUN3 Taylor recurrence, muon hard-matching contract, full-family row-run status; self-verifier 7/7 PASS). This module re-derives two things: (1) the TP5 ... |
+| · | `T_two_loop_phase2_coefficient_surface_no_smuggling_current_depth` | theorem | `—` | (no summary) |
 
 ## `apf/w_trace_native_two_loop_phase2_counterterm_residue_formula_ledger.py` — 1 checks (0 bundled)
 
@@ -4876,7 +4876,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `T_w_numeric_source_adapter_allowed_source_classes_declared` | theorem | `—` | (no summary) |
-| · | `T_w_numeric_source_adapter_bank_closure` | theorem | `P_w_numeric_source_adapter` | (no summary) |
+| · | `T_w_numeric_source_adapter_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_numeric_source_adapter_codomain_not_physical_export` | theorem | `—` | (no summary) |
 | · | `T_w_numeric_source_adapter_completion_gate_remains_locked` | theorem | `—` | (no summary) |
 | · | `T_w_numeric_source_adapter_contract_export_shape` | theorem | `—` | (no summary) |
@@ -4917,7 +4917,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `T_w_payload_fixture_bank_closure` | theorem | `P_w_payload_fixture` | (no summary) |
+| · | `T_w_payload_fixture_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_payload_fixture_checksum_locator_required` | theorem | `—` | (no summary) |
 | · | `T_w_payload_fixture_codomain_not_physical_export` | theorem | `—` | (no summary) |
 | · | `T_w_payload_fixture_completion_gate_remains_locked` | theorem | `—` | (no summary) |
@@ -4950,8 +4950,8 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `T_w_payload_import_cli_csv_fixture_not_promoted_to_real` | theorem | `P_w_payload_import_cli_loader` | (no summary) |
 | · | `T_w_payload_import_cli_current_flags_false` | theorem | `P_w_payload_import_cli_loader` | (no summary) |
 | · | `T_w_payload_import_cli_default_absence_certificate_locked` | theorem | `P_w_payload_import_cli_loader` | (no summary) |
-| · | `T_w_payload_import_cli_depends_on_v103_attempt_gate` | theorem | `P_w_payload_import_cli_loader` | (no summary) |
-| · | `T_w_payload_import_cli_depends_on_v109_bundle_gate` | theorem | `P_w_payload_import_cli_loader` | (no summary) |
+| · | `T_w_payload_import_cli_depends_on_v103_attempt_gate` | theorem | `—` | (no summary) |
+| · | `T_w_payload_import_cli_depends_on_v109_bundle_gate` | theorem | `—` | (no summary) |
 | · | `T_w_payload_import_cli_depends_on_v112_readiness` | theorem | `P_w_payload_import_cli_loader` | (no summary) |
 | · | `T_w_payload_import_cli_explicit_format_enforced` | theorem | `P_w_payload_import_cli_loader` | (no summary) |
 | · | `T_w_payload_import_cli_forbidden_consumption_rejected` | theorem | `P_w_payload_import_cli_loader` | (no summary) |
@@ -4975,7 +4975,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `T_w_payload_source_pack_bank_closure` | theorem | `P_w_payload_source_pack` | (no summary) |
+| · | `T_w_payload_source_pack_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_payload_source_pack_codomain_not_physical_export` | theorem | `—` | (no summary) |
 | · | `T_w_payload_source_pack_completion_gate_remains_locked` | theorem | `—` | (no summary) |
 | · | `T_w_payload_source_pack_covers_all_components` | theorem | `—` | (no summary) |
@@ -5009,7 +5009,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `T_w_payload_template_pack_csv_loader_path_works` | theorem | `P_w_payload_template_pack` | (no summary) |
 | · | `T_w_payload_template_pack_csv_shape_not_real_payload` | theorem | `P_w_payload_template_pack` | (no summary) |
 | · | `T_w_payload_template_pack_csv_template_parses` | theorem | `P_w_payload_template_pack` | (no summary) |
-| · | `T_w_payload_template_pack_depends_on_v101_parser` | theorem | `P_w_payload_template_pack` | (no summary) |
+| · | `T_w_payload_template_pack_depends_on_v101_parser` | theorem | `—` | (no summary) |
 | · | `T_w_payload_template_pack_depends_on_v113_loader` | theorem | `—` | (no summary) |
 | · | `T_w_payload_template_pack_digests_declared` | theorem | `P_w_payload_template_pack` | (no summary) |
 | · | `T_w_payload_template_pack_directory_exists` | theorem | `P_w_payload_template_pack` | (no summary) |
@@ -5034,7 +5034,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `T_w_physical_export_lock_bank_closure` | theorem | `P_w_physical_export_lock` | (no summary) |
+| · | `T_w_physical_export_lock_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_physical_export_lock_completion_gate_still_locked` | theorem | `—` | (no summary) |
 | · | `T_w_physical_export_lock_default_locked` | theorem | `—` | (no summary) |
 | · | `T_w_physical_export_lock_depends_on_uncertainty_harness` | theorem | `—` | (no summary) |
@@ -5157,7 +5157,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `T_w_trace_pv_d00_dij_rank2_mesh_consistency` | theorem | `P` | Box rank-2 D00/Dij quadrature mesh-converged: n=28 vs n=46 to 1.27e-03. |
-| · | `T_w_trace_pv_d00_dij_rank2_trace_relation` | theorem | `P` | The native rank-2 box coefficients D00 (metric) and D_ij satisfy the metric-trace relation 4 D00 + sum_{ij} (p_i.p_j) D_ij = C0(2,3,4) + m1^2 D0 -- the box rank-2 reduced against the native triangle C0(234) and box D0 -- to max relative err 1.00e-04; the in-pass D0 is value-identical to banked d0... |
+| · | `T_w_trace_pv_d00_dij_rank2_trace_relation` | theorem | `—` | (no summary) |
 | · | `T_w_trace_pv_d00k_dijk_rank3_mesh_consistency` | theorem | `P` | Box rank-3 D00k/Dijk quadrature mesh-converged: n=28 vs n=46 to 2.15e-03. |
 | · | `T_w_trace_pv_d00k_dijk_rank3_trace_relation` | theorem | `P` | The native rank-3 box coefficients D00k (metric x momentum) and D_ijk satisfy the p_i-projected metric-trace relation 6 sum_m (p_i.p_m) D00m + sum_{abc} (p_a.p_b)(p_i.p_c) D_abc = (p_i . C(2,3,4)) + m1^2 sum_m (p_i.p_m) D_m for i=1,2,3 -- the box rank-3 reduced against the native triangle (2,3,4)... |
 | · | `T_w_trace_pv_d1_d2_d3_contraction_identities` | theorem | `P` | The native rank-1 box coefficients D1,D2,D3 satisfy the three contraction identities p_i.D^mu = 1/2 [C0(sub) - C0(sub) - f_i D0], reducing the box to the four native triangle sub-functions C0 (with box-induced invariants) and the box D0, to max relative err 4.29e-04 -- a target-free validation ag... |
@@ -5290,10 +5290,10 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `T_w_real_row_bundle_admission_states_exhaustive` | theorem | `P_w_real_row_bundle_admission` | (no summary) |
-| · | `T_w_real_row_bundle_bank_closure` | theorem | `P_w_real_row_bundle_admission` | (no summary) |
+| · | `T_w_real_row_bundle_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_real_row_bundle_default_empty_certificate` | theorem | `P_w_real_row_bundle_admission` | (no summary) |
 | · | `T_w_real_row_bundle_default_exports_locked` | theorem | `P_w_real_row_bundle_admission` | (no summary) |
-| · | `T_w_real_row_bundle_depends_on_v108_schema` | theorem | `P_w_real_row_bundle_admission` | (no summary) |
+| · | `T_w_real_row_bundle_depends_on_v108_schema` | theorem | `—` | (no summary) |
 | · | `T_w_real_row_bundle_does_not_certify_component_sum` | theorem | `P_w_real_row_bundle_admission` | (no summary) |
 | · | `T_w_real_row_bundle_does_not_certify_covariance` | theorem | `P_w_real_row_bundle_admission` | (no summary) |
 | · | `T_w_real_row_bundle_dry_rows_can_admit_when_not_shipped_default` | theorem | `P_w_real_row_bundle_admission` | (no summary) |
@@ -5319,7 +5319,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `T_w_real_source_candidate_absence_certificate_names_missing_rows` | theorem | `—` | (no summary) |
-| · | `T_w_real_source_candidate_bank_closure` | theorem | `P_w_real_source_candidate_gate` | (no summary) |
+| · | `T_w_real_source_candidate_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_real_source_candidate_complete_metadata_predicate_positive` | theorem | `—` | (no summary) |
 | · | `T_w_real_source_candidate_depends_on_v101_ingestion` | theorem | `—` | (no summary) |
 | · | `T_w_real_source_candidate_does_not_certify_component_sum` | theorem | `—` | (no summary) |
@@ -5506,7 +5506,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 |---|---|---|---|---|
 | · | `T_w_review_packet_validator_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_review_packet_validator_default_packet_rejected` | theorem | `P_w_review_packet_validator` | (no summary) |
-| · | `T_w_review_packet_validator_depends_on_v116_review_packet` | theorem | `P_w_review_packet_validator` | (no summary) |
+| · | `T_w_review_packet_validator_depends_on_v116_review_packet` | theorem | `—` | (no summary) |
 | · | `T_w_review_packet_validator_doc_exists` | theorem | `P_w_review_packet_validator` | (no summary) |
 | · | `T_w_review_packet_validator_doc_warns_locked` | theorem | `P_w_review_packet_validator` | (no summary) |
 | · | `T_w_review_packet_validator_json_template_exists` | theorem | `P_w_review_packet_validator` | (no summary) |
@@ -5579,12 +5579,12 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `T_w_row_bundle_sum_bridge_admitted_bundle_constructs_summands` | theorem | `P_w_row_bundle_to_component_sum_bridge` | (no summary) |
-| · | `T_w_row_bundle_sum_bridge_bank_closure` | theorem | `P_w_row_bundle_to_component_sum_bridge` | (no summary) |
+| · | `T_w_row_bundle_sum_bridge_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_row_bundle_sum_bridge_blocks_physical_export_request` | theorem | `P_w_row_bundle_to_component_sum_bridge` | (no summary) |
 | · | `T_w_row_bundle_sum_bridge_default_empty_no_invocation` | theorem | `P_w_row_bundle_to_component_sum_bridge` | (no summary) |
 | · | `T_w_row_bundle_sum_bridge_default_export_locked` | theorem | `P_w_row_bundle_to_component_sum_bridge` | (no summary) |
-| · | `T_w_row_bundle_sum_bridge_depends_on_v104_sum_harness` | theorem | `P_w_row_bundle_to_component_sum_bridge` | (no summary) |
-| · | `T_w_row_bundle_sum_bridge_depends_on_v109_bundle_gate` | theorem | `P_w_row_bundle_to_component_sum_bridge` | (no summary) |
+| · | `T_w_row_bundle_sum_bridge_depends_on_v104_sum_harness` | theorem | `—` | (no summary) |
+| · | `T_w_row_bundle_sum_bridge_depends_on_v109_bundle_gate` | theorem | `—` | (no summary) |
 | · | `T_w_row_bundle_sum_bridge_dry_target_rows_can_certify_mechanics` | theorem | `P_w_row_bundle_to_component_sum_bridge` | (no summary) |
 | · | `T_w_row_bundle_sum_bridge_dry_target_rows_do_not_unlock_export` | theorem | `P_w_row_bundle_to_component_sum_bridge` | (no summary) |
 | · | `T_w_row_bundle_sum_bridge_empty_bundle_cannot_certify` | theorem | `P_w_row_bundle_to_component_sum_bridge` | (no summary) |
@@ -5610,12 +5610,12 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `T_w_row_schema_bank_closure` | theorem | `P_w_row_schema_adapter` | (no summary) |
+| · | `T_w_row_schema_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_row_schema_component_order_matches_skeleton` | theorem | `P_w_row_schema_adapter` | (no summary) |
 | · | `T_w_row_schema_component_symbols_match` | theorem | `P_w_row_schema_adapter` | (no summary) |
 | · | `T_w_row_schema_counterterm_row_present_but_unadmitted` | theorem | `P_w_row_schema_adapter` | (no summary) |
 | · | `T_w_row_schema_default_empty_state_no_rows_admitted` | theorem | `P_w_row_schema_adapter` | (no summary) |
-| · | `T_w_row_schema_depends_on_counterterm_convention` | theorem | `P_w_row_schema_adapter` | (no summary) |
+| · | `T_w_row_schema_depends_on_counterterm_convention` | theorem | `—` | (no summary) |
 | · | `T_w_row_schema_dimensionless_units_required` | theorem | `P_w_row_schema_adapter` | (no summary) |
 | · | `T_w_row_schema_forbids_apf_anchor_consumption` | theorem | `P_w_row_schema_adapter` | (no summary) |
 | · | `T_w_row_schema_forbids_observed_w_consumption` | theorem | `P_w_row_schema_adapter` | (no summary) |
@@ -5718,14 +5718,14 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `T_w_source_acquisition_review_packet_bank_closure` | theorem | `P_w_source_acquisition_review_packet` | (no summary) |
+| · | `T_w_source_acquisition_review_packet_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_source_acquisition_review_packet_carries_allowed_source_classes` | theorem | `P_w_source_acquisition_review_packet` | (no summary) |
 | · | `T_w_source_acquisition_review_packet_carries_forbidden_inputs` | theorem | `P_w_source_acquisition_review_packet` | (no summary) |
 | · | `T_w_source_acquisition_review_packet_carries_preimport_order` | theorem | `P_w_source_acquisition_review_packet` | (no summary) |
 | · | `T_w_source_acquisition_review_packet_carries_registry_evidence_fields` | theorem | `P_w_source_acquisition_review_packet` | (no summary) |
 | · | `T_w_source_acquisition_review_packet_decisions_declared` | theorem | `P_w_source_acquisition_review_packet` | (no summary) |
 | · | `T_w_source_acquisition_review_packet_default_template_not_complete` | theorem | `P_w_source_acquisition_review_packet` | (no summary) |
-| · | `T_w_source_acquisition_review_packet_depends_on_v115_registry` | theorem | `P_w_source_acquisition_review_packet` | (no summary) |
+| · | `T_w_source_acquisition_review_packet_depends_on_v115_registry` | theorem | `—` | (no summary) |
 | · | `T_w_source_acquisition_review_packet_doc_exists` | theorem | `P_w_source_acquisition_review_packet` | (no summary) |
 | · | `T_w_source_acquisition_review_packet_doc_warns_no_real_source` | theorem | `P_w_source_acquisition_review_packet` | (no summary) |
 | · | `T_w_source_acquisition_review_packet_json_template_exists` | theorem | `P_w_source_acquisition_review_packet` | (no summary) |
@@ -5772,7 +5772,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `T_w_source_candidate_registry_allowed_classes_declared` | theorem | `P_w_source_candidate_registry` | (no summary) |
-| · | `T_w_source_candidate_registry_bank_closure` | theorem | `P_w_source_candidate_registry` | (no summary) |
+| · | `T_w_source_candidate_registry_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_source_candidate_registry_candidate_classes_allowed` | theorem | `P_w_source_candidate_registry` | (no summary) |
 | · | `T_w_source_candidate_registry_candidate_completion_predicate_accepts_promoted_independent_source` | theorem | `P_w_source_candidate_registry` | (no summary) |
 | · | `T_w_source_candidate_registry_candidate_ids_unique` | theorem | `P_w_source_candidate_registry` | (no summary) |
@@ -5784,7 +5784,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | · | `T_w_source_candidate_registry_completion_rejects_template_shape_source` | theorem | `P_w_source_candidate_registry` | (no summary) |
 | · | `T_w_source_candidate_registry_completion_rejects_unacquired_default` | theorem | `P_w_source_candidate_registry` | (no summary) |
 | · | `T_w_source_candidate_registry_completion_rejects_wrong_review_status` | theorem | `P_w_source_candidate_registry` | (no summary) |
-| · | `T_w_source_candidate_registry_depends_on_v114_template_pack` | theorem | `P_w_source_candidate_registry` | (no summary) |
+| · | `T_w_source_candidate_registry_depends_on_v114_template_pack` | theorem | `—` | (no summary) |
 | · | `T_w_source_candidate_registry_doc_exists` | theorem | `P_w_source_candidate_registry` | (no summary) |
 | · | `T_w_source_candidate_registry_doc_warns_no_real_rows` | theorem | `P_w_source_candidate_registry` | (no summary) |
 | · | `T_w_source_candidate_registry_forbidden_inputs_declared` | theorem | `P_w_source_candidate_registry` | (no summary) |
@@ -5912,7 +5912,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
 | · | `T_w_uncertainty_propagation_apf_anchor_comparison_only` | theorem | `—` | (no summary) |
-| · | `T_w_uncertainty_propagation_bank_closure` | theorem | `P_w_uncertainty_propagation_harness` | (no summary) |
+| · | `T_w_uncertainty_propagation_bank_closure` | theorem | `—` | (no summary) |
 | · | `T_w_uncertainty_propagation_component_order_matches_skeleton` | theorem | `—` | (no summary) |
 | · | `T_w_uncertainty_propagation_computes_sigma_delta_r` | theorem | `—` | (no summary) |
 | · | `T_w_uncertainty_propagation_covariance_shape_ok` | theorem | `—` | (no summary) |
@@ -6014,7 +6014,7 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 |---|---|---|---|---|
 | · | `L_wg2_dictionary_index_content_blind_native` | lemma | `P_structural` | Under the .354/.359 record-partition (called live: check_L_completion_angle_content_blind_native, [P_structural]), the w propto g^n dictionary index is NO-RECORD (zero native capacity gain; C_total = 61 for every probed n) and CONTENT-BLIND: completions at n=2 and n=4 share every native-preserved... |
 | · | `T_mcross_gate_dictionary_conditional` | theorem | `P_structural` | The banked forward solve (_alpha_s_forward, abelian_coupling_capacity_count.py) supplies t = ln(M_cross/M_Z) = 34.59 from the counts alone -- so the fence clause "which the counts do not supply" was half-stale -- BUT the supplied t is dictionary-index-conditional in its very formulation: the rati... |
-| · | `T_wg2_dictionary_index_no_native_consumer_census` | theorem | `P_structural` | Over the FULL bank registry at the census tree (closed-world pin: landed at v24.3.394, EXPECTED 3880; containment certified import-free against the manifest module lists), NO banked constructor consumes the dictionary index n in the w-to-g correspondence. Three coordinated levels: Level V -- the ... |
+| · | `T_wg2_dictionary_index_no_native_consumer_census` | theorem | `—` | (no summary) |
 
 ## `apf/yang_mills_gap.py` — 6 checks (0 bundled)
 
@@ -6037,9 +6037,9 @@ Full catalog of **3918** bank-registered theorems in the canonical APF codebase 
 
 | Bundled | Name | Kind | Tag | Summary |
 |---|---|---|---|---|
-| · | `T_contextuality_implies_superadditive_cost` | theorem | `P_structural_reading` | Contextuality (IJCStr, no global Boolean section) => Delta>0 (non-factorizable) => record-locked => gapped. Strict, but the counter-witness is ENTANGLEMENT, not classical correlation: the non-abelian colour singlet gives Delta>0 (entangled record) while its gauge-invariant algebra is abelian (Sep... |
+| · | `T_contextuality_implies_superadditive_cost` | theorem | `—` | (no summary) |
 | · | `T_su2_single_plaquette_curvature_exact` | theorem | `P` | Exact curvature-dimension tensor of the SU(2) single-plaquette/heat-bath measure: A = (2 + h cos phi) g, isotropic, from Ric(S^3)=2 and Obata's Hess(cos phi)=-cos phi.g. Threshold h=2. A diagonal single-site fact; the mass-gap off-diagonal assembly is open and the Otto-Reznikoff tensorization to ... |
-| · | `T_su2_single_site_uniform_gap_drift` | theorem | `P_structural` | Uniform single-site spectral gap of the SU(2) heat-bath measure by an exact confining drift (BBCG): the conditioned single-link measure IS this heat-bath with h=beta.\|staple\|, so the gap is uniform over beta and environment; rho(0)=3, monotone rising, no single-site closure. Settles the DIAGONAL.... |
+| · | `T_su2_single_site_uniform_gap_drift` | theorem | `—` | (no summary) |
 | · | `T_ym_conformal_phase_excluded_by_record_locking` | theorem | `P_structural_reading` | The symmetry/geometry/record-locking closure of the confining-vs-conformal question. Non-abelian composition is superadditive (L_cost + record theorem, Delta>0: the non-abelian colour record is the non-factorizable entangled singlet); the abelian case is additive (Delta=0), which is why U(1) is C... |
 | · | `T_ym_gap_positivity_from_MD` | theorem | `P_structural_reading` | The ep* bridge, banked at the honest conditional level. L_epsilon_star [P] proves the Minimum-Distinction realignment floor eps_min(Gamma) > 0 ('zero isolated from the spectrum'). Via the OS2 reflection-positive transfer matrix T = exp(-aH) (self-adjoint H >= 0, vacuum at 0) the lightest excitati... |
 | · | `T_ym_ir_endpoint_trichotomy_branch2_open` | theorem | `P_structural_reading` | Under named readings R1(i)-(iii) (RG step = continuation; commitment inheritance; budget constancy -- none banked), the matter-free IR ledger terminates in exactly one of: saturation (exact under L_cost quantization: slack < eps* <=> slack = 0; <= C strict increments), the INERT RECORD-LOCKED PLA... |

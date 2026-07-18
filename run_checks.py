@@ -9,7 +9,7 @@ Usage:
 This is the standalone-repo verifier for Calculus Finite Continuability (APF Paper 10).
 The full APF codebase v6.8 (frozen 2026-04-18) verifies 348 checks across
 335 bank-registered theorems plus apf/standalone/ — this paper's repo
-verifies the 0-theorem subset directly cited by the manuscript.
+verifies the 3-theorem subset directly cited by the manuscript.
 """
 
 import sys

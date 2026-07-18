@@ -1,6 +1,6 @@
 {
   "schema": "apf.repo_map.v1",
-  "generated_at": "2026-07-18T02:24:05.769706+00:00",
+  "generated_at": "2026-07-18T22:25:47.456277+00:00",
   "paper": {
     "number": 10,
     "title": "The Calculus of Finite Continuability",
@@ -618,6 +618,13 @@
       "tier": "other",
       "references": []
     },
+    "desktop.ini": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
     "interactive_dag.html": {
       "purpose": "(uncategorized; see file directly)",
       "audience": "unknown",
@@ -667,6 +674,13 @@
       "tier": "other",
       "references": []
     },
+    "ai_context/desktop.ini": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
     "ai_context/DO_NOT_CLAIM.md": {
       "purpose": "(uncategorized; see file directly)",
       "audience": "unknown",
@@ -675,6 +689,48 @@
       "references": []
     },
     "ai_context/LOCAL_VS_IMPORTED.md": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "apf/desktop.ini": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "docs/desktop.ini": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "ai_context/wiki/desktop.ini": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "ai_context/wiki/codebase/desktop.ini": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "ai_context/wiki/concepts/desktop.ini": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "ai_context/wiki/papers/desktop.ini": {
       "purpose": "(uncategorized; see file directly)",
       "audience": "unknown",
       "read_order": null,
@@ -845,9 +901,9 @@
     }
   ],
   "metadata": {
-    "total_files": 65,
+    "total_files": 73,
     "total_edges": 32,
-    "bundled_checks": 0,
+    "bundled_checks": 3,
     "corpus_size": 10
   }
 }

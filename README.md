@@ -40,14 +40,14 @@ python run_checks.py
 Expected output:
 
 ```
-      Paper 10 (The Calculus of Finite Continuability): 0 passed, 0 failed, 0 total — verified in <minutes>
+      Paper 10 (The Calculus of Finite Continuability): 3 passed, 0 failed, 3 total — verified in <minutes>
 ```
 
 **4. Individual inspection.**
 
 ```python
 from apf.bank import get_check
-r = get_check('T_Born')()
+r = get_check('check_T_finite_operational_basis_scope_contract')()
 print(r['key_result'])
 ```
 
@@ -61,6 +61,9 @@ This table maps every result in the manuscript to its executable verification.
 
 | Check | Type | Summary |
 |-------|------|---------|
+| `check_T_finite_operational_basis_scope_contract` | Theorem | Scope guard and exact-arithmetic contract for the Paper 10/Paper 9 node. |
+| `check_T_finite_operational_basis` | Theorem | Exact finite atom-cover model witness for the finite basis mechanism. |
+| `check_T_finite_minimal_joint_realization_atom_cover` | Theorem | Concrete compatible joint-realization corollary on the atom-cover model. |
 
 All check functions reside in `apf/core.py`. Every function listed above can be called independently and returns a structured result including its logical dependencies and the mathematical content it verifies.
 
@@ -69,7 +72,7 @@ All check functions reside in `apf/core.py`. Every function listed above can be 
 ## The derivation chain
 
 ```
-(no theorems in this subset)
+  Level 0: T_finite_operational_basis_scope_contract · T_finite_operational_basis · T_finite_minimal_joint_realization_atom_cover
 ```
 
 The [interactive DAG](https://ethan-brooke.github.io/APF-Paper-10-Calculus-of-Finite-Continuability/) shows the full graph with hover details and animated verification.
@@ -97,7 +100,7 @@ The [interactive DAG](https://ethan-brooke.github.io/APF-Paper-10-Calculus-of-Fi
 │   ├── derivation_graph.json              ← theorem DAG as JSON
 │   └── wiki/                              ← bundled APF wiki (concepts, papers, codebase)
 ├── apf/
-│   ├── core.py                            ← 0 theorem check functions
+│   ├── core.py                            ← 3 theorem check functions
 │   ├── apf_utils.py                       ← exact arithmetic + helpers
 │   └── bank.py                            ← registry and runner
 ├── docs/

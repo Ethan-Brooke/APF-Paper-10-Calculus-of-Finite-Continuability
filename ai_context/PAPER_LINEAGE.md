@@ -9,7 +9,7 @@ This file tracks the version history of Paper 10 (The Calculus of Finite Continu
 - **Version in this repo:** v1.21
 - **File in this repo:** `Paper_10_Calculus_of_Finite_Continuability_v1.21.tex` + `.pdf`
 - **Page count:** 24 pp
-- **Release date:** 2026-07-17
+- **Release date:** 2026-07-18
 - **Codebase version at build:** v24.3.427 (2026-05-04)
 
 ## Zenodo record

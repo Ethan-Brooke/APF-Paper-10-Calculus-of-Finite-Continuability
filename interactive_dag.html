@@ -100,7 +100,7 @@
   <header>
     <div>
       <h1>Paper 10 — The Calculus of Finite Continuability</h1>
-      <div class="subtitle">Interactive derivation DAG · 0 checks · APF v6.8</div>
+      <div class="subtitle">Interactive derivation DAG · 3 checks · APF v6.8</div>
     </div>
     <div class="controls">
       <button id="run-checks-btn">▶ Run All Checks</button>
@@ -130,7 +130,29 @@
   </footer>
 
 <script>
-const NODES = [];
+const NODES = [
+  {
+    "id": "T_finite_operational_basis_scope_contract",
+    "fullId": "check_T_finite_operational_basis_scope_contract",
+    "type": "theorem",
+    "summary": "Scope guard and exact-arithmetic contract for the Paper 10/Paper 9 node.",
+    "deps": []
+  },
+  {
+    "id": "T_finite_operational_basis",
+    "fullId": "check_T_finite_operational_basis",
+    "type": "theorem",
+    "summary": "Exact finite atom-cover model witness for the finite basis mechanism.",
+    "deps": []
+  },
+  {
+    "id": "T_finite_minimal_joint_realization_atom_cover",
+    "fullId": "check_T_finite_minimal_joint_realization_atom_cover",
+    "type": "theorem",
+    "summary": "Concrete compatible joint-realization corollary on the atom-cover model.",
+    "deps": []
+  }
+];
 const LINKS = [];
 const COLOR = {
   axiom: getCss('--axiom'), theorem: getCss('--theorem'),

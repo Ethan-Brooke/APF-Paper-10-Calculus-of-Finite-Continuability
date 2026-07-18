@@ -1,11 +1,11 @@
 {
   "schema": "apf.derivation_graph.v1",
   "metadata": {
-    "total_nodes": 4067,
-    "total_edges": 4056,
+    "total_nodes": 4060,
+    "total_edges": 3939,
     "bank_registered_nodes": 3918,
-    "external_primitive_nodes": 149,
-    "bundled_nodes": 0
+    "external_primitive_nodes": 142,
+    "bundled_nodes": 3
   },
   "axioms": [
     "A1",
@@ -637,7 +637,7 @@
       "module": "gauge_invariant_record",
       "epistemic": "",
       "tier": null,
-      "summary": "Face (b) of the matter-free branch-2 phenotype (deep superselection) CLOSED: in-sector (m=1) centrality of the colour record is real (fund + adjoint pairs, exact) but ONE adjoint enlargement de-centralizes it (HW multiplicity >= 2, non-scalar reco...",
+      "summary": "",
       "bundled": false
     },
     {
@@ -646,7 +646,7 @@
       "module": "gauge_invariant_record",
       "epistemic": "",
       "tier": null,
-      "summary": "In SU(2)/SU(3) fund (x) antifund the gauge-invariant *-algebra is exactly the 2-dim span{pi_singlet, pi_adjoint}; its unique rank-1 projector is the non-factorizable colour singlet (Schmidt rank N), so every sharp gauge-invariant colour record is ...",
+      "summary": "",
       "bundled": false
     },
     {
@@ -673,7 +673,7 @@
       "module": "gauge_invariant_record",
       "epistemic": "",
       "tier": null,
-      "summary": "The tetraquark gauge-invariant colour algebra is NON-ABELIAN: singlet multiplicity m=2 for SU(2) and SU(3) gives an M_2 block in the commutant, and for SU(2) the two meson-meson pairing projectors P_A, P_B are gauge-invariant and do not commute. T...",
+      "summary": "",
       "bundled": false
     },
     {
@@ -745,7 +745,7 @@
       "module": "gauge_invariant_record",
       "epistemic": "",
       "tier": null,
-      "summary": "The CKM-forced flavour co-availability is SepStr, not the contextual web. The A1-forced CKM (V != 1, fully mixing: |V_ij| in (0.0036, 0.9992)) makes exactly two incompatible mass bases (down-mass, up-mass via the charged current) co-available and ...",
+      "summary": "",
       "bundled": false
     },
     {
@@ -1996,7 +1996,7 @@
       "module": "claim_to_interface_graph_compiler",
       "epistemic": "",
       "tier": null,
-      "summary": "Claim-to-Interface Graph Compiler is P: prose claims compile to conservative interface audits without treating text as evidence.",
+      "summary": "",
       "bundled": false
     },
     {
@@ -2210,8 +2210,8 @@
       "id": "T_cmb_fm_quadrupole_suppression",
       "name": "T_cmb_fm_quadrupole_suppression",
       "module": "cmb_finite_mode_covariance",
-      "epistemic": "P_structural_reading",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -2219,8 +2219,8 @@
       "id": "T_cmb_fm_high_ell_preservation",
       "name": "T_cmb_fm_high_ell_preservation",
       "module": "cmb_finite_mode_covariance",
-      "epistemic": "P_structural_reading",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -4613,9 +4613,9 @@
       "id": "T_w_trace_native_os_renorm_mu_independence",
       "name": "T_w_trace_native_os_renorm_mu_independence",
       "module": "w_trace_native_os_renormalized_self_energy",
-      "epistemic": "P",
-      "tier": 4,
-      "summary": "Under mu^2 -> 4 mu^2 the OS-renormalized Sigma_hat(p^2) is invariant to 5.2e-08 (float floor of the twice-subtraction) across spacelike and timelike p^2 for all three loops, whereas the bare ratio Re A(p^2)/M^2 -- whose un-subtracted scale depende...",
+      "epistemic": "",
+      "tier": null,
+      "summary": "",
       "bundled": false
     },
     {
@@ -4685,18 +4685,18 @@
       "id": "T_w_trace_native_bosonic_drho_pole",
       "name": "T_w_trace_native_bosonic_drho_pole",
       "module": "w_trace_native_bosonic_gauge_self_energy",
-      "epistemic": "P",
-      "tier": 4,
-      "summary": "The native bosonic custodial pole Delta rho_bos = Sigma^W_bos(0)/MW^2 - Sigma^ZZ_bos(0)/MZ^2 has UV pole +4 (affine k^2-extrapolation of the mu-running to k^2=0, max dev 8.4e-07) and is M_H-independent (checked M_H = 125, 200, 600 GeV) -- reproduc...",
+      "epistemic": "",
+      "tier": null,
+      "summary": "",
       "bundled": false
     },
     {
       "id": "T_w_trace_native_bosonic_regularity",
       "name": "T_w_trace_native_bosonic_regularity",
       "module": "w_trace_native_bosonic_gauge_self_energy",
-      "epistemic": "P",
-      "tier": 4,
-      "summary": "Sigma^ZZ_bos has no massless line: the (MZ^2-MH^2)^2/k^2 (B0(k^2)-B0(0)) regulator term cancels cleanly and Sigma^ZZ_bos converges to a finite limit as k^2 -> 0 (relative spread 1.0e-05 over k^2 1e-2..1e-4). Sigma^W_bos contains the photon loop, w...",
+      "epistemic": "",
+      "tier": null,
+      "summary": "",
       "bundled": false
     },
     {
@@ -6557,9 +6557,9 @@
       "id": "L_codef_aggregation_argmin",
       "name": "L_codef_aggregation_argmin",
       "module": "codef_aggregation",
-      "epistemic": "P",
-      "tier": 4,
-      "summary": "Corollary of T_sep [P] + A2 (NAMED constitutive axiom): for CoDef pairs (overlapping anchors, contained joint threat) under K3-additive support-billing, the named FD3 coverage premise, and the rider eps_joint <= C, the aggregated configuration is ...",
+      "epistemic": "",
+      "tier": null,
+      "summary": "",
       "bundled": false
     },
     {
@@ -6611,8 +6611,8 @@
       "id": "L_frustrated_witness",
       "name": "L_frustrated_witness",
       "module": "frustrated_choice_family",
-      "epistemic": "P_structural | P-dangling (open, named, adjudicated) + codef support-billing convention (consumed-banked) + A1 endpoint gating; frustration witness class",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -7207,16 +7207,16 @@
       "module": "interface_atlas",
       "epistemic": "",
       "tier": null,
-      "summary": "Interface atlas emits a JSON strategy report suitable for integration dashboards.",
+      "summary": "",
       "bundled": false
     },
     {
       "id": "check_T_interface_atlas_axis_typing_P",
       "name": "check_T_interface_atlas_axis_typing_P",
       "module": "interface_atlas",
-      "epistemic": "P_atlas_axis_typing",
-      "tier": 4,
-      "summary": "Atlas engine-axis typing operational: mixed-axis input set produces per-axis summary with ROUTE + CODOMAIN axes; SC codomain row classified as COHERENT_CODOMAIN_SELECTED with export_global_P; cross-axis advisory note present (Reference doc Q2 star...",
+      "epistemic": "",
+      "tier": null,
+      "summary": "",
       "bundled": false
     },
     {
@@ -7225,7 +7225,7 @@
       "module": "interface_atlas",
       "epistemic": "",
       "tier": null,
-      "summary": "Interface Atlas is P: many route/claim/codomain graphs aggregate into APF-wide bottleneck and repair-strategy reports across engine axes.",
+      "summary": "",
       "bundled": false
     },
     {
@@ -7351,7 +7351,7 @@
       "module": "interface_intelligence_CI_orchestrator",
       "epistemic": "",
       "tier": null,
-      "summary": "CI orchestrator emits module, atlas, and live-adapter reports.",
+      "summary": "",
       "bundled": false
     },
     {
@@ -7378,7 +7378,7 @@
       "module": "interface_intelligence_E2E_artifact_pipeline",
       "epistemic": "",
       "tier": null,
-      "summary": "E2E artifact pipeline produces candidates, batch certification, reviewer report, and zip.",
+      "summary": "",
       "bundled": false
     },
     {
@@ -7387,7 +7387,7 @@
       "module": "interface_intelligence_E2E_artifact_pipeline",
       "epistemic": "",
       "tier": null,
-      "summary": "E2E pipeline handles empty artifact folders without overclaiming.",
+      "summary": "",
       "bundled": false
     },
     {
@@ -7396,7 +7396,7 @@
       "module": "interface_intelligence_E2E_artifact_pipeline",
       "epistemic": "",
       "tier": null,
-      "summary": "Interface Intelligence E2E Artifact Pipeline is P: artifact folders become payloads, batch certifications, reviewer reports, and zipped diagnostics.",
+      "summary": "",
       "bundled": false
     },
     {
@@ -7414,7 +7414,7 @@
       "module": "interface_intelligence_engineering_command_center",
       "epistemic": "",
       "tier": null,
-      "summary": "Command center dry-run fails gracefully with missing-script diagnostics.",
+      "summary": "",
       "bundled": false
     },
     {
@@ -7432,7 +7432,7 @@
       "module": "interface_intelligence_engineering_command_center",
       "epistemic": "",
       "tier": null,
-      "summary": "Interface Intelligence Engineering Command Center is P: live diagnostics can be orchestrated and dashboarded in one command.",
+      "summary": "",
       "bundled": false
     },
     {
@@ -7468,7 +7468,7 @@
       "module": "interface_intelligence_failure_triage_assistant",
       "epistemic": "",
       "tier": null,
-      "summary": "Interface Intelligence Failure Triage Assistant is P: reports become prioritized next actions without overclaiming.",
+      "summary": "",
       "bundled": false
     },
     {
@@ -7540,7 +7540,7 @@
       "module": "interface_intelligence_post_install_acceptance_auditor",
       "epistemic": "",
       "tier": null,
-      "summary": "Post-Install Acceptance Auditor is P: live integration is accepted, held, or blocked by explicit evidence criteria.",
+      "summary": "",
       "bundled": false
     },
     {
@@ -7693,7 +7693,7 @@
       "module": "interface_ew_counterterm_uncertainty_intake",
       "epistemic": "",
       "tier": null,
-      "summary": "EW intake surfaces candidate evidence while preserving no-target guards and no-new-physical-W boundary.",
+      "summary": "",
       "bundled": false
     },
     {
@@ -7702,7 +7702,7 @@
       "module": "interface_ew_counterterm_uncertainty_intake",
       "epistemic": "",
       "tier": null,
-      "summary": "EW counterterm and uncertainty live blockers have candidate evidence packets, with no route promotion.",
+      "summary": "",
       "bundled": false
     },
     {
@@ -11210,9 +11210,9 @@
       "id": "L_RT_two_sided_reading_no_go",
       "name": "L_RT_two_sided_reading_no_go",
       "module": "supplements",
-      "epistemic": "",
-      "tier": null,
-      "summary": "",
+      "epistemic": "P",
+      "tier": 4,
+      "summary": "The entanglement/holographic reading of L_RT_capacity cannot be upgraded by any internal purification: pure-state marginals are equal (Schmidt) while the banked marginals are 19*sigma != 42*sigma, and every internal cut is capped at min(k,61-k)*si...",
       "bundled": false
     },
     {
@@ -14774,8 +14774,8 @@
       "id": "T_w_component_sum_certificate_bank_closure",
       "name": "T_w_component_sum_certificate_bank_closure",
       "module": "w_trace_component_sum_certificate",
-      "epistemic": "P_w_component_sum_certificate_harness",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -15269,8 +15269,8 @@
       "id": "T_w_counterterm_convention_bank_closure",
       "name": "T_w_counterterm_convention_bank_closure",
       "module": "w_trace_counterterm_convention",
-      "epistemic": "P_w_counterterm_convention_certificate",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -26312,8 +26312,8 @@
       "id": "T_w_payload_import_cli_bank_closure",
       "name": "T_w_payload_import_cli_bank_closure",
       "module": "w_trace_payload_import_cli",
-      "epistemic": "",
-      "tier": null,
+      "epistemic": "P_w_payload_import_cli_loader",
+      "tier": 4,
       "summary": "",
       "bundled": false
     },
@@ -26537,8 +26537,8 @@
       "id": "T_w_payload_template_pack_depends_on_v113_loader",
       "name": "T_w_payload_template_pack_depends_on_v113_loader",
       "module": "w_trace_payload_template_pack",
-      "epistemic": "P_w_payload_template_pack",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -26546,8 +26546,8 @@
       "id": "T_w_payload_template_pack_depends_on_v101_parser",
       "name": "T_w_payload_template_pack_depends_on_v101_parser",
       "module": "w_trace_payload_template_pack",
-      "epistemic": "P_w_payload_template_pack",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -26753,8 +26753,8 @@
       "id": "T_w_payload_template_pack_bank_closure",
       "name": "T_w_payload_template_pack_bank_closure",
       "module": "w_trace_payload_template_pack",
-      "epistemic": "P_w_payload_template_pack",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -26978,8 +26978,8 @@
       "id": "T_w_physical_export_lock_bank_closure",
       "name": "T_w_physical_export_lock_bank_closure",
       "module": "w_trace_physical_export_lock",
-      "epistemic": "P_w_physical_export_lock",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -28526,9 +28526,9 @@
       "id": "T_two_loop_phase2_coefficient_surface_no_smuggling_current_depth",
       "name": "T_two_loop_phase2_coefficient_surface_no_smuggling_current_depth",
       "module": "w_trace_native_two_loop_phase2_coefficient_surface_no_smuggling",
-      "epistemic": "P_two_loop_phase2_coefficient_surface_no_smuggling_current_depth",
-      "tier": 4,
-      "summary": "Sibling-AI delivery via APF_TWO_LOOP_PHASE2_PUSH_BUNDLE_v11 (5 packs: TP5 degree-5 native coefficient output, TP5 sector / no-smuggling ledger, SUN3 Taylor recurrence, muon hard-matching contract, full-family row-run status; self-verifier 7/7 PASS...",
+      "epistemic": "",
+      "tier": null,
+      "summary": "",
       "bundled": false
     },
     {
@@ -29012,18 +29012,18 @@
       "id": "T_w_trace_pv_d0_general_zero_momentum_limit",
       "name": "T_w_trace_pv_d0_general_zero_momentum_limit",
       "module": "w_trace_pv_d0_general_momentum",
-      "epistemic": "P",
-      "tier": 4,
-      "summary": "The native general-momentum box D0 reduces, at vanishing external invariants, to the banked d0_fin_zero_momenta to max relative err 7.09e-05 -- ties the new evaluator to the banked substrate.",
+      "epistemic": "",
+      "tier": null,
+      "summary": "",
       "bundled": false
     },
     {
       "id": "T_w_trace_pv_d0_general_cyclic_symmetry",
       "name": "T_w_trace_pv_d0_general_cyclic_symmetry",
       "module": "w_trace_pv_d0_general_momentum",
-      "epistemic": "P",
-      "tier": 4,
-      "summary": "The native box D0 is invariant under cyclic permutation of the leg (mass, invariant) labels with the diagonal s<->t swap to max relative err 3.00e-04 -- a target-free validation of the (s,t) diagonal pairing structure of F.",
+      "epistemic": "",
+      "tier": null,
+      "summary": "",
       "bundled": false
     },
     {
@@ -29066,9 +29066,9 @@
       "id": "T_w_trace_pv_d00_dij_rank2_trace_relation",
       "name": "T_w_trace_pv_d00_dij_rank2_trace_relation",
       "module": "w_trace_pv_dij_four_point",
-      "epistemic": "P",
-      "tier": 4,
-      "summary": "The native rank-2 box coefficients D00 (metric) and D_ij satisfy the metric-trace relation 4 D00 + sum_{ij} (p_i.p_j) D_ij = C0(2,3,4) + m1^2 D0 -- the box rank-2 reduced against the native triangle C0(234) and box D0 -- to max relative err 1.00e-...",
+      "epistemic": "",
+      "tier": null,
+      "summary": "",
       "bundled": false
     },
     {
@@ -29318,8 +29318,8 @@
       "id": "T_w_real_row_bundle_bank_closure",
       "name": "T_w_real_row_bundle_bank_closure",
       "module": "w_trace_real_row_bundle_admission",
-      "epistemic": "P_w_real_row_bundle_admission",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -29543,8 +29543,8 @@
       "id": "T_w_real_source_candidate_bank_closure",
       "name": "T_w_real_source_candidate_bank_closure",
       "module": "w_trace_real_source_candidate",
-      "epistemic": "P_w_real_source_candidate_gate",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -31325,8 +31325,8 @@
       "id": "T_w_row_bundle_sum_bridge_depends_on_v104_sum_harness",
       "name": "T_w_row_bundle_sum_bridge_depends_on_v104_sum_harness",
       "module": "w_trace_row_bundle_to_component_sum",
-      "epistemic": "P_w_row_bundle_to_component_sum_bridge",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -31541,8 +31541,8 @@
       "id": "T_w_row_bundle_sum_bridge_bank_closure",
       "name": "T_w_row_bundle_sum_bridge_bank_closure",
       "module": "w_trace_row_bundle_to_component_sum",
-      "epistemic": "P_w_row_bundle_to_component_sum_bridge",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -31559,8 +31559,8 @@
       "id": "T_w_row_schema_depends_on_counterterm_convention",
       "name": "T_w_row_schema_depends_on_counterterm_convention",
       "module": "w_trace_row_schema_adapter",
-      "epistemic": "P_w_row_schema_adapter",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -31802,8 +31802,8 @@
       "id": "T_w_row_schema_bank_closure",
       "name": "T_w_row_schema_bank_closure",
       "module": "w_trace_row_schema_adapter",
-      "epistemic": "P_w_row_schema_adapter",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -33971,8 +33971,8 @@
       "id": "T_w_uncertainty_propagation_bank_closure",
       "name": "T_w_uncertainty_propagation_bank_closure",
       "module": "w_trace_uncertainty_propagation",
-      "epistemic": "P_w_uncertainty_propagation_harness",
-      "tier": 4,
+      "epistemic": "",
+      "tier": null,
       "summary": "",
       "bundled": false
     },
@@ -34538,9 +34538,9 @@
       "id": "T_contextuality_implies_superadditive_cost",
       "name": "T_contextuality_implies_superadditive_cost",
       "module": "yang_mills_md_bridge",
-      "epistemic": "P_structural_reading",
-      "tier": 4,
-      "summary": "Contextuality (IJCStr, no global Boolean section) => Delta>0 (non-factorizable) => record-locked => gapped. Strict, but the counter-witness is ENTANGLEMENT, not classical correlation: the non-abelian colour singlet gives Delta>0 (entangled record)...",
+      "epistemic": "",
+      "tier": null,
+      "summary": "",
       "bundled": false
     },
     {
@@ -34700,9 +34700,9 @@
       "id": "L_recoverability_is_orbit_reachability",
       "name": "L_recoverability_is_orbit_reachability",
       "module": "operational_completeness",
-      "epistemic": "P",
-      "tier": 3,
-      "summary": "Cost-ledger recoverability (the v24.3.230 clause semantics) and P_Gamma-orbit reachability (compositions of interface-local admissible operators on the FD2/FD3-refined product space) compute the SAME floor functional: verified on the bank's worlds...",
+      "epistemic": "",
+      "tier": null,
+      "summary": "",
       "bundled": false
     },
     {
@@ -35162,25 +35162,25 @@
       "epistemic": "P_structural_instrument",
       "tier": 4,
       "summary": "The finite-basis bank node is scoped to a finite atom-cover model: finite content atoms, subset-coded operational classes, union closure/joint carrier, and exact no-excess atom cost. Exact Fraction arithmetic rejects the former +1e-9 boundary enla...",
-      "bundled": false
+      "bundled": true
     },
     {
       "id": "T_finite_operational_basis",
       "name": "T_finite_operational_basis",
       "module": "continuation_calculus",
-      "epistemic": "P_structural",
-      "tier": 4,
-      "summary": "Restricted executable theorem: on a finite atom-cover model, where admitted content is a finite atom set, operational classes are atom subsets, joint realization/closure is union, and exact no-excess cost is |covered atoms|*eps*, full-content admi...",
-      "bundled": false
+      "epistemic": "",
+      "tier": null,
+      "summary": "",
+      "bundled": true
     },
     {
       "id": "T_finite_minimal_joint_realization_atom_cover",
       "name": "T_finite_minimal_joint_realization_atom_cover",
       "module": "continuation_calculus",
-      "epistemic": "P_structural",
-      "tier": 4,
-      "summary": "On every exercised closed finite atom-cover model, a complete inclusion-minimal basis is represented by one concrete joint carrier containing exactly the union of its atoms. Exact atom cost makes that carrier minimum and no-excess; deterministic s...",
-      "bundled": false
+      "epistemic": "",
+      "tier": null,
+      "summary": "",
+      "bundled": true
     },
     {
       "id": "T_gammaC_carrier_fork",
@@ -35984,15 +35984,6 @@
       "bundled": false
     },
     {
-      "id": "apf.codomain_selection_engine",
-      "name": "apf.codomain_selection_engine",
-      "module": "axiom_or_primitive",
-      "epistemic": "axiom",
-      "tier": 0,
-      "summary": "Axiom or structural primitive (not a bank-registered check). See FRAMEWORK_OVERVIEW.md for the axioms.",
-      "bundled": false
-    },
-    {
       "id": "apf.codomain_selection_engine.PRESERVED_NON_CLAIMS",
       "name": "apf.codomain_selection_engine.PRESERVED_NON_CLAIMS",
       "module": "axiom_or_primitive",
@@ -36265,15 +36256,6 @@
     {
       "id": "check_L_irr",
       "name": "check_L_irr",
-      "module": "axiom_or_primitive",
-      "epistemic": "axiom",
-      "tier": 0,
-      "summary": "Axiom or structural primitive (not a bank-registered check). See FRAMEWORK_OVERVIEW.md for the axioms.",
-      "bundled": false
-    },
-    {
-      "id": "check_T_CKM",
-      "name": "check_T_CKM",
       "module": "axiom_or_primitive",
       "epistemic": "axiom",
       "tier": 0,
@@ -36571,51 +36553,6 @@
     {
       "id": "wrap_route_adjudication_packet",
       "name": "wrap_route_adjudication_packet",
-      "module": "axiom_or_primitive",
-      "epistemic": "axiom",
-      "tier": 0,
-      "summary": "Axiom or structural primitive (not a bank-registered check). See FRAMEWORK_OVERVIEW.md for the axioms.",
-      "bundled": false
-    },
-    {
-      "id": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'default_empty', 'report': {'status': 'P_w_real_row_bundle_admission', 'version': 'w_trace_real_row_bundle_admission_v0', 'mode': 'EMPTY_BY_DEFAULT_REAL_ROW_BUNDLE_ADMISSION_REPORT_NO_EXPORT', 'admission_state': 'EMPTY', 'bundle_supplied': False, 'bundle_admitted': False, 'bundle_rejected': False, 'row_count': 0, 'row_schema_status': 'P_w_row_schema_adapter', 'row_schema_version': 'w_trace_row_schema_adapter_v0', 'row_schema_valid': False, 'rows_admitted_by_schema': False, 'counterterm_value_row_admitted_by_schema': False, 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'declared_component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'missing_metadata_fields': (), 'forbidden_bundle_inputs_hit': (), 'row_failure_reasons': ('NO_REAL_OR_FIXTURE_ROWS_SUPPLIED', 'MISSING_COMPONENT_ROWS'), 'failure_reasons': ('EMPTY_BUNDLE_NO_REAL_ROWS_SUPPLIED', 'NO_REAL_OR_FIXTURE_ROWS_SUPPLIED', 'MISSING_COMPONENT_ROWS'), 'component_sum_certified': False, 'covariance_certified': False, 'uncertainty_propagation_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False, 'row_report': {'status': 'P_w_row_schema_adapter', 'version': 'w_trace_row_schema_adapter_v0', 'rows_supplied': False, 'row_count': 0, 'real_payload_requested': True, 'rows_schema_valid': False, 'rows_admitted': False, 'counterterm_value_row_present': False, 'counterterm_value_row_admitted': False, 'component_sum_certified': False, 'covariance_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False, 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'component_ids_seen': (), 'missing_components': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'duplicate_components': (), 'unknown_components': (), 'missing_fields_by_row': (), 'bad_symbols': (), 'bad_uncertainty': (), 'bad_numeric': (), 'bad_units': (), 'bad_source_class': (), 'bad_real_fixture': (), 'bad_convention': (), 'bad_counterterm': (), 'forbidden_inputs_hit': (), 'failure_reasons': ('NO_REAL_OR_FIXTURE_ROWS_SUPPLIED', 'MISSING_COMPONENT_ROWS')}}}",
-      "name": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'default_empty', 'report': {'status': 'P_w_real_row_bundle_admission', 'version': 'w_trace_real_row_bundle_admission_v0', 'mode': 'EMPTY_BY_DEFAULT_REAL_ROW_BUNDLE_ADMISSION_REPORT_NO_EXPORT', 'admission_state': 'EMPTY', 'bundle_supplied': False, 'bundle_admitted': False, 'bundle_rejected': False, 'row_count': 0, 'row_schema_status': 'P_w_row_schema_adapter', 'row_schema_version': 'w_trace_row_schema_adapter_v0', 'row_schema_valid': False, 'rows_admitted_by_schema': False, 'counterterm_value_row_admitted_by_schema': False, 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'declared_component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'missing_metadata_fields': (), 'forbidden_bundle_inputs_hit': (), 'row_failure_reasons': ('NO_REAL_OR_FIXTURE_ROWS_SUPPLIED', 'MISSING_COMPONENT_ROWS'), 'failure_reasons': ('EMPTY_BUNDLE_NO_REAL_ROWS_SUPPLIED', 'NO_REAL_OR_FIXTURE_ROWS_SUPPLIED', 'MISSING_COMPONENT_ROWS'), 'component_sum_certified': False, 'covariance_certified': False, 'uncertainty_propagation_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False, 'row_report': {'status': 'P_w_row_schema_adapter', 'version': 'w_trace_row_schema_adapter_v0', 'rows_supplied': False, 'row_count': 0, 'real_payload_requested': True, 'rows_schema_valid': False, 'rows_admitted': False, 'counterterm_value_row_present': False, 'counterterm_value_row_admitted': False, 'component_sum_certified': False, 'covariance_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False, 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'component_ids_seen': (), 'missing_components': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'duplicate_components': (), 'unknown_components': (), 'missing_fields_by_row': (), 'bad_symbols': (), 'bad_uncertainty': (), 'bad_numeric': (), 'bad_units': (), 'bad_source_class': (), 'bad_real_fixture': (), 'bad_convention': (), 'bad_counterterm': (), 'forbidden_inputs_hit': (), 'failure_reasons': ('NO_REAL_OR_FIXTURE_ROWS_SUPPLIED', 'MISSING_COMPONENT_ROWS')}}}",
-      "module": "axiom_or_primitive",
-      "epistemic": "axiom",
-      "tier": 0,
-      "summary": "Axiom or structural primitive (not a bank-registered check). See FRAMEWORK_OVERVIEW.md for the axioms.",
-      "bundled": false
-    },
-    {
-      "id": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'depends_on_v108'}",
-      "name": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'depends_on_v108'}",
-      "module": "axiom_or_primitive",
-      "epistemic": "axiom",
-      "tier": 0,
-      "summary": "Axiom or structural primitive (not a bank-registered check). See FRAMEWORK_OVERVIEW.md for the axioms.",
-      "bundled": false
-    },
-    {
-      "id": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'dry_rows_admit', 'report': {'status': 'P_w_real_row_bundle_admission', 'version': 'w_trace_real_row_bundle_admission_v0', 'mode': 'EMPTY_BY_DEFAULT_REAL_ROW_BUNDLE_ADMISSION_REPORT_NO_EXPORT', 'admission_state': 'ADMITTED', 'bundle_supplied': True, 'bundle_admitted': True, 'bundle_rejected': False, 'row_count': 8, 'row_schema_status': 'P_w_row_schema_adapter', 'row_schema_version': 'w_trace_row_schema_adapter_v0', 'row_schema_valid': True, 'rows_admitted_by_schema': True, 'counterterm_value_row_admitted_by_schema': True, 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'declared_component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'missing_metadata_fields': (), 'forbidden_bundle_inputs_hit': (), 'row_failure_reasons': (), 'failure_reasons': (), 'component_sum_certified': False, 'covariance_certified': False, 'uncertainty_propagation_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False, 'row_report': {'status': 'P_w_row_schema_adapter', 'version': 'w_trace_row_schema_adapter_v0', 'rows_supplied': True, 'row_count': 8, 'real_payload_requested': True, 'rows_schema_valid': True, 'rows_admitted': True, 'counterterm_value_row_present': True, 'counterterm_value_row_admitted': True, 'component_sum_certified': False, 'covariance_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False, 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'component_ids_seen': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'missing_components': (), 'duplicate_components': (), 'unknown_components': (), 'missing_fields_by_row': (), 'bad_symbols': (), 'bad_uncertainty': (), 'bad_numeric': (), 'bad_units': (), 'bad_source_class': (), 'bad_real_fixture': (), 'bad_convention': (), 'bad_counterterm': (), 'forbidden_inputs_hit': (), 'failure_reasons': ()}}}",
-      "name": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'dry_rows_admit', 'report': {'status': 'P_w_real_row_bundle_admission', 'version': 'w_trace_real_row_bundle_admission_v0', 'mode': 'EMPTY_BY_DEFAULT_REAL_ROW_BUNDLE_ADMISSION_REPORT_NO_EXPORT', 'admission_state': 'ADMITTED', 'bundle_supplied': True, 'bundle_admitted': True, 'bundle_rejected': False, 'row_count': 8, 'row_schema_status': 'P_w_row_schema_adapter', 'row_schema_version': 'w_trace_row_schema_adapter_v0', 'row_schema_valid': True, 'rows_admitted_by_schema': True, 'counterterm_value_row_admitted_by_schema': True, 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'declared_component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'missing_metadata_fields': (), 'forbidden_bundle_inputs_hit': (), 'row_failure_reasons': (), 'failure_reasons': (), 'component_sum_certified': False, 'covariance_certified': False, 'uncertainty_propagation_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False, 'row_report': {'status': 'P_w_row_schema_adapter', 'version': 'w_trace_row_schema_adapter_v0', 'rows_supplied': True, 'row_count': 8, 'real_payload_requested': True, 'rows_schema_valid': True, 'rows_admitted': True, 'counterterm_value_row_present': True, 'counterterm_value_row_admitted': True, 'component_sum_certified': False, 'covariance_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False, 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'component_ids_seen': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'missing_components': (), 'duplicate_components': (), 'unknown_components': (), 'missing_fields_by_row': (), 'bad_symbols': (), 'bad_uncertainty': (), 'bad_numeric': (), 'bad_units': (), 'bad_source_class': (), 'bad_real_fixture': (), 'bad_convention': (), 'bad_counterterm': (), 'forbidden_inputs_hit': (), 'failure_reasons': ()}}}",
-      "module": "axiom_or_primitive",
-      "epistemic": "axiom",
-      "tier": 0,
-      "summary": "Axiom or structural primitive (not a bank-registered check). See FRAMEWORK_OVERVIEW.md for the axioms.",
-      "bundled": false
-    },
-    {
-      "id": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'preserve_release_lock'}",
-      "name": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'preserve_release_lock'}",
-      "module": "axiom_or_primitive",
-      "epistemic": "axiom",
-      "tier": 0,
-      "summary": "Axiom or structural primitive (not a bank-registered check). See FRAMEWORK_OVERVIEW.md for the axioms.",
-      "bundled": false
-    },
-    {
-      "id": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'status_declared', 'manifest': {'status': 'P_w_real_row_bundle_admission', 'version': 'w_trace_real_row_bundle_admission_v0', 'mode': 'EMPTY_BY_DEFAULT_REAL_ROW_BUNDLE_ADMISSION_REPORT_NO_EXPORT', 'upstream_row_schema_status': 'P_w_row_schema_adapter', 'upstream_row_schema_version': 'w_trace_row_schema_adapter_v0', 'policy': {'require_nonempty_real_rows_for_admission': True, 'require_v108_row_schema_pass': True, 'require_full_component_coverage': True, 'require_bundle_metadata': True, 'require_declared_order_matches_skeleton': True, 'allow_shape_fixtures_as_real_bundle': False, 'allow_component_sum_certification_here': False, 'allow_covariance_certification_here': False, 'allow_physical_export_here': False, 'allow_apf_anchor_consumption': False, 'allow_observed_w_consumption': False}, 'admission_states': ('EMPTY', 'REJECTED', 'ADMITTED'), 'required_bundle_metadata_fields': ('bundle_id', 'bundle_version', 'row_schema_version', 'source_pack_digest', 'source_pack_uri', 'extraction_log_digest', 'review_status', 'license_or_access_note', 'declared_component_order', 'physical_export_request'), 'allowed_review_statuses': ('reviewed_external_payload', 'audited_internal_reproduction', 'candidate_under_review'), 'allowed_row_source_classes': ('reviewed_loop_library_export', 'audited_literature_table', 'independent_symbolic_evaluator_export', 'internal_shape_fixture_not_real_payload'), 'forbidden_bundle_inputs': ('observed_M_W', 'observed_M_W_uncertainty', 'M_W_world_average', 'world_average_W_mass_column', 'W_mass_residual', 'W_mass_residual_column', 'Delta_r_fit_to_observed_M_W', 'APF_ANCHOR_DELTA_R_TARGET', 'apf_anchor_delta_r_target_as_component_input', 'component_sum_residual_to_apf_target', 'finite_counterterm_chosen_to_match_M_W', 'posthoc_counterterm_fit', 'identity_W_TRACE_to_on_shell_M_W', 'observed_M_W_column', 'fit_residual_column', 'apf_anchor_delta_r_column', 'physical_export_request', 'observed_M_W_bundle_metadata', 'world_average_W_mass_bundle_metadata', 'apf_anchor_delta_r_bundle_metadata'), 'required_row_fields': ('component_id', 'component_symbol', 'value', 'uncertainty', 'unit', 'scheme_family', 'convention_id', 'counterterm_component', 'loop_order_scope', 'sign_convention', 'source_class', 'source_title', 'source_pack_digest', 'table_locator', 'extraction_log_digest', 'row_checksum', 'provenance_chain', 'review_status', 'adapter_version', 'consumed_inputs', 'physical_export_request'), 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'real_row_bundle_supplied': False, 'real_row_bundle_admitted': False, 'component_sum_certified': False, 'covariance_certified': False, 'uncertainty_propagation_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False}}",
-      "name": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'status_declared', 'manifest': {'status': 'P_w_real_row_bundle_admission', 'version': 'w_trace_real_row_bundle_admission_v0', 'mode': 'EMPTY_BY_DEFAULT_REAL_ROW_BUNDLE_ADMISSION_REPORT_NO_EXPORT', 'upstream_row_schema_status': 'P_w_row_schema_adapter', 'upstream_row_schema_version': 'w_trace_row_schema_adapter_v0', 'policy': {'require_nonempty_real_rows_for_admission': True, 'require_v108_row_schema_pass': True, 'require_full_component_coverage': True, 'require_bundle_metadata': True, 'require_declared_order_matches_skeleton': True, 'allow_shape_fixtures_as_real_bundle': False, 'allow_component_sum_certification_here': False, 'allow_covariance_certification_here': False, 'allow_physical_export_here': False, 'allow_apf_anchor_consumption': False, 'allow_observed_w_consumption': False}, 'admission_states': ('EMPTY', 'REJECTED', 'ADMITTED'), 'required_bundle_metadata_fields': ('bundle_id', 'bundle_version', 'row_schema_version', 'source_pack_digest', 'source_pack_uri', 'extraction_log_digest', 'review_status', 'license_or_access_note', 'declared_component_order', 'physical_export_request'), 'allowed_review_statuses': ('reviewed_external_payload', 'audited_internal_reproduction', 'candidate_under_review'), 'allowed_row_source_classes': ('reviewed_loop_library_export', 'audited_literature_table', 'independent_symbolic_evaluator_export', 'internal_shape_fixture_not_real_payload'), 'forbidden_bundle_inputs': ('observed_M_W', 'observed_M_W_uncertainty', 'M_W_world_average', 'world_average_W_mass_column', 'W_mass_residual', 'W_mass_residual_column', 'Delta_r_fit_to_observed_M_W', 'APF_ANCHOR_DELTA_R_TARGET', 'apf_anchor_delta_r_target_as_component_input', 'component_sum_residual_to_apf_target', 'finite_counterterm_chosen_to_match_M_W', 'posthoc_counterterm_fit', 'identity_W_TRACE_to_on_shell_M_W', 'observed_M_W_column', 'fit_residual_column', 'apf_anchor_delta_r_column', 'physical_export_request', 'observed_M_W_bundle_metadata', 'world_average_W_mass_bundle_metadata', 'apf_anchor_delta_r_bundle_metadata'), 'required_row_fields': ('component_id', 'component_symbol', 'value', 'uncertainty', 'unit', 'scheme_family', 'convention_id', 'counterterm_component', 'loop_order_scope', 'sign_convention', 'source_class', 'source_title', 'source_pack_digest', 'table_locator', 'extraction_log_digest', 'row_checksum', 'provenance_chain', 'review_status', 'adapter_version', 'consumed_inputs', 'physical_export_request'), 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'real_row_bundle_supplied': False, 'real_row_bundle_admitted': False, 'component_sum_certified': False, 'covariance_certified': False, 'uncertainty_propagation_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False}}",
       "module": "axiom_or_primitive",
       "epistemic": "axiom",
       "tier": 0,
@@ -37191,41 +37128,6 @@
     },
     {
       "source": "check_T_only_gauge_invariant_sharp_colour_record_is_nonfactorizable_singlet_P",
-      "target": "check_T_matter_free_colour_record_deep_superselection_no_go",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_exotic_gauge_invariant_algebra_is_nonabelian",
-      "target": "check_T_matter_free_colour_record_deep_superselection_no_go",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_canonical_colour_record_iff_multiplicity_free_P",
-      "target": "check_T_matter_free_colour_record_deep_superselection_no_go",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_center_order_parameter_triality",
-      "target": "check_T_matter_free_colour_record_deep_superselection_no_go",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_ym_conformal_phase_excluded_by_record_locking",
-      "target": "check_T_matter_free_colour_record_deep_superselection_no_go",
-      "kind": "dependency"
-    },
-    {
-      "source": "L_cost",
-      "target": "check_T_matter_free_colour_record_deep_superselection_no_go",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_gauge_connection_is_gauge_variant_convention_P",
-      "target": "check_T_only_gauge_invariant_sharp_colour_record_is_nonfactorizable_singlet_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_only_gauge_invariant_sharp_colour_record_is_nonfactorizable_singlet_P",
       "target": "check_T_unique_gauge_invariant_colour_state_of_N_fundamentals_is_entangled_baryon_P",
       "kind": "dependency"
     },
@@ -37247,16 +37149,6 @@
     {
       "source": "check_T_gauge_connection_is_gauge_variant_convention_P",
       "target": "check_T_canonical_colour_record_iff_multiplicity_free_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_only_gauge_invariant_sharp_colour_record_is_nonfactorizable_singlet_P",
-      "target": "check_T_exotic_gauge_invariant_algebra_is_nonabelian",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_canonical_colour_record_iff_multiplicity_free_P",
-      "target": "check_T_exotic_gauge_invariant_algebra_is_nonabelian",
       "kind": "dependency"
     },
     {
@@ -37352,26 +37244,6 @@
     {
       "source": "check_T_gauge_invariant_colour_interface_is_contextual",
       "target": "check_T_colour_contextuality_is_kstring_spectrum_blind",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_CKM",
-      "target": "check_T_ckm_flavour_coavailability_is_sepstr",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_chiral_condensate_flavour_density_interface_is_contextual",
-      "target": "check_T_ckm_flavour_coavailability_is_sepstr",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_feasbool_general_contextuality",
-      "target": "check_T_ckm_flavour_coavailability_is_sepstr",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_interface_contextuality_general_scenario",
-      "target": "check_T_ckm_flavour_coavailability_is_sepstr",
       "kind": "dependency"
     },
     {
@@ -37632,26 +37504,6 @@
     {
       "source": "check_T_claim_required_structures_P",
       "target": "check_T_claim_obligation_packets_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_claim_route_classification_P",
-      "target": "check_T_claim_to_interface_graph_compiler_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_claim_text_not_evidence_P",
-      "target": "check_T_claim_to_interface_graph_compiler_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_claim_required_structures_P",
-      "target": "check_T_claim_to_interface_graph_compiler_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_claim_obligation_packets_P",
-      "target": "check_T_claim_to_interface_graph_compiler_P",
       "kind": "dependency"
     },
     {
@@ -40065,11 +39917,6 @@
       "kind": "dependency"
     },
     {
-      "source": "T_w_trace_native_os_renorm_os_conditions",
-      "target": "T_w_trace_native_os_renorm_mu_independence",
-      "kind": "dependency"
-    },
-    {
       "source": "T_w_trace_native_os_renorm_mu_independence",
       "target": "T_w_trace_native_os_renorm_running_matches_pole",
       "kind": "dependency"
@@ -40107,21 +39954,6 @@
     {
       "source": "T_w_trace_native_bosonic_photon_vp_pole",
       "target": "T_w_trace_native_bosonic_photon_pole",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_w_trace_native_bosonic_photon_pole",
-      "target": "T_w_trace_native_bosonic_drho_pole",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_w_trace_native_uv_cancel_drho_plus4_absorbed",
-      "target": "T_w_trace_native_bosonic_drho_pole",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_w_trace_native_bosonic_drho_pole",
-      "target": "T_w_trace_native_bosonic_regularity",
       "kind": "dependency"
     },
     {
@@ -43666,26 +43498,6 @@
     },
     {
       "source": "A1",
-      "target": "L_codef_aggregation_argmin",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_sep",
-      "target": "L_codef_aggregation_argmin",
-      "kind": "dependency"
-    },
-    {
-      "source": "L_epsilon*",
-      "target": "L_codef_aggregation_argmin",
-      "kind": "dependency"
-    },
-    {
-      "source": "Regime_R",
-      "target": "L_codef_aggregation_argmin",
-      "kind": "dependency"
-    },
-    {
-      "source": "A1",
       "target": "T_gapless_serial_floor",
       "kind": "dependency"
     },
@@ -43727,26 +43539,6 @@
     {
       "source": "L_commutative_no_unresolved_hold",
       "target": "T_gapless_serial_floor",
-      "kind": "dependency"
-    },
-    {
-      "source": "A1",
-      "target": "L_frustrated_witness",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_sep",
-      "target": "L_frustrated_witness",
-      "kind": "dependency"
-    },
-    {
-      "source": "L_codef_aggregation_argmin",
-      "target": "L_frustrated_witness",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_gapless_serial_floor",
-      "target": "L_frustrated_witness",
       "kind": "dependency"
     },
     {
@@ -44530,46 +44322,6 @@
       "kind": "dependency"
     },
     {
-      "source": "check_T_interface_atlas_shared_repairs_P",
-      "target": "check_T_interface_atlas_strategy_report_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_interface_atlas_construction_P",
-      "target": "check_T_interface_atlas_axis_typing_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "apf.codomain_selection_engine",
-      "target": "check_T_interface_atlas_axis_typing_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_interface_atlas_construction_P",
-      "target": "check_T_interface_atlas_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_interface_atlas_bottlenecks_P",
-      "target": "check_T_interface_atlas_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_interface_atlas_shared_repairs_P",
-      "target": "check_T_interface_atlas_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_interface_atlas_strategy_report_P",
-      "target": "check_T_interface_atlas_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_interface_atlas_axis_typing_P",
-      "target": "check_T_interface_atlas_P",
-      "kind": "dependency"
-    },
-    {
       "source": "check_T_evidence_complete_triggers_rerun_P",
       "target": "check_T_incomplete_evidence_blocks_rerun_P",
       "kind": "dependency"
@@ -44615,58 +44367,8 @@
       "kind": "dependency"
     },
     {
-      "source": "check_T_CI_top_checks_pass_P",
-      "target": "check_T_CI_report_generation_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_e2e_artifact_pipeline_collects_files_P",
-      "target": "check_T_e2e_artifact_pipeline_runs_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_e2e_artifact_pipeline_runs_P",
-      "target": "check_T_e2e_artifact_pipeline_empty_safe_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_e2e_artifact_pipeline_collects_files_P",
-      "target": "check_T_interface_intelligence_E2E_artifact_pipeline_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_e2e_artifact_pipeline_runs_P",
-      "target": "check_T_interface_intelligence_E2E_artifact_pipeline_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_e2e_artifact_pipeline_empty_safe_P",
-      "target": "check_T_interface_intelligence_E2E_artifact_pipeline_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_command_center_structure_P",
-      "target": "check_T_command_center_dry_run_P",
-      "kind": "dependency"
-    },
-    {
       "source": "check_T_command_center_dry_run_P",
       "target": "check_T_command_center_dashboard_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_command_center_structure_P",
-      "target": "check_T_interface_intelligence_engineering_command_center_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_command_center_dry_run_P",
-      "target": "check_T_interface_intelligence_engineering_command_center_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_command_center_dashboard_P",
-      "target": "check_T_interface_intelligence_engineering_command_center_P",
       "kind": "dependency"
     },
     {
@@ -44677,21 +44379,6 @@
     {
       "source": "check_T_failure_triage_detects_route_actions_P",
       "target": "check_T_failure_triage_markdown_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_failure_triage_detects_smoke_blocker_P",
-      "target": "check_T_interface_intelligence_failure_triage_assistant_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_failure_triage_detects_route_actions_P",
-      "target": "check_T_interface_intelligence_failure_triage_assistant_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_failure_triage_markdown_P",
-      "target": "check_T_interface_intelligence_failure_triage_assistant_P",
       "kind": "dependency"
     },
     {
@@ -44727,21 +44414,6 @@
     {
       "source": "check_T_acceptance_auditor_accepts_complete_P",
       "target": "check_T_acceptance_auditor_blocks_failures_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_acceptance_auditor_holds_missing_P",
-      "target": "check_T_interface_intelligence_post_install_acceptance_auditor_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_acceptance_auditor_accepts_complete_P",
-      "target": "check_T_interface_intelligence_post_install_acceptance_auditor_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_acceptance_auditor_blocks_failures_P",
-      "target": "check_T_interface_intelligence_post_install_acceptance_auditor_P",
       "kind": "dependency"
     },
     {
@@ -44837,26 +44509,6 @@
     {
       "source": "check_T_reviewer_reporter_markdown_P",
       "target": "check_T_interface_intelligence_reviewer_reporter_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_EW_uncertainty_evidence_candidate_P",
-      "target": "check_T_EW_intake_does_not_promote_route_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_EW_counterterm_evidence_candidate_P",
-      "target": "check_T_EW_counterterm_uncertainty_intake_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_EW_uncertainty_evidence_candidate_P",
-      "target": "check_T_EW_counterterm_uncertainty_intake_P",
-      "kind": "dependency"
-    },
-    {
-      "source": "check_T_EW_intake_does_not_promote_route_P",
-      "target": "check_T_EW_counterterm_uncertainty_intake_P",
       "kind": "dependency"
     },
     {
@@ -49015,6 +48667,31 @@
       "kind": "dependency"
     },
     {
+      "source": "L_equip",
+      "target": "L_RT_two_sided_reading_no_go",
+      "kind": "dependency"
+    },
+    {
+      "source": "L_KMS_trace_state",
+      "target": "L_RT_two_sided_reading_no_go",
+      "kind": "dependency"
+    },
+    {
+      "source": "L_RT_capacity",
+      "target": "L_RT_two_sided_reading_no_go",
+      "kind": "dependency"
+    },
+    {
+      "source": "T_deSitter_entropy",
+      "target": "L_RT_two_sided_reading_no_go",
+      "kind": "dependency"
+    },
+    {
+      "source": "T11",
+      "target": "L_RT_two_sided_reading_no_go",
+      "kind": "dependency"
+    },
+    {
       "source": "T_capacity_ladder",
       "target": "L_MERA_generation",
       "kind": "dependency"
@@ -52605,36 +52282,6 @@
       "kind": "dependency"
     },
     {
-      "source": "PASS",
-      "target": "T_w_component_sum_certificate_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_component_sum_certificate_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_component_sum_certificate_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_component_sum_certificate_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_component_sum_certificate_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_component_sum_certificate_bank_closure",
-      "kind": "dependency"
-    },
-    {
       "source": "T_w_input_basis_ledger_bank_closure",
       "target": "T_w_constants_source_ledger_status_declared",
       "kind": "dependency"
@@ -52707,41 +52354,6 @@
     {
       "source": "T_w_constants_publication_claim_ladder",
       "target": "T_w_constants_source_ledger_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_counterterm_convention_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_counterterm_convention_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_counterterm_convention_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_counterterm_convention_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_counterterm_convention_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_counterterm_convention_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_counterterm_convention_bank_closure",
       "kind": "dependency"
     },
     {
@@ -53575,36 +53187,6 @@
       "kind": "dependency"
     },
     {
-      "source": "T_w_physical_export_lock_status_declared",
-      "target": "T_w_physical_export_lock_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_w_physical_export_lock_depends_on_uncertainty_harness",
-      "target": "T_w_physical_export_lock_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_w_physical_export_lock_schema_declared",
-      "target": "T_w_physical_export_lock_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_w_physical_export_lock_default_locked",
-      "target": "T_w_physical_export_lock_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_w_physical_export_lock_completion_gate_still_locked",
-      "target": "T_w_physical_export_lock_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_w_physical_export_lock_no_physical_mass_exports",
-      "target": "T_w_physical_export_lock_bank_closure",
-      "kind": "dependency"
-    },
-    {
       "source": "check_T_w_trace_pv_b0_gate_closed",
       "target": "T_w_trace_pv_b1_reduction_matches_direct",
       "kind": "dependency"
@@ -54282,16 +53864,6 @@
     {
       "source": "T_two_loop_phase2_ibp_reduction_engine_tier0_current_depth",
       "target": "T_two_loop_phase2_coefficient_output_slices_current_depth",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_two_loop_phase2_coefficient_output_slices_current_depth",
-      "target": "T_two_loop_phase2_coefficient_surface_no_smuggling_current_depth",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_two_loop_two_point_5line_euclidean_master_arbitrary_mass",
-      "target": "T_two_loop_phase2_coefficient_surface_no_smuggling_current_depth",
       "kind": "dependency"
     },
     {
@@ -55125,16 +54697,6 @@
       "kind": "dependency"
     },
     {
-      "source": "check_T_w_trace_pv_d0_gate_closed",
-      "target": "T_w_trace_pv_d0_general_zero_momentum_limit",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_w_trace_pv_d0_general_zero_momentum_limit",
-      "target": "T_w_trace_pv_d0_general_cyclic_symmetry",
-      "kind": "dependency"
-    },
-    {
       "source": "T_w_trace_pv_d0_general_zero_momentum_limit",
       "target": "T_w_trace_pv_d0_general_mesh_consistency",
       "kind": "dependency"
@@ -55160,16 +54722,6 @@
       "kind": "dependency"
     },
     {
-      "source": "T_w_trace_pv_d1_d2_d3_contraction_identities",
-      "target": "T_w_trace_pv_d00_dij_rank2_trace_relation",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_w_trace_pv_c0_general_zero_momentum_limit",
-      "target": "T_w_trace_pv_d00_dij_rank2_trace_relation",
-      "kind": "dependency"
-    },
-    {
       "source": "T_w_trace_pv_d00_dij_rank2_trace_relation",
       "target": "T_w_trace_pv_d00_dij_rank2_mesh_consistency",
       "kind": "dependency"
@@ -55192,126 +54744,6 @@
     {
       "source": "T_w_trace_pv_d00k_dijk_rank3_trace_relation",
       "target": "T_w_trace_pv_d_rank123_subgate_partial",
-      "kind": "dependency"
-    },
-    {
-      "source": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'status_declared', 'manifest': {'status': 'P_w_real_row_bundle_admission', 'version': 'w_trace_real_row_bundle_admission_v0', 'mode': 'EMPTY_BY_DEFAULT_REAL_ROW_BUNDLE_ADMISSION_REPORT_NO_EXPORT', 'upstream_row_schema_status': 'P_w_row_schema_adapter', 'upstream_row_schema_version': 'w_trace_row_schema_adapter_v0', 'policy': {'require_nonempty_real_rows_for_admission': True, 'require_v108_row_schema_pass': True, 'require_full_component_coverage': True, 'require_bundle_metadata': True, 'require_declared_order_matches_skeleton': True, 'allow_shape_fixtures_as_real_bundle': False, 'allow_component_sum_certification_here': False, 'allow_covariance_certification_here': False, 'allow_physical_export_here': False, 'allow_apf_anchor_consumption': False, 'allow_observed_w_consumption': False}, 'admission_states': ('EMPTY', 'REJECTED', 'ADMITTED'), 'required_bundle_metadata_fields': ('bundle_id', 'bundle_version', 'row_schema_version', 'source_pack_digest', 'source_pack_uri', 'extraction_log_digest', 'review_status', 'license_or_access_note', 'declared_component_order', 'physical_export_request'), 'allowed_review_statuses': ('reviewed_external_payload', 'audited_internal_reproduction', 'candidate_under_review'), 'allowed_row_source_classes': ('reviewed_loop_library_export', 'audited_literature_table', 'independent_symbolic_evaluator_export', 'internal_shape_fixture_not_real_payload'), 'forbidden_bundle_inputs': ('observed_M_W', 'observed_M_W_uncertainty', 'M_W_world_average', 'world_average_W_mass_column', 'W_mass_residual', 'W_mass_residual_column', 'Delta_r_fit_to_observed_M_W', 'APF_ANCHOR_DELTA_R_TARGET', 'apf_anchor_delta_r_target_as_component_input', 'component_sum_residual_to_apf_target', 'finite_counterterm_chosen_to_match_M_W', 'posthoc_counterterm_fit', 'identity_W_TRACE_to_on_shell_M_W', 'observed_M_W_column', 'fit_residual_column', 'apf_anchor_delta_r_column', 'physical_export_request', 'observed_M_W_bundle_metadata', 'world_average_W_mass_bundle_metadata', 'apf_anchor_delta_r_bundle_metadata'), 'required_row_fields': ('component_id', 'component_symbol', 'value', 'uncertainty', 'unit', 'scheme_family', 'convention_id', 'counterterm_component', 'loop_order_scope', 'sign_convention', 'source_class', 'source_title', 'source_pack_digest', 'table_locator', 'extraction_log_digest', 'row_checksum', 'provenance_chain', 'review_status', 'adapter_version', 'consumed_inputs', 'physical_export_request'), 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'real_row_bundle_supplied': False, 'real_row_bundle_admitted': False, 'component_sum_certified': False, 'covariance_certified': False, 'uncertainty_propagation_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False}}",
-      "target": "T_w_real_row_bundle_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'depends_on_v108'}",
-      "target": "T_w_real_row_bundle_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'default_empty', 'report': {'status': 'P_w_real_row_bundle_admission', 'version': 'w_trace_real_row_bundle_admission_v0', 'mode': 'EMPTY_BY_DEFAULT_REAL_ROW_BUNDLE_ADMISSION_REPORT_NO_EXPORT', 'admission_state': 'EMPTY', 'bundle_supplied': False, 'bundle_admitted': False, 'bundle_rejected': False, 'row_count': 0, 'row_schema_status': 'P_w_row_schema_adapter', 'row_schema_version': 'w_trace_row_schema_adapter_v0', 'row_schema_valid': False, 'rows_admitted_by_schema': False, 'counterterm_value_row_admitted_by_schema': False, 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'declared_component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'missing_metadata_fields': (), 'forbidden_bundle_inputs_hit': (), 'row_failure_reasons': ('NO_REAL_OR_FIXTURE_ROWS_SUPPLIED', 'MISSING_COMPONENT_ROWS'), 'failure_reasons': ('EMPTY_BUNDLE_NO_REAL_ROWS_SUPPLIED', 'NO_REAL_OR_FIXTURE_ROWS_SUPPLIED', 'MISSING_COMPONENT_ROWS'), 'component_sum_certified': False, 'covariance_certified': False, 'uncertainty_propagation_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False, 'row_report': {'status': 'P_w_row_schema_adapter', 'version': 'w_trace_row_schema_adapter_v0', 'rows_supplied': False, 'row_count': 0, 'real_payload_requested': True, 'rows_schema_valid': False, 'rows_admitted': False, 'counterterm_value_row_present': False, 'counterterm_value_row_admitted': False, 'component_sum_certified': False, 'covariance_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False, 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'component_ids_seen': (), 'missing_components': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'duplicate_components': (), 'unknown_components': (), 'missing_fields_by_row': (), 'bad_symbols': (), 'bad_uncertainty': (), 'bad_numeric': (), 'bad_units': (), 'bad_source_class': (), 'bad_real_fixture': (), 'bad_convention': (), 'bad_counterterm': (), 'forbidden_inputs_hit': (), 'failure_reasons': ('NO_REAL_OR_FIXTURE_ROWS_SUPPLIED', 'MISSING_COMPONENT_ROWS')}}}",
-      "target": "T_w_real_row_bundle_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'dry_rows_admit', 'report': {'status': 'P_w_real_row_bundle_admission', 'version': 'w_trace_real_row_bundle_admission_v0', 'mode': 'EMPTY_BY_DEFAULT_REAL_ROW_BUNDLE_ADMISSION_REPORT_NO_EXPORT', 'admission_state': 'ADMITTED', 'bundle_supplied': True, 'bundle_admitted': True, 'bundle_rejected': False, 'row_count': 8, 'row_schema_status': 'P_w_row_schema_adapter', 'row_schema_version': 'w_trace_row_schema_adapter_v0', 'row_schema_valid': True, 'rows_admitted_by_schema': True, 'counterterm_value_row_admitted_by_schema': True, 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'declared_component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'missing_metadata_fields': (), 'forbidden_bundle_inputs_hit': (), 'row_failure_reasons': (), 'failure_reasons': (), 'component_sum_certified': False, 'covariance_certified': False, 'uncertainty_propagation_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False, 'row_report': {'status': 'P_w_row_schema_adapter', 'version': 'w_trace_row_schema_adapter_v0', 'rows_supplied': True, 'row_count': 8, 'real_payload_requested': True, 'rows_schema_valid': True, 'rows_admitted': True, 'counterterm_value_row_present': True, 'counterterm_value_row_admitted': True, 'component_sum_certified': False, 'covariance_certified': False, 'physical_W_export_enabled': False, 'exports_physical_M_W': False, 'component_order': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'component_ids_seen': ('delta_alpha_running_component', 'delta_rho_oblique_component', 'fermionic_loop_finite_component', 'bosonic_loop_finite_component', 'vertex_box_finite_component', 'scheme_conversion_counterterm_component', 'correlation_covariance_component', 'uncertainty_propagation_component'), 'missing_components': (), 'duplicate_components': (), 'unknown_components': (), 'missing_fields_by_row': (), 'bad_symbols': (), 'bad_uncertainty': (), 'bad_numeric': (), 'bad_units': (), 'bad_source_class': (), 'bad_real_fixture': (), 'bad_convention': (), 'bad_counterterm': (), 'forbidden_inputs_hit': (), 'failure_reasons': ()}}}",
-      "target": "T_w_real_row_bundle_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "{'passed': True, 'status': 'PASS', 'tier': 4, 'epistemic': 'P_w_real_row_bundle_admission', 'check': 'preserve_release_lock'}",
-      "target": "T_w_real_row_bundle_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_real_source_candidate_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_real_source_candidate_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_real_source_candidate_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_real_source_candidate_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_real_source_candidate_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_row_schema_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_row_schema_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_row_schema_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_row_schema_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_row_schema_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_row_schema_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_row_schema_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_row_schema_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_uncertainty_propagation_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_uncertainty_propagation_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_uncertainty_propagation_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_uncertainty_propagation_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_uncertainty_propagation_bank_closure",
-      "kind": "dependency"
-    },
-    {
-      "source": "PASS",
-      "target": "T_w_uncertainty_propagation_bank_closure",
       "kind": "dependency"
     },
     {
@@ -55457,16 +54889,6 @@
     {
       "source": "T_ym_meaningful_spectrum_is_singlet_gapped",
       "target": "T_ym_conformal_phase_excluded_by_record_locking",
-      "kind": "dependency"
-    },
-    {
-      "source": "L_irr",
-      "target": "T_contextuality_implies_superadditive_cost",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_ym_conformal_phase_excluded_by_record_locking",
-      "target": "T_contextuality_implies_superadditive_cost",
       "kind": "dependency"
     },
     {
@@ -55707,46 +55129,6 @@
     {
       "source": "Paper0_row7b_defense_billing_locus",
       "target": "L_local_removability",
-      "kind": "dependency"
-    },
-    {
-      "source": "A1",
-      "target": "L_recoverability_is_orbit_reachability",
-      "kind": "dependency"
-    },
-    {
-      "source": "MD",
-      "target": "L_recoverability_is_orbit_reachability",
-      "kind": "dependency"
-    },
-    {
-      "source": "L_nc",
-      "target": "L_recoverability_is_orbit_reachability",
-      "kind": "dependency"
-    },
-    {
-      "source": "L_loc",
-      "target": "L_recoverability_is_orbit_reachability",
-      "kind": "dependency"
-    },
-    {
-      "source": "L_irr",
-      "target": "L_recoverability_is_orbit_reachability",
-      "kind": "dependency"
-    },
-    {
-      "source": "Paper0_row6_operational_completeness",
-      "target": "L_recoverability_is_orbit_reachability",
-      "kind": "dependency"
-    },
-    {
-      "source": "Paper0_row7a_threat_totality",
-      "target": "L_recoverability_is_orbit_reachability",
-      "kind": "dependency"
-    },
-    {
-      "source": "Paper0_row7b_defense_billing_locus",
-      "target": "L_recoverability_is_orbit_reachability",
       "kind": "dependency"
     },
     {
@@ -56707,36 +56089,6 @@
     {
       "source": "check_T_center_order_parameter_triality",
       "target": "check_T_su2_string_cut_comovement",
-      "kind": "dependency"
-    },
-    {
-      "source": "A1",
-      "target": "T_finite_operational_basis",
-      "kind": "dependency"
-    },
-    {
-      "source": "L_epsilon*",
-      "target": "T_finite_operational_basis",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_admissibility_greedoid_structure",
-      "target": "T_finite_operational_basis",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_finite_operational_basis_scope_contract",
-      "target": "T_finite_operational_basis",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_finite_operational_basis",
-      "target": "T_finite_minimal_joint_realization_atom_cover",
-      "kind": "dependency"
-    },
-    {
-      "source": "T_finite_operational_basis_scope_contract",
-      "target": "T_finite_minimal_joint_realization_atom_cover",
       "kind": "dependency"
     },
     {

@@ -13,6 +13,7 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage[nameinlink,capitalize]{cleveref}
+\usepackage{seqsplit}%CORPUSGUARD
 
 \hypersetup{
   colorlinks=true,
@@ -70,6 +71,8 @@
 \newcommand{\HH}{\mathbb H}
 \newcommand{\OO}{\mathbb O}
 \newcommand{\Status}[1]{\textsf{#1}}
+\newcommand{\codeid}[1]{\texttt{\seqsplit{#1}}}%CORPUSGUARD
+\newcommand{\coderef}[2]{{\small(\codeid{#1}, \codeid{#2})}}%CORPUSGUARD
 
 \title{The Calculus of Finite Continuability\\
 \large A Continuation-First Language for APF, Held Profiles, Recruitment, Quantum Representation, and Geometry}
@@ -680,9 +683,9 @@ union; adjoining it remains in $\mathfrak J_U$ and adds at least one atom, so
 the exact marginal cost is at least $\floor$.  Thus finite joint extension,
 minimum attainment, closure invariance, and the positive extension floor all
 hold.  This is the restricted model certified by APF-Engine checks
-\texttt{T\_finite\_operational\_basis\_scope\_contract},
-\texttt{T\_finite\_operational\_basis}, and
-\texttt{T\_finite\_minimal\_joint\_realization\_atom\_cover}.
+\coderef{check\_T\_finite\_operational\_basis\_scope\_contract}{continuation\_calculus.py},
+\coderef{check\_T\_finite\_operational\_basis}{continuation\_calculus.py}, and
+\coderef{check\_T\_finite\_minimal\_joint\_realization\_atom\_cover}{continuation\_calculus.py}.
 \end{proof}
 
 \begin{audit}[Engine and theorem scope]
