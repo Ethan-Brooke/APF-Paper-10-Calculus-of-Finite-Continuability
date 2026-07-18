@@ -20,10 +20,10 @@ The Admissibility Physics Framework is a **9-paper spine** plus a canonical comp
 | 5 | Quantum Structure from Finite Enforceability | [10.5281/zenodo.18439433](https://doi.org/10.5281/zenodo.18439433) | [`APF-Paper-5-Quantum-Structure-Hilbert-Born`](https://github.com/Ethan-Brooke/APF-Paper-5-Quantum-Structure-Hilbert-Born) | public |
 | 6 | Dynamics and Geometry as Optimal Admissible Reallocation | [10.5281/zenodo.18439445](https://doi.org/10.5281/zenodo.18439445) | [`APF-Paper-6-Dynamics-Geometry-Spacetime-Gravity`](https://github.com/Ethan-Brooke/APF-Paper-6-Dynamics-Geometry-Spacetime-Gravity) | public |
 | 7 | Action, Internalization, and the Lagrangian | [10.5281/zenodo.18439513](https://doi.org/10.5281/zenodo.18439513) | [`APF-Paper-7-Action-Internalization-Lagrangian`](https://github.com/Ethan-Brooke/APF-Paper-7-Action-Internalization-Lagrangian) | public |
-| 9 | The Geometric Substrate as Cost Structure of Comparison Continuations | — | [`APF-Paper-9-Geometric-Substrate`](https://github.com/Ethan-Brooke/APF-Paper-9-Geometric-Substrate) | pending |
-| 10 | The Calculus of Finite Continuability **(this repo)** | — | [`APF-Paper-10-Calculus-of-Finite-Continuability`](https://github.com/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability) | pending |
+| 9 | The Geometric Substrate as Cost Structure of Comparison Continuations | [10.5281/zenodo.20041675](https://doi.org/10.5281/zenodo.20041675) | [`APF-Paper-9-Geometric-Substrate`](https://github.com/Ethan-Brooke/APF-Paper-9-Geometric-Substrate) | public |
+| 10 | The Calculus of Finite Continuability **(this repo)** | [10.5281/zenodo.20041680](https://doi.org/10.5281/zenodo.20041680) | [`APF-Paper-10-Calculus-of-Finite-Continuability`](https://github.com/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability) | public |
 | 13 | The Minimal Admissibility Core | [10.5281/zenodo.18361446](https://doi.org/10.5281/zenodo.18361446) | [`APF-Paper-13-The-Minimal-Admissibility-Core`](https://github.com/Ethan-Brooke/APF-Paper-13-The-Minimal-Admissibility-Core) | public |
-| — | Canonical codebase (v7.8) | [10.5281/zenodo.18529115](https://doi.org/10.5281/zenodo.18529115) | [`APF-Codebase`](https://github.com/Ethan-Brooke/APF-Codebase) | pending |
+| — | Canonical codebase (v24.3.427) | [10.5281/zenodo.18529115](https://doi.org/10.5281/zenodo.18529115) | [`APF-Codebase`](https://github.com/Ethan-Brooke/APF-Codebase) | pending |
 
 **You are reading the companion to Paper 10** (this repo: https://github.com/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability).
 
@@ -46,7 +46,7 @@ The repo bundles:
 - A theorem-by-theorem Colab walkthrough (`APF_Reviewer_Walkthrough.ipynb`)
 - **This AI-onboarding pack** (`ai_context/`) — the authoritative context for agents
 
-The framework-wide canonical codebase (440 bank-registered theorems, 25 modules, 457 `verify_all` checks; canonical Phase-18 baseline) is **not** bundled here. Only the Paper 10 subset is runnable locally. See `ai_context/THEOREMS.md` for the full bank listing with bundled-in-this-repo flags.
+The framework-wide canonical codebase (3918 bank-registered theorems, 25 modules, 3918 `verify_all` checks; canonical Phase-18 baseline) is **not** bundled here. Only the Paper 10 subset is runnable locally. See `ai_context/THEOREMS.md` for the full bank listing with bundled-in-this-repo flags.
 
 ## 2. APF in 30 seconds
 
@@ -78,7 +78,7 @@ If you're loading this repo cold and want to understand Paper 10 well enough to 
 4. **`README.md`** — paper-specific orientation and the verification recipe. Badges, theorem table, install.
 5. **`apf/core.py`** — the vendored code. Read at least one check function fully. This is ground truth.
 6. **`run_checks.py`** + run it — confirms the local state works.
-7. **`Paper_10_Calculus_of_Finite_Continuability_v1.12.tex`** or `.pdf` — the manuscript. Read §1 (intro) and the section you care about. Don't try to read the whole paper first.
+7. **`Paper_10_Calculus_of_Finite_Continuability_v1.21.tex`** or `.pdf` — the manuscript. Read §1 (intro) and the section you care about. Don't try to read the whole paper first.
 8. **Technical Supplement** if present — canonical proofs. Dense; dip in only where you need depth.
 9. **`ai_context/wiki/`** — concept pages (Axiom A1, Derivation Chain, Born Rule, etc.) and per-paper pages. Navigate from `wiki/INDEX.md`.
 10. **`ai_context/AUDIT_DISCIPLINE.md`** — read before you propose any substantive change or critique. This is the posture the project expects from AI contributors.
@@ -114,9 +114,9 @@ The honest posture: $H_0$ is a real falsification candidate, not a bug to patch 
 
 ## 6. Current canonical state (at time of this release)
 
-- **Codebase:** v7.9 (2026-05-04)
-- **Bank-registered theorems:** 440 across 25 modules
-- **Total `verify_all` checks:** 457 (includes `apf/standalone/` + session modules)
+- **Codebase:** v24.3.427 (2026-05-04)
+- **Bank-registered theorems:** 3918 across 25 modules
+- **Total `verify_all` checks:** 3918 (includes `apf/standalone/` + session modules)
 - **Quantitative predictions:** 48 (39 tested; 32/39 within 3σ; mean error 3.83%; median 0.37%)
 - **Free parameters:** 0
 
@@ -160,7 +160,7 @@ If reviewer B raises the same concern as reviewer A, the convergent criticism is
 | `STARTING_PROMPTS.md` | High-value query templates known to work. |
 | `GLOSSARY.md` | APF-specific terminology and epistemic tag meanings. |
 | `HOW_TO_VERIFY.md` | Recipes for verifying any claim in this paper. |
-| `THEOREMS.md` | Full bank catalog (440 theorems) with bundled-in-this-repo flags. |
+| `THEOREMS.md` | Full bank catalog (3918 theorems) with bundled-in-this-repo flags. |
 | `theorems.json` | Same catalog in structured form — query/grep-friendly. |
 | `derivation_graph.json` | The DAG as structured data (nodes + edges). |
 | `OPEN_PROBLEMS.md` | Framework-level open questions (so you don't re-solve known-open ones naively). |

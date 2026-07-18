@@ -22,7 +22,7 @@ Grouped by intent:
 
 > What's the shortest derivation chain from A1 to `check_T_CPTP`? List the intermediate theorems with their epistemic tags.
 
-> Read `Paper_10_Calculus_of_Finite_Continuability_v1.12.tex` and produce a 500-word summary. Preserve all `\coderef{}{}` anchors. Distinguish internally-derived claims ([P]) from imported closures ([P]+[I]) and from structural identifications ([P_structural]).
+> Read `Paper_10_Calculus_of_Finite_Continuability_v1.21.tex` and produce a 500-word summary. Preserve all `\coderef{}{}` anchors. Distinguish internally-derived claims ([P]) from imported closures ([P]+[I]) and from structural identifications ([P_structural]).
 
 ---
 

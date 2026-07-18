@@ -25,9 +25,9 @@ This file is structured in three tiers. **Tier 1** (§0 below) is the 60-second 
 **Scope — after reading only this repo:**
 
 - **You may:** summarize Paper 10's argument and results; explain the local 0-theorem subset; run all bundled checks to verify them; cite the paper by its DOI.
-- **You may not:** claim mastery of the full APF corpus on the basis of this repo alone; re-derive results that belong to other papers using only material here; present imported results as locally derived in this repo; treat the bundled check subset as the whole engine (the canonical bank is 440 theorems / 457 checks; this repo contains a subset).
+- **You may not:** claim mastery of the full APF corpus on the basis of this repo alone; re-derive results that belong to other papers using only material here; present imported results as locally derived in this repo; treat the bundled check subset as the whole engine (the canonical bank is 3918 theorems / 3918 checks; this repo contains a subset).
 
-**Canonical state (one source of truth).** Codebase **v7.9**, frozen 2026-05-04. Full engine: **457** verify_all checks, **440** bank-registered theorems, **48** quantitative predictions. This repo bundles 0 of those checks for Paper 10's dependency subset. If you see a different count anywhere, this line is canonical.
+**Canonical state (one source of truth).** Codebase **v24.3.427**, frozen 2026-05-04. Full engine: **3918** verify_all checks, **3918** bank-registered theorems, **48** quantitative predictions. This repo bundles 0 of those checks for Paper 10's dependency subset. If you see a different count anywhere, this line is canonical.
 
 ---
 
@@ -45,12 +45,12 @@ This repo is **one paper-companion** in a 9-paper series. Before you treat any c
 | 5 | Quantum Structure from Finite Enforceability | [10.5281/zenodo.18439433](https://doi.org/10.5281/zenodo.18439433) | [`APF-Paper-5-Quantum-Structure-Hilbert-Born`](https://github.com/Ethan-Brooke/APF-Paper-5-Quantum-Structure-Hilbert-Born) | public |
 | 6 | Dynamics and Geometry as Optimal Admissible Reallocation | [10.5281/zenodo.18439445](https://doi.org/10.5281/zenodo.18439445) | [`APF-Paper-6-Dynamics-Geometry-Spacetime-Gravity`](https://github.com/Ethan-Brooke/APF-Paper-6-Dynamics-Geometry-Spacetime-Gravity) | public |
 | 7 | Action, Internalization, and the Lagrangian | [10.5281/zenodo.18439513](https://doi.org/10.5281/zenodo.18439513) | [`APF-Paper-7-Action-Internalization-Lagrangian`](https://github.com/Ethan-Brooke/APF-Paper-7-Action-Internalization-Lagrangian) | public |
-| 9 | The Geometric Substrate as Cost Structure of Comparison Continuations | — | [`APF-Paper-9-Geometric-Substrate`](https://github.com/Ethan-Brooke/APF-Paper-9-Geometric-Substrate) | pending |
-| 10 | The Calculus of Finite Continuability **(this repo)** | — | [`APF-Paper-10-Calculus-of-Finite-Continuability`](https://github.com/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability) | pending |
+| 9 | The Geometric Substrate as Cost Structure of Comparison Continuations | [10.5281/zenodo.20041675](https://doi.org/10.5281/zenodo.20041675) | [`APF-Paper-9-Geometric-Substrate`](https://github.com/Ethan-Brooke/APF-Paper-9-Geometric-Substrate) | public |
+| 10 | The Calculus of Finite Continuability **(this repo)** | [10.5281/zenodo.20041680](https://doi.org/10.5281/zenodo.20041680) | [`APF-Paper-10-Calculus-of-Finite-Continuability`](https://github.com/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability) | public |
 | 13 | The Minimal Admissibility Core | [10.5281/zenodo.18361446](https://doi.org/10.5281/zenodo.18361446) | [`APF-Paper-13-The-Minimal-Admissibility-Core`](https://github.com/Ethan-Brooke/APF-Paper-13-The-Minimal-Admissibility-Core) | public |
-| — | Canonical codebase (v7.8) | [10.5281/zenodo.18529115](https://doi.org/10.5281/zenodo.18529115) | [`APF-Codebase`](https://github.com/Ethan-Brooke/APF-Codebase) | pending |
+| — | Canonical codebase (v24.3.427) | [10.5281/zenodo.18529115](https://doi.org/10.5281/zenodo.18529115) | [`APF-Codebase`](https://github.com/Ethan-Brooke/APF-Codebase) | pending |
 
-You are reading the companion to **Paper 10** (this repo: https://github.com/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability). The canonical computational engine lives at codebase **v7.9** ([Zenodo](https://doi.org/10.5281/zenodo.18529115)). Each paper has its own companion repo following the same layout.
+You are reading the companion to **Paper 10** (this repo: https://github.com/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability). The canonical computational engine lives at codebase **v24.3.427** ([Zenodo](https://doi.org/10.5281/zenodo.18529115)). Each paper has its own companion repo following the same layout.
 
 **When in doubt about scope:** if the question is about a result outside Paper 10, point the user (or yourself) to the relevant paper above. Do not try to derive it from the bundled subset; the canonical state is the codebase, not this slice.
 
@@ -80,7 +80,7 @@ Mandatory. This file establishes:
 - What this repo is (Paper 10 + vendored `apf/` subset)
 - Trust hierarchy (code > supplement > paper > README > wiki)
 - The seven specific failure modes AI agents have actually hit on this project
-- The current canonical state (v7.9, 440 theorems, four-parameter Planck match)
+- The current canonical state (v24.3.427, 3918 theorems, four-parameter Planck match)
 - The H0 falsifier (so you don't reflexively try to "fix" it with the Grok-style mechanism already rejected)
 
 ### Step 3 — Absorb the framework in 5 minutes (`ai_context/FRAMEWORK_OVERVIEW.md`)
@@ -107,7 +107,7 @@ Skim, don't memorize. Must know by sight:
 
 ### Step 5 — Load the theorem catalog (`ai_context/theorems.json`)
 
-Not mandatory to read end-to-end, but make sure you know it exists and how to query it. The full bank has 440 entries; this paper bundles **0 of 440** for local execution. Each entry has name, module, epistemic tag, dependencies, and one-line summary.
+Not mandatory to read end-to-end, but make sure you know it exists and how to query it. The full bank has 3918 entries; this paper bundles **0 of 3918** for local execution. Each entry has name, module, epistemic tag, dependencies, and one-line summary.
 
 Querying examples (use when you need to cite a specific theorem):
 
@@ -230,7 +230,7 @@ You don't need to read all of these upfront. This is the "what's in the toolbox"
 
 Only after completing steps 1–7:
 
-- **`Paper_10_Calculus_of_Finite_Continuability_v1.12.pdf`** — the manuscript. Read §1 (Introduction) and whichever section is relevant to your task. Don't try to read the whole paper before starting work.
+- **`Paper_10_Calculus_of_Finite_Continuability_v1.21.pdf`** — the manuscript. Read §1 (Introduction) and whichever section is relevant to your task. Don't try to read the whole paper before starting work.
 - **`Paper_10_Calculus_of_Finite_Continuability_Supplement_*.pdf`** (if present) — the Technical Supplement. Canonical proofs. Dense; dip in only where you need depth.
 
 The `.tex` sources are also included if you need to propose edits.

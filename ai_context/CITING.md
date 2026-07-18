@@ -8,7 +8,7 @@ This release is one paper of a multi-paper series. There are three citation targ
 
 **APA-style:**
 
-> Brooke, E. S. (2026). *The Calculus of Finite Continuability*. Version v1.12. Zenodo. https://doi.org/
+> Brooke, E. S. (2026). *The Calculus of Finite Continuability*. Version v1.21. Zenodo. https://doi.org/10.5281/zenodo.20041680
 
 **BibTeX:**
 
@@ -17,14 +17,14 @@ This release is one paper of a multi-paper series. There are three citation targ
   author       = {Brooke, Ethan S.},
   title        = {The Calculus of Finite Continuability},
   year         = {2026},
-  version      = {v1.12},
+  version      = {v1.21},
   publisher    = {Zenodo},
-  doi          = {},
-  url          = {https://doi.org/}
+  doi          = {10.5281/zenodo.20041680},
+  url          = {https://doi.org/10.5281/zenodo.20041680}
 }
 ```
 
-The DOI `` is the concept DOI; it resolves to the latest version. Specific versions have their own version-DOIs (see the Zenodo record).
+The DOI `10.5281/zenodo.20041680` is the concept DOI; it resolves to the latest version. Specific versions have their own version-DOIs (see the Zenodo record).
 
 If this release includes a Technical Supplement, cite the supplement inline where the formal proof is referenced:
 
@@ -36,7 +36,7 @@ The codebase has its own Zenodo deposit — cite this if you're citing the machi
 
 **APA-style:**
 
-> Brooke, E. S. (2026). *Admissibility Physics: Unified Theorem Bank & Verification Engine*. Version 6.9. Zenodo. https://doi.org/10.5281/zenodo.18529115
+> Brooke, E. S. (2026). *Admissibility Physics: Unified Theorem Bank & Verification Engine*. Version 6.9. Zenodo. https://doi.org/10.5281/zenodo.18604548
 
 **BibTeX:**
 
@@ -47,39 +47,39 @@ The codebase has its own Zenodo deposit — cite this if you're citing the machi
   year         = {2026},
   version      = {6.9},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.18529115},
-  url          = {https://doi.org/10.5281/zenodo.18529115}
+  doi          = {10.5281/zenodo.18604548},
+  url          = {https://doi.org/10.5281/zenodo.18604548}
 }
 ```
 
-Cite a specific check function as: `check_T7B` (from `apf/gravity.py`, APF codebase v7.9, Brooke 2026).
+Cite a specific check function as: `check_T7B` (from `apf/gravity.py`, APF codebase v24.3.427, Brooke 2026).
 
 ## 3. Cite the framework (the overall APF program)
 
 For a general reference to the Admissibility Physics Framework as a whole, cite Paper 0 (the ontology paper) and the engine paper together:
 
-- Brooke, E. S. (2026). *What Physics Permits: A Constraint-First Framework for Physics*. Zenodo. https://doi.org/10.5281/zenodo.18439523
-- Brooke, E. S. (2026). *Admissibility Physics: Unified Theorem Bank & Verification Engine*. Zenodo. https://doi.org/10.5281/zenodo.18529115
+- Brooke, E. S. (2026). *What Physics Permits: A Constraint-First Framework for Physics*. Zenodo. https://doi.org/10.5281/zenodo.18605692
+- Brooke, E. S. (2026). *Admissibility Physics: Unified Theorem Bank & Verification Engine*. Zenodo. https://doi.org/10.5281/zenodo.18604548
 
 For specific framework results, cite the relevant paper from the series:
 
 | Paper | Topic | DOI |
 |---|---|---|
-| 0 | Ontology (*What Physics Permits*) | 10.5281/zenodo.18439523 |
-| 1 | Enforceability of distinction (spine) | 10.5281/zenodo.18439200 |
-| 2 | Structure and gauge uniqueness | 10.5281/zenodo.18439274 |
-| 3 | Ledgers: entropy, time, accumulated cost | 10.5281/zenodo.18439363 |
-| 4 | Constraints: field content, fermion spectrum | 10.5281/zenodo.18439397 |
-| 5 | Quantum structure (Hilbert, Born) | 10.5281/zenodo.18439433 |
-| 6 | Dynamics and geometry (spacetime, gravity) | 10.5281/zenodo.18439445 |
-| 7 | Action, internalization, the Lagrangian | 10.5281/zenodo.18439513 |
-| 13 | The minimal admissibility core | 10.5281/zenodo.18361446 |
+| 0 | Ontology (*What Physics Permits*) | 10.5281/zenodo.18605692 |
+| 1 | Enforceability of distinction (spine) | 10.5281/zenodo.18604678 |
+| 2 | Structure and gauge uniqueness | 10.5281/zenodo.18604839 |
+| 3 | Ledgers: entropy, time, accumulated cost | 10.5281/zenodo.18604844 |
+| 4 | Constraints: field content, fermion spectrum | 10.5281/zenodo.18604845 |
+| 5 | Quantum structure (Hilbert, Born) | 10.5281/zenodo.18604861 |
+| 6 | Dynamics and geometry (spacetime, gravity) | 10.5281/zenodo.18604874 |
+| 7 | Action, internalization, the Lagrangian | 10.5281/zenodo.18604875 |
+| 13 | The minimal admissibility core | 10.5281/zenodo.18614663 |
 
 ## 4. Standalone derivation papers
 
 Some specific quantitative results are published as standalone derivation papers, not part of the main spine:
 
-- Brooke, E. S. (2026). *The Weak Mixing Angle as a Capacity Equilibrium*. Zenodo. https://doi.org/10.5281/zenodo.18603208
+- Brooke, E. S. (2026). *The Weak Mixing Angle as a Capacity Equilibrium*. Zenodo. https://doi.org/10.5281/zenodo.18603209
 
 Cite these directly if your work specifically leans on their content (e.g., $\sin^2\theta_W = 3/13$ derivation).
 

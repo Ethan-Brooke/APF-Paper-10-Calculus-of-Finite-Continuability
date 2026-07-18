@@ -1,16 +1,16 @@
 {
   "schema": "apf.repo_map.v1",
-  "generated_at": "2026-05-05T06:32:18.522148+00:00",
+  "generated_at": "2026-07-18T02:24:05.769706+00:00",
   "paper": {
     "number": 10,
     "title": "The Calculus of Finite Continuability",
-    "current_version": "v1.12",
-    "zenodo_doi": "",
-    "zenodo_url": "",
+    "current_version": "v1.21",
+    "zenodo_doi": "10.5281/zenodo.20041680",
+    "zenodo_url": "https://doi.org/10.5281/zenodo.20041680",
     "github_slug": "APF-Paper-10-Calculus-of-Finite-Continuability",
     "github_url": "https://github.com/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability"
   },
-  "codebase_version": "v7.8",
+  "codebase_version": "v24.3.427",
   "corpus": [
     {
       "number": 0,
@@ -114,7 +114,7 @@
     {
       "number": "engine",
       "title": "Admissibility Physics: Unified Theorem Bank & Verification Engine",
-      "current_version": "v7.8",
+      "current_version": "v24.3.427",
       "zenodo_doi": "10.5281/zenodo.18529115",
       "zenodo_url": "https://doi.org/10.5281/zenodo.18529115",
       "github_slug": "APF-Codebase",
@@ -127,7 +127,7 @@
     "ai": "START_HERE.md",
     "human": "README.md",
     "verification": "run_checks.py",
-    "manuscript": "Paper_10_Calculus_of_Finite_Continuability_v1.12.pdf"
+    "manuscript": "Paper_10_Calculus_of_Finite_Continuability_v1.21.pdf"
   },
   "read_order_for_ai": [
     {
@@ -319,6 +319,13 @@
         "ai_context/theorems.json"
       ]
     },
+    "ai_context/repo_map.json": {
+      "purpose": "This file: machine-readable map of the repo (purpose/audience/read-order per file, edges, corpus inventory)",
+      "audience": "AI",
+      "read_order": null,
+      "tier": "data",
+      "references": []
+    },
     "run_checks.py": {
       "purpose": "Verification entry point: executes the bundled checks and prints pass/fail summary",
       "audience": "code",
@@ -406,15 +413,15 @@
       "tier": "code",
       "references": []
     },
-    "Paper_10_Calculus_of_Finite_Continuability_v1.12.pdf": {
+    "Paper_10_Calculus_of_Finite_Continuability_v1.21.pdf": {
       "purpose": "Main paper compiled PDF (Paper 10)",
       "audience": "human",
       "read_order": null,
       "tier": "manuscript",
       "references": []
     },
-    "Paper_10_Calculus_of_Finite_Continuability_v1.12.tex": {
-      "purpose": "Main paper LaTeX source (Paper 10 v1.12)",
+    "Paper_10_Calculus_of_Finite_Continuability_v1.21.tex": {
+      "purpose": "Main paper LaTeX source (Paper 10 v1.21)",
       "audience": "human",
       "read_order": null,
       "tier": "manuscript",
@@ -603,6 +610,76 @@
       "read_order": null,
       "tier": "context",
       "references": []
+    },
+    "derivation_graph.json": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "interactive_dag.html": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "MANIFEST.custom": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "NEXT_STEPS.md": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "repo_map.json": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "theorems.json": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "ai_context/ARGUMENT_FLOW.md": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "ai_context/CLAIMS_LEDGER.md": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "ai_context/DO_NOT_CLAIM.md": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
+    },
+    "ai_context/LOCAL_VS_IMPORTED.md": {
+      "purpose": "(uncategorized; see file directly)",
+      "audience": "unknown",
+      "read_order": null,
+      "tier": "other",
+      "references": []
     }
   },
   "edges": [
@@ -762,13 +839,13 @@
       "kind": "references"
     },
     {
-      "from": "Paper_10_Calculus_of_Finite_Continuability_v1.12.tex",
+      "from": "Paper_10_Calculus_of_Finite_Continuability_v1.21.tex",
       "to": "apf/core.py",
       "kind": "references"
     }
   ],
   "metadata": {
-    "total_files": 54,
+    "total_files": 65,
     "total_edges": 32,
     "bundled_checks": 0,
     "corpus_size": 10

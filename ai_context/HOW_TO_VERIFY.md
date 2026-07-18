@@ -57,11 +57,11 @@ A check that passes means the witness survived every invariant. The witness is t
 
 ## Cross-check against the manuscript
 
-Every `\coderef{check_X}{module.py}` in the paper source (`Paper_10_Calculus_of_Finite_Continuability_v1.12.tex`) points to a specific check function. To verify the paper's claim at a particular point:
+Every `\coderef{check_X}{module.py}` in the paper source (`Paper_10_Calculus_of_Finite_Continuability_v1.21.tex`) points to a specific check function. To verify the paper's claim at a particular point:
 
 ```bash
 # find all coderefs in the paper
-grep -o '\\coderef{[^}]*}{[^}]*}' Paper_10_Calculus_of_Finite_Continuability_v1.12.tex
+grep -o '\\coderef{[^}]*}{[^}]*}' Paper_10_Calculus_of_Finite_Continuability_v1.21.tex
 
 # for each coderef, run it:
 python -c "from apf import core; print(core.check_T7B().get('key_result'))"

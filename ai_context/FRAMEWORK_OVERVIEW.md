@@ -82,7 +82,7 @@ A1 (finite capacity)
 
 Horizontal lines above are logical necessity ("forces"); downward branches are dependent derivations.
 
-## The 25 bank modules (v7.9)
+## The 25 bank modules (v24.3.427)
 
 | Module | Role |
 |---|---|
@@ -108,7 +108,7 @@ Horizontal lines above are logical necessity ("forces"); downward branches are d
 
 **Plus `apf/standalone/`**: four additional `verify_all`-tracked files (L_Cauchy_uniqueness, L_CKM_resolution_limit, phase1_seesaw_closure, phase5_theorem_R_audit) that are not bank-registered but are run by `verify_all.py`.
 
-Totals: **440 bank-registered theorems · 457 `verify_all` checks · 48 quantitative predictions · 0 free parameters** (canonical Phase-18 baseline; see Paper~0 v4.4 §`sec:codebase`).
+Totals: **3918 bank-registered theorems · 3918 `verify_all` checks · 48 quantitative predictions · 0 free parameters** (canonical Phase-18 baseline; see Paper~0 v4.4 §`sec:codebase`).
 
 ## Quantitative predictions — the headline results
 

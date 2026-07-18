@@ -2,7 +2,7 @@
 
 ### Interactive Mathematical Appendix to Paper 10 of the Admissibility Physics Framework
 
-[![DOI](https://zenodo.org/badge/DOI/.svg)](https://doi.org/) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability/blob/main/APF_Reviewer_Walkthrough.ipynb)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20041680.svg)](https://doi.org/10.5281/zenodo.20041680) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability/blob/main/APF_Reviewer_Walkthrough.ipynb)
 
 [Interactive Derivation DAG](https://ethan-brooke.github.io/APF-Paper-10-Calculus-of-Finite-Continuability/) · [Theorem Map](#theorem-mapping-table) · [Reviewers' Guide](REVIEWERS_GUIDE.md) · [The full APF corpus](#the-full-apf-corpus) · [Citation](#citation)
 
@@ -16,7 +16,7 @@ Continuation-first re-foundation of APF.  The primitive judgment Γ ⊨_C D ⇝ 
 
 This repository is the executable audit layer for the symbolic proofs in this paper.  Every theorem in the manuscript traces to a named `check_*` function that exercises the claim at concrete representative values; the symbolic proof itself lives in the manuscript and its Technical Supplement.  Numerical agreement at concrete values is a sanity check, not a proof — see Paper~0 v4.4 §`sec:codebase` for the canonical trust-control discipline.
 
-The codebase is a faithful subset of the canonical APF codebase v24.3.249 (3,745 bank-registered theorems across 422 modules). Each theorem in the manuscript traces to a named `check_*` function in `apf/core.py`, which can be called independently and returns a structured result.
+The codebase is a faithful subset of the canonical APF codebase v24.3.427 (frozen 2026-05-04; 3918 verify_all checks, 3918 bank-registered theorems across 25 modules + `apf/standalone/`; canonical Phase-18 baseline). Each theorem in the manuscript traces to a named `check_*` function in `apf/core.py`, which can be called independently and returns a structured result.
 
 The codebase requires Python 3.8+ and NumPy / SciPy (some numerical lemmas use them; see `pyproject.toml`).
 
@@ -106,7 +106,7 @@ The [interactive DAG](https://ethan-brooke.github.io/APF-Paper-10-Calculus-of-Fi
 ├── run_checks.py                          ← convenience entry point
 ├── pyproject.toml                         ← package metadata
 ├── zenodo.json                            ← archival metadata
-├── Paper_10_Calculus_of_Finite_Continuability_v1.12.tex                ← the paper
+├── Paper_10_Calculus_of_Finite_Continuability_v1.21.tex                ← the paper
 
 └── LICENSE                                ← MIT
 ```
@@ -117,7 +117,7 @@ The [interactive DAG](https://ethan-brooke.github.io/APF-Paper-10-Calculus-of-Fi
 
 **Derived:** (see Theorem mapping table above)
 
-**Not derived here:** Specific results outside this paper's scope live in companion papers — see the corpus table below for the full corpus (Papers 0-42).
+**Not derived here:** Specific results outside this paper's scope live in companion papers — see the corpus table below for the full 9-paper series.
 
 ---
 
@@ -128,7 +128,7 @@ The [interactive DAG](https://ethan-brooke.github.io/APF-Paper-10-Calculus-of-Fi
   title   = {The Calculus of Finite Continuability},
   author  = {Brooke, Ethan},
   year    = {2026},
-  doi     = {},
+  doi     = {10.5281/zenodo.20041680},
   url     = {https://github.com/Ethan-Brooke/APF-Paper-10-Calculus-of-Finite-Continuability}
 }
 ```

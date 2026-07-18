@@ -1,0 +1,1126 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=1in}
+\setlength{\emergencystretch}{4em}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,tabularx,array,longtable}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[nameinlink,capitalize]{cleveref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black,
+  pdfauthor={E. S. Brooke},
+  pdftitle={The Calculus of Finite Continuability}
+}
+
+\setlist[itemize]{leftmargin=1.4em, topsep=3pt, itemsep=2pt}
+\setlist[enumerate]{leftmargin=1.6em, topsep=3pt, itemsep=2pt}
+\renewcommand{\arraystretch}{1.15}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{principle}[theorem]{Principle}
+\newtheorem{gate}[theorem]{Gate}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{warning}[theorem]{Boundary}
+\newtheorem{audit}[theorem]{Audit Note}
+
+\newcommand{\G}{\Gamma}
+\newcommand{\Ccap}{C}
+\newcommand{\entails}{\Vdash}
+\newcommand{\goes}{\rightsquigarrow}
+\newcommand{\Cont}{\operatorname{Cont}}
+\newcommand{\Cost}{\kappa}
+\newcommand{\floor}{\varepsilon^{\!*}_{\G}}
+\newcommand{\eps}{\varepsilon^{\!*}}
+\newcommand{\BCD}{\mathsf{BCD}}
+\newcommand{\LoF}{\mathsf{LoF}}
+\newcommand{\Alg}{\mathfrak A}
+\newcommand{\Ledger}{\mathcal L}
+\newcommand{\Sep}{\mathsf{Sep}}
+\newcommand{\IJC}{\mathsf{IJC}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Erec}{E_{\rm rec}}
+\newcommand{\Held}{\mathsf{Held}}
+\newcommand{\Rec}{\mathsf{Rec}}
+\newcommand{\Vh}{V_H}
+\newcommand{\Th}{\mathfrak T_H}
+\newcommand{\Ah}{\mathcal A_H}
+\newcommand{\phide}{\phi_{D\to E}}
+\newcommand{\Req}{\phi_{\rm eq}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\HH}{\mathbb H}
+\newcommand{\OO}{\mathbb O}
+\newcommand{\Status}[1]{\textsf{#1}}
+
+\title{The Calculus of Finite Continuability\\
+\large A Continuation-First Language for APF, Held Profiles, Recruitment, Quantum Representation, and Geometry}
+\author{E. S. Brooke}
+\date{Version 1.21 -- Finite operational basis (conditional joint-extension form) and compatible minimum joint realization}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Spencer--Brown's \emph{Laws of Form} begins with the act of drawing a distinction.  The Admissibility Physics Framework begins one layer lower: a distinction is physical only through the admissible continuations it can sustain.  The primitive judgment is
+\[
+        \G\entails_C D\goes E,
+\]
+read: in context \(\G\), distinction-expression \(D\) can continue as \(E\) using enforcement capacity no greater than \(C\).  Enforceability is identity-class continuation, cost is the least burden required for a fixed continuation, and the Budgeted Calculus of Distinctions is the discrete positive-floor specialization.
+
+This revision makes explicit the pre-record object carried through the mature APF corpus: the \emph{structurally aligned held continuation profile}.  The held profile contains complete contextual continuation identity together with every consequential distinction retained before irreversible commitment.  The committed record is a different object, obtained only by a record-forming class transition.  The universal held continuation lift is then the operational quotient of local held-profile germs.  In smooth first-order regimes it is represented by a first jet; for one elementary signed comparison its completed local carrier has real rank two.  This real carrier is only the language-layer handoff.  Paper~5 is the source of record for the later coherent-loop, ledger-adjoint, local \(SO(2)\cong S^1\), monodromy-free natural-orientation, complex-enrichment, Born, and complete-process theorems.
+
+A finite-operational-basis theorem is proved upstream of geometry in a conditional general form.  Operational distinction classes are ordered by lossless recoverability, but individual closed-world availability does not imply joint extendability.  On a closed interface carrying a downward-closed joint-realizability system, attained no-excess minimum joint cost, closure invariance across minima, finite joint extension or amalgamation, a positive marginal extension floor, and finite capacity, each genuinely new jointly realizable class consumes a strict capacity increment.  The construction therefore terminates with a finite complete operational-class basis and one compatible minimum joint carrier.  APF-Engine certifies this mechanism exactly on the finite atom-cover instantiation.  Paper~9 may import the conditional operational-basis theorem, but it retains a separate faithful-realization gate before the operational basis becomes a physical precision-channel basis.
+
+The same grammar supports recruitment, records, entropy, action, gauge, and geometry.  Recruitment profiles describe where substrate carries a continuation.  Fields are equilibrium recruitment profiles.  Geometry is the calibrated response structure of carrying comparison continuations, with Paper~9 the source of record for response-null quotienting, ledger calibration, substrate anchoring, and the separation of positive cost geometry from signed causal geometry.  The paper is therefore a language and handoff theorem, not a duplicate derivation of either quantum theory or gravity.
+\end{abstract}
+
+\begin{center}
+\fbox{\begin{minipage}{0.86\textwidth}
+\centering
+\vspace{3pt}
+\textbf{Governing sentence.}\\[3pt]
+Physics is the study of which distinctions can continue, which complete profile is held before record formation, how that continuation is carried by substrate, and what finite burden it requires.\\[3pt]
+\[
+\begin{aligned}
+        \G\entails_C D\goes E
+        &\Longrightarrow
+        \phi_{D\to E}(x)\\
+        &\Longrightarrow
+        \Erec[\phi]\\
+        &\Longrightarrow
+        \text{held profile / recruitment / record / representation.}
+\end{aligned}
+\]
+\vspace{3pt}
+\end{minipage}}
+\end{center}
+
+\tableofcontents
+
+\section{Orientation: why held continuation comes first}
+
+The original costly-mark formulation asked what happens when the Spencer--Brown mark is no longer free.  That remains a useful public bridge.  But it is not the most primitive APF statement.  A mark is already a stabilized boundary.  Before asking what a mark costs, APF asks what makes a distinction physical at all.
+
+The answer is continuability.  A candidate distinction is physical only if it can be carried into admissible future, comparative, record, or interaction contexts without collapsing into indistinguishability.  This is why the primitive is not first a state, a field, a particle, a truth-value, or even an enforced distinction.  The primitive is a continuation judgment:
+\[
+        \G\entails_C D\goes E.
+\]
+
+This moves the framework from a static language of maintained facts to a process-neutral language of possible continuation.  It also separates two notions that are often conflated:
+\[
+\boxed{\begin{gathered}\text{Continuation defines admissible possibility.}\\ \text{Dynamics selects or weights admissible continuations.}\end{gathered}}
+\]
+
+That separation is the central simplification.  Once it is made, enforcement, cost, records, time, action, quantum order, geometry, fields, and gauge all become specializations of the same question:
+
+\begin{quote}
+What continuation is preserved, how is it carried, and what does it cost?
+\end{quote}
+
+\subsection*{On operational language}
+
+The continuation calculus is the language layer of Admissibility Physics, and at the language layer the framework commits explicitly to the eternalist position.  The primitive judgment $\G\entails_C D\goes E$ has two readings, both intended:
+\begin{itemize}
+\item \emph{Operational reading.}\quad ``In context $\G$, distinction-expression $D$ can continue as $E$ using enforcement capacity at most $C$.''
+\item \emph{Structural reading.}\quad ``$D$ and $E$ stand in this judgment relation in admissibility space at the context $\G$; the cost-budget $C$ is the structural commitment that relation carries.  The operational reading is the local-reading shorthand for what a finite observer with a thermodynamic gradient sees.''
+\end{itemize}
+The two readings refer to the same fact.  The structural reading is what the calculus fundamentally commits to; the operational reading is what that commitment looks like under temporal slicing.  Time itself is derived in the broader corpus: Paper~3 derives the arrow of time as the loss of global admissible coordination, and Paper~6 derives the metric and dimensionality of spacetime.  The continuation primitive must therefore not presuppose temporal individuation: $\G\entails_C D\goes E$ is a static algebraic relation on continuation profiles, and the verbs ``continue,'' ``preserve,'' ``carry,'' and ``recruit'' that appear in the prose throughout this paper are the local readings of those static relations.
+
+A reader who wants the structural reading can take every ``continues,'' ``preserves,'' and ``recruits'' as shorthand for the local reading of the corresponding admissibility-space judgment.  The technical apparatus developed below --- continuation profiles, recruitment cost functional $\Erec$, the held-profile handoff to the Paper~5 Hilbert--Born representation chain, the theorem-tree status discipline --- is already structural; only the pedagogical wrapping is temporal.
+
+This convention matches Paper~0's ``A note on language'' in the Prelude \S1 and Paper~0's Descriptive Reading chapter on temporal language and the eternalist commitment, and Paper~1 supplement v8.24's ``On the use of operational language'' note in \S1.  The framework is in this respect in the company of block-universe readings of general relativity, the Wheeler--DeWitt timeless quantum gravity programme, and the Page--Wootters mechanism for time emergence in entangled quantum systems --- structural at the foundation, with time as a derived feature of how the structure is read locally.
+
+\section{The primitive continuation judgment}
+
+\begin{definition}[Context and distinction-expression]
+A \emph{context} \(\G\) is a physical regime, interface, substrate, apparatus, or domain in which candidate distinctions may or may not be admissibly continued.  A \emph{distinction-expression} \(D\) is a formal expression designating a candidate separation, record, boundary, outcome, branch, charge label, comparison, or continuation-relevant difference.
+\end{definition}
+
+\begin{definition}[Primitive continuation judgment]
+The primitive APF judgment is
+\[
+        \G\entails_C D\goes E.
+\]
+It means that, in context \(\G\), distinction-expression \(D\) can continue as distinction-expression \(E\) using enforcement capacity no greater than \(C\).
+\end{definition}
+
+The notation is intentionally prior to dynamics.  It does not say that \(D\) will become \(E\), or that the universe chooses \(E\).  It says only that \(E\) is an admissible continuation of \(D\) under the capacity bound.  A dynamics, probability law, variational rule, or stochastic process is an additional representation or selection rule on the admissible continuation relation.
+
+\begin{principle}[Continuation before dynamics]
+The relation \(\G\entails_C D\goes E\) specifies admissible possibility.  A dynamics is any further rule that selects, weights, samples, coarse-grains, or extremizes admissible continuation words.
+\end{principle}
+
+\begin{definition}[Continuation profile]
+The continuation profile of a distinction-expression \(D\) in context \(\G\) is
+\[
+        \Cont_\G(D):=\{E:\exists C<\infty\text{ with }\G\entails_C D\goes E\}.
+\]
+Two expressions are continuation-equivalent in \(\G\), written \(D\sim_\G D'\), when they have the same tested continuation behavior at the relevant resolution.  The equivalence class is denoted \([D]_\G\).
+\end{definition}
+
+\begin{principle}[Meaning by continuation]
+A distinction-expression has physical meaning only through its admissible continuation profile.  Two expressions that cannot be separated by any admissible tested continuation are physically equivalent in that context.
+\end{principle}
+
+
+\section{The structurally aligned held continuation profile}\label{sec:held-profile}
+
+The continuation profile defined in the preceding section must be separated from its later record.  A record is already a committed, protected, and generally coarsened object.  Before commitment the framework requires a complete carrier of the distinctions that remain consequential to future continuation.  Papers~1, 14, and 37 supply the contextual-identity, physical-occupancy, and held-to-record parts of this distinction; the present section records their common language object.
+
+\begin{definition}[Structurally aligned held continuation profile]
+A \emph{structurally aligned held continuation profile} is a tuple
+\[
+        H=\bigl([D]_{\rm cont},\,\mathcal D_H,\,\mathcal G_H,\,\phi_H\bigr)
+\]
+consisting of: (i) the complete contextual continuation-identity class \([D]_{\rm cont}\); (ii) the consequential distinctions \(\mathcal D_H\) retained before irreversible commitment; (iii) the admitted coherent local continuation germs \(\mathcal G_H\); and, when spatial or modal realization is relevant, (iv) the recruitment profile \(\phi_H\) that carries the continuation burden.  Two tuples represent the same held profile exactly when no admissible pre-composition, post-composition, coherent insertion, or completed readout distinguishes them.
+\end{definition}
+
+\begin{definition}[Held and record categories]
+Write \(\Held\) for the typed category of structurally aligned held continuation profiles and coherent identity-preserving continuations.  Write \(\Rec\) for the category of committed records and record-preserving continuations.  A record-forming class transition is a generally nonfaithful map
+\[
+        \mathsf Q:\Held\longrightarrow\Rec
+\]
+that retains committed tested content while discarding held distinctions that are record-null, including a globally common orientation when only relative orientation has consequences.
+\end{definition}
+
+\begin{principle}[Held/record separation]
+A consequential distinction may not disappear between \(\Held\) and \(\Rec\) without either being represented in the record, being paid as boundary or overwrite debt, or being proved quotient-null.  Decoherence may suppress accessible cross-profile continuation without by itself producing a committed record.  Record formation is the irreversible class transition that books the tested distinction.
+\end{principle}
+
+\begin{theorem}[Held-profile completeness handoff]\label{thm:held-completeness}
+Assume Paper~1's strong contextual continuation identity and closed-world completeness.  Then every pre-record description adequate for all admissible future contexts factors through a unique held continuation profile up to contextual equivalence.  Any omitted consequential coordinate is hidden continuation debt; any retained coordinate with no continuation witness is quotient-null.
+\end{theorem}
+
+\begin{proof}
+Take the equivalence relation defined by equality under all admissible pre- and post-compositions and completed tests.  The quotient is complete by construction.  A proposed pre-record carrier that identifies two contextually distinguishable representatives loses consequential information; a proposed enlargement that separates no tested continuation adds no physical content.  This is the global held-profile form of the same quotient argument used locally in \cref{thm:minimal-continuation-lift}.
+\end{proof}
+
+\begin{audit}[Physical input and mathematical output]
+The physical input is the occupied structural alignment and its continuation trajectory.  Whether a segment lies in the coherent held component or crosses into a record-bearing class is read from that trajectory.  The quotient, completeness, and type separation are mathematical consequences of the contextual-identity rules; they do not assume Hilbert space, amplitudes, probabilities, or observables.
+\end{audit}
+
+\section{The universal held continuation lift}\label{sec:local-continuation-closure}
+
+The global continuation profile defined in the preceding section distinguishes expressions by all admissible tested contexts.  A separate question is local: what is the least instantaneous object that represents every consequential difference between nearby continuation germs?  The answer is first given without coordinates or differential geometry.  Only afterward, in a smooth first-order regime, is the universal object represented by an ordinary first-jet bundle.
+
+\begin{definition}[Local continuation germ]
+Fix a structurally aligned held profile $H$ and a local comparison coordinate $q$ inside it.  Let $\mathsf G_q$ denote the set of admissible local continuation germs issuing from $q$.  Two germs $\gamma_1,\gamma_2\in\mathsf G_q$ are locally operationally equivalent, written
+\[
+        \gamma_1\sim_q\gamma_2,
+\]
+when every sufficiently short admissible pre-insertion, post-insertion, and completed readout defined on both germs gives the same continuation profile.
+\end{definition}
+
+\begin{definition}[Complete local continuation carrier]
+A \emph{local continuation carrier} at $q$ is a pair $(L_q,\eta_q)$ consisting of a finite-rank represented object $L_q$ and a map
+\[
+        \eta_q:\mathsf G_q\longrightarrow L_q.
+\]
+It is \emph{complete} when
+\[
+        \eta_q(\gamma_1)=\eta_q(\gamma_2)
+        \quad\Longleftrightarrow\quad
+        \gamma_1\sim_q\gamma_2.
+\]
+Thus a complete carrier loses no consequential local history and stores no distinction that is absent from the local continuation quotient.
+\end{definition}
+
+\begin{definition}[Universal minimal continuation lift]
+The \emph{universal held continuation lift} is the quotient
+\[
+        \mathsf L_q:=\mathsf G_q/\!\sim_q,
+        \qquad
+        \lambda_q:\mathsf G_q\to\mathsf L_q,
+\]
+with the quotient topology and the represented linear structure generated by the finite separating continuation profiles.  A family $q\mapsto\mathsf L_q$ is denoted $\mathsf LQ$.
+\end{definition}
+
+\begin{theorem}[Universal Held Continuation Lift]\label{thm:minimal-continuation-lift}
+Assume finite local operational rank and closed-world continuation identity.  Then $(\mathsf L_q,\lambda_q)$ is complete and universal: for every complete local carrier $(L_q,\eta_q)$ there exists a unique injective representation map
+\[
+        \iota_q:\mathsf L_q\longrightarrow L_q
+\]
+onto the continuation-relevant image of $\eta_q$ such that
+\[
+        \eta_q=\iota_q\circ\lambda_q.
+\]
+Consequently every complete carrier contains a faithful copy of $\mathsf L_q$, and every extra represented coordinate outside that copy is either independently witnessed or continuation-null.  Under the no-waste/A2 rule, the minimum complete carrier is therefore $\mathsf L_q$ itself.
+\end{theorem}
+
+\begin{proof}
+The quotient map $\lambda_q$ identifies exactly the locally operationally equivalent germs, so it is complete by construction.  Let $(L_q,\eta_q)$ be any other complete carrier.  Define
+\[
+        \iota_q([\gamma]):=\eta_q(\gamma).
+\]
+Completeness makes this well defined: equivalent germs have equal images.  It is injective because equality of images in a complete carrier implies local operational equivalence.  The factorization $\eta_q=\iota_q\circ\lambda_q$ is immediate, and uniqueness follows because every class in $\mathsf L_q$ has a representative germ.  Finite local operational rank supplies the finite represented structure.  Any additional coordinate in $L_q$ that changes no completed continuation profile lies outside the continuation-relevant image and is quotient-null; retaining it at positive cost violates no-waste/A2.  If it does change a profile, it is independently witnessed and belongs to the true quotient rather than to an optional enlargement.
+\end{proof}
+
+\begin{remark}[No new primitive]
+The lift is not postulated.  It is the operational quotient already demanded by continuation identity, restricted to local germs.  Its universal property says only that every adequate instantaneous description must represent that quotient.  Differential-geometric language enters only when a regime theorem identifies the quotient with familiar local data.
+\end{remark}
+
+\begin{definition}[Operationally first-order smooth regime]\label{def:first-order-regime}
+A local continuation sector is \emph{operationally first order and smooth} when:
+\begin{enumerate}[label=(F\arabic*)]
+\item admitted germs admit a value $q$ and tangent $v$ at the joining point;
+\item sufficiently short fragments compose whenever their completed endpoint lifts agree;
+\item two admitted germs with the same $(q,v)$ are locally operationally equivalent;
+\item whenever two germs have different immediate continuation profiles or a later non-null recombination witness, their completed local lifts are distinct.
+\end{enumerate}
+No claim is made that all APF regimes satisfy these conditions.  Independently witnessed acceleration, memory, or environmental data enlarge the universal lift.
+\end{definition}
+
+\begin{theorem}[First-jet representation theorem]\label{thm:first-jet-representation}
+In an operationally first-order smooth regime, the universal held continuation lift is canonically represented by the first jet:
+\[
+        \mathsf LQ\cong J^1Q,
+        \qquad
+        [\gamma]_q\longmapsto \bigl(\gamma(0),\dot\gamma(0)\bigr).
+\]
+The map is an isomorphism onto the admitted first-jet locus.  If every $(q,v)$ in the regime is locally realizable, that locus is the full bundle $J^1Q$.
+\end{theorem}
+
+\begin{proof}
+Condition (F3) makes the displayed map well defined and injective on local operational classes: equal first jets imply equivalent germs.  Condition (F4) gives the converse separation required for completeness: any consequential difference must appear in the completed lift.  The image is precisely the admitted first-jet locus, and local realizability makes it exhaustive.  The universal property of \cref{thm:minimal-continuation-lift} then identifies this representation with the minimum complete carrier.
+\end{proof}
+
+\begin{corollary}[Elementary bipolar comparison lift]\label{cor:bipolar-first-jet}
+Let an elementary signed comparison have ordered poles $p_+,p_-$ and quotient line
+\[
+        Q_A:=\operatorname{span}_{\R}\{p_+,p_-\}/\R(p_++p_-)
+        \cong\R.
+\]
+Let $U\subset Q_A$ be a sufficiently small unsaturated neighborhood of the neutral comparison value $0$.  In the operationally first-order smooth regime, the universal lift over $U$ is represented by
+\[
+        \mathsf L(U)\cong J^1(U)\cong U\times\R.
+\]
+The linearized completed comparison carrier at the neutral lifted state is therefore
+\[
+        W_A:=T_{(0,0)}\mathsf L(U)
+        \cong T_0Q_A\oplus T_0Q_A
+        \cong\R^2.
+\]
+The first summand is an infinitesimal signed-comparison displacement and the second is an infinitesimal oriented-continuation displacement.  Pole exchange together with path reversal acts by
+\[
+        (\delta q,\delta v)\longmapsto(-\delta q,-\delta v)
+        =-\Id_{W_A}(\delta q,\delta v).
+\]
+\end{corollary}
+
+\begin{proof}
+The fiber of $J^1Q_A$ over a fixed value is one-dimensional; it stores only the tangent.  The required rank-two object is instead the tangent space of the \emph{total completed local lift} at the neutral lifted state.  Since the signed quotient has rank one, the first-jet representation over a neighborhood has one value coordinate and one tangent coordinate, and its linearization is
+$T_0Q_A\oplus T_0Q_A$.  Both directions are continuation-relevant in an occupied zipper sector: changing the first changes the signed comparison, while changing the second changes the local continuation germ.  Pole exchange reverses the first displacement and germ reversal reverses the second.
+\end{proof}
+
+\begin{theorem}[Functorial linearized lift]\label{thm:functorial-linearized-lift}
+Let $f:Q_A\to Q_B$ be an admitted smooth local comparison morphism with $f(0)=0$.  The universal continuation quotient induces its first-jet lift
+\[
+        J^1f(q,v)=\bigl(f(q),Df_qv\bigr).
+\]
+At the neutral lifted state, the represented linear map is
+\[
+        W(f):=D(J^1f)_{(0,0)}
+        =Df_0\oplus Df_0.
+\]
+For one-dimensional elementary comparison lines, $Df_0=a_f\in\R$, so
+\[
+        W(f)=a_f\,\Id_{W_A}.
+\]
+Consequently the standard oriented-plane map
+\[
+        J_{
+m std}(\delta q,\delta v):=(-\delta v,\delta q)
+\]
+commutes with these coordinate lifts:
+\[
+        W(f)J_{
+m std}=J_{
+m std}W(f).
+\]
+This is a coordinate representation lemma only.  It does not establish that physical coherent loops realize \(SO(2)\), that one orientation is intrinsic, or that the family is globally path independent.
+\end{theorem}
+
+\begin{proof}
+Local operational equivalence is a two-sided congruence, so postcomposition by $f$ sends equivalent germs to equivalent germs and descends to the universal quotient.  In the first-order smooth representation this descended map is the ordinary first-jet lift.  Differentiating at $(0,0)$ gives the direct sum of the same derivative on value and tangent perturbations.  In one real dimension that derivative is scalar multiplication; scalar multiplication commutes with the standard oriented-plane map.  No physical circle action, complex scalar, or phase rule is assumed.
+\end{proof}
+
+\begin{audit}[Failure modes and scope]
+\begin{itemize}
+\item If local direction has no continuation witness, the universal quotient may remain rank one; no comparison plane is licensed.
+\item If equal first jets have different futures, the universal lift is larger than $J^1Q$ and must retain the independently witnessed higher-order or memory data.
+\item At saturation, the admitted germ space may collapse and the smooth first-order representation exits.
+\item The theorem supplies a universal real continuation carrier and its first-order representation.  It does not by itself assert circle holonomy, a central complex structure, Born probabilities, or complete positivity.
+\end{itemize}
+\end{audit}
+
+
+\section{Enforcement, cost, and BCD as special cases}
+
+\begin{definition}[Enforceability as identity-class continuation]
+The shorthand enforceability judgment is defined by
+\[
+        \G\entails_C D
+        \quad\Longleftrightarrow\quad
+        \exists E\in[D]_\G\text{ such that }\G\entails_C D\goes E.
+\]
+Thus enforcement is not primitive.  It is continuation that preserves the physical identity-class of the distinction.
+\end{definition}
+
+\begin{definition}[Continuation cost]
+The cost of a continuation is
+\[
+        \Cost_\G(D\goes E)
+        :=
+        \inf\{C:\G\entails_C D\goes E\}.
+\]
+The maintenance cost of a distinction is the least cost of identity-class continuation:
+\[
+        \Cost_\G(D)
+        :=
+        \inf_{E\in[D]_\G}\Cost_\G(D\goes E).
+\]
+\end{definition}
+
+\begin{assumption}[Capacity monotonicity]\label{ass:cap-mono}
+If \(\G\entails_C D\goes E\) and \(C'\ge C\), then \(\G\entails_{C'} D\goes E\).
+\end{assumption}
+
+\begin{definition}[Finite physical regime]
+A context \(\G\) is in the finite physical regime when it has finite available capacity \(C_\G<\infty\) and a positive marginal distinction floor
+\[
+        \floor:=\inf\Big\{\Cost_\G(S\otimes D)-\Cost_\G(S):S\text{ admissible in }\G,\ D\text{ tested in }\G,\ S\otimes D\text{ admissible}\Big\}>0.
+\]
+The floor is the least marginal cost of adding a tested distinction to any admissible context.  This is the right invariant for capacity counting: shared substrate commitments are paid by the carrying context $S$, not by each distinction separately, so $\floor$ measures only the genuinely-new burden of each additional distinction.
+\end{definition}
+
+\begin{theorem}[Finite continuability bound]
+In a finite physical regime, any jointly maintained family of tested distinctions has cardinality at most
+\[
+        N_\G=\left\lfloor \frac{C_\G}{\floor}\right\rfloor .
+\]
+\end{theorem}
+
+\begin{proof}
+Build the family $D_1,\ldots,D_k$ one distinction at a time.  Let $S_0$ be the empty context with $\Cost_\G(S_0)=0$, and set $S_i:=D_1\otimes\cdots\otimes D_i$ for $i=1,\ldots,k$.  Each step $S_{i-1}\to S_i = S_{i-1}\otimes D_i$ pays marginal cost
+\[
+        \Cost_\G(S_i)-\Cost_\G(S_{i-1})\ge \floor
+\]
+by definition of the marginal distinction floor.  Telescoping over $i$ gives $\Cost_\G(S_k)\ge k\floor$.  Admissibility requires $\Cost_\G(S_k)\le C_\G$, so $k\floor\le C_\G$.  Since $k$ is an integer, $k\le\lfloor C_\G/\floor\rfloor$.
+\end{proof}
+
+\begin{remark}[Why the marginal floor]
+An earlier draft of this section used the in-isolation floor $\inf\{\Cost_\G(D):D\text{ tested in }\G\}$.  That definition makes the bound conditional on the joint surplus $\Delta_\G$ being non-negative: when many distinctions share a structural commitment --- a broken vacuum, a confined-phase substrate, a topological infrastructure --- the in-isolation costs each include the shared piece, while the joint cost pays it once, giving negative surplus and breaking the bound.  The marginal floor sidesteps this: shared substrate is paid by the carrying context $S$, and only the genuinely-new burden of each additional distinction enters the count.  The two floors coincide when the substrate has no shared structural commitments, so all results phrased in terms of the in-isolation floor for the discrete BCD specialization carry over verbatim.  In physical regimes with broken symmetry or confinement, the marginal floor is the right invariant for capacity counting: at the Standard-Model interface the $C_{\rm total}=61$ count is a count of marginal channel-distinctions on top of the broken-vacuum and confined-phase substrate, not in-isolation costs against an unbroken vacuum.
+\end{remark}
+
+\begin{corollary}[Budgeted Calculus of Distinctions]
+When the tested identity-class continuations are represented by atomic marks with uniform positive floor \(\eps\), and joint continuation has surplus
+\[
+        \Cost_\G(D\otimes E)
+        =
+        \Cost_\G(D)+\Cost_\G(E)+\Delta_\G(D,E),
+        \qquad \Delta_\G(D,E)\ge0,
+\]
+the Budgeted Calculus of Distinctions is recovered as the discrete specialization of finite continuability.  The Spencer--Brown mark is the free-mark limit of this specialization.
+\end{corollary}
+
+\begin{remark}[The public slogan and the formal slogan]
+The public-facing BCD slogan remains: ``the mark costs \(\eps\).''  The formal APF slogan is deeper: a mark is a distinction that can continue as itself, and such continuation has finite cost.
+\end{remark}
+
+\subsection{PLEC decomposition and partial reductions}\label{sec:plec-recovery}
+
+The Principle of Least Enforcement Cost names four constitutive features at the foundation of the broader APF programme: \textbf{A1} (capacity bound), \textbf{MD} (positive cost floor), \textbf{A2} ($\arg\min$ selection), and \textbf{BW} (cost-spectrum non-degeneracy).  Earlier corpus work treats these as four separate structural commitments.  In the continuation calculus they decompose more carefully: A1 and MD's \emph{value} are the two halves of the finite-physical-regime hypothesis; the no-excess realization content often associated with A2 is derived for a fixed continuation; global selection among distinct outcomes remains a dynamics question; and BW is recovered as marginal-floor cost-spectrum grading.  This subsection records that partial compression without upgrading fixed-realization minimality into universal outcome selection.
+
+\paragraph{A1 (capacity bound) as regime hypothesis.}
+A1 says: at every causally connected region, total enforcement cost is finite.  In continuation language, this is half of the finite-physical-regime hypothesis: $C_\G < \infty$.  The continuation calculus as a formal system is well-defined for arbitrary $C$, including $C = \infty$; A1 is the regime restriction that picks out the contexts where the calculus has finite physical content.  A1 is therefore named, not derived: it is the structural commitment that physical regions have finite capacity.
+
+\paragraph{MD (positive cost floor) as regime hypothesis + derived tested/gauge cleavage.}
+MD says: every nonvoid tested distinction has positive minimum cost, $\Cost_\G(D) \ge \mu^* > 0$.  Two parts come apart in the continuation calculus.
+
+The \emph{value} of the floor --- $\floor > 0$ --- is the second half of the finite-physical-regime hypothesis.  Like A1, the value is named, not derived.
+
+The \emph{cleavage} between tested and gauge distinctions --- which distinctions are subject to MD versus which are zero-cost --- is derived directly from the continuation primitives.  By the gauge principle (the gauge section below), a gauge transformation is a continuation-profile-preserving relabeling; it leaves $\Cont_\G(D)$ invariant and therefore does not separate $D$ from $D'$ physically, so its cost is zero.  By the conservation principle (the gauge section below), conserved distinctions are zero-cost identity-class continuations.  Distinctions split:
+\begin{itemize}
+\item \emph{Gauge / conserved distinctions:} zero-cost, continuation-profile-preserving.  Outside MD's scope.
+\item \emph{Tested distinctions:} positive-cost, continuation-profile-distinguishing.  Subject to MD.
+\end{itemize}
+The cleavage is forced by the calculus's own structural commitments.  MD is then the conjunction of the value commitment (positive marginal floor) and the derived tested/gauge structure.
+
+\paragraph{A2, no-waste, and outcome selection.}
+The continuation calculus proves a narrower result than universal deterministic \(\arg\min\) selection.  Cost-as-infimum plus no-waste removes excess capacity from the realization of a \emph{fixed} continuation.  It does not, without an additional dynamics theorem, select the globally cheapest member of a family of physically different outcomes.
+
+\begin{lemma}[No-excess realization lemma]\label{lem:no-excess}
+Let \(\G\) be a finite physical regime and suppose the continuation \(D\goes E\) is realized at budget \(C\).  Under no-waste, its realized budget equals its continuation cost:
+\[
+        C=\Cost_\G(D\goes E).
+\]
+\end{lemma}
+\begin{proof}
+If \(C>\Cost_\G(D\goes E)\), capacity monotonicity supplies a smaller admissible budget for the same continuation, so the excess is unused by that realization.  No-waste removes it.
+\end{proof}
+
+\begin{warning}[Fixed realization versus selection among outcomes]
+\Cref{lem:no-excess} minimizes the carrier and budget of a fixed continuation.  It does not prove that physics deterministically chooses the least-cost endpoint among distinct admissible continuations.  Such selection belongs to the dynamics layer unless a saturation, variational, stochastic, or other regime theorem closes it.  In Paper~5 the no-waste result is used to remove redundant carrier coordinates, not to predetermine measurement outcomes.
+\end{warning}
+
+
+\subsection{Finite operational bases from joint extension and positive marginal cost}\label{sec:finite-operational-basis}
+
+The no-excess lemma has a second use that remains distinct from outcome selection.  It controls the growth of \emph{represented distinction content}.  The construction is made at the level of operational distinction classes before choosing coordinates, channels, or a smooth carrier.
+
+\begin{definition}[Operational recoverability preorder]\label{def:recoverability-preorder}
+For operational distinction realizations $a$ and $b$ in a fixed closed interface $U$, write
+\[
+        a\preceq_U b
+\]
+when every tested distinction carried by $a$ is recoverable from $b$ by admissible deterministic lossless postprocessing.  Write $a\simeq_U b$ when both $a\preceq_U b$ and $b\preceq_U a$.  An \emph{operational distinction class} is an equivalence class $[a]_U$ under $\simeq_U$.
+\end{definition}
+
+\begin{definition}[Joint-realizability system and operational closure]
+\label{def:joint-realizability-system}\label{def:operational-closure}
+Let $\mathcal A_U$ be the admitted operational distinction classes of a closed
+interface $U$.  A \emph{joint-realizability system} consists of
+\[
+  \mathfrak J_U\subseteq\mathcal P_{\rm fin}(\mathcal A_U),
+  \qquad \varnothing\in\mathfrak J_U,
+\]
+with the following data.
+\begin{enumerate}[label=(\roman*)]
+\item $\mathfrak J_U$ is downward closed: if $S\in\mathfrak J_U$ and
+$T\subseteq S$, then $T\in\mathfrak J_U$.
+\item For each $S\in\mathfrak J_U$, the set $\mathcal R_U(S)$ of joint
+physical realizations is nonempty.  Here $r\in\mathcal R_U(S)$ means that for
+every $[a]_U\in S$ there is an admissible deterministic lossless projection
+$\pi_a$ with $\pi_a(r)\in[a]_U$.  The minimum joint cost is attained:
+\[
+  \kappa_U(S)
+  :=\min_{r\in\mathcal R_U(S)}\Cost_U(r).
+\]
+\item All no-excess minimum realizations of the same $S$ have the same
+recoverability closure.  Hence
+\[
+  \operatorname{cl}_U(S)
+\]
+is well defined as the classes recoverable from any no-excess minimum joint
+realization of $S$ by admissible deterministic lossless postprocessing.
+\end{enumerate}
+An operational class $[a]_U$ is \emph{new over $S$} when
+$[a]_U\notin\operatorname{cl}_U(S)$.
+\end{definition}
+
+\begin{assumption}[Closed-world individual realization]
+\label{ass:closed-world-distinction-realization}
+Every admitted class in $\mathcal A_U$ has at least one admissible physical
+realization.  This is an individual-availability statement; it does not by
+itself assert that arbitrary finite families are jointly realizable.
+\end{assumption}
+
+\begin{assumption}[Finite joint extension / amalgamation]
+\label{ass:finite-joint-extension}
+For every $S\in\mathfrak J_U$ with
+$\operatorname{cl}_U(S)\neq\mathcal A_U$, there exists
+$[a]_U\in\mathcal A_U\setminus\operatorname{cl}_U(S)$ such that
+\[
+  S\cup\{[a]_U\}\in\mathfrak J_U.
+\]
+Thus every incomplete finite jointly realizable family can be extended by at
+least one genuinely new admitted class without leaving the joint-realizability
+domain.
+\end{assumption}
+
+\begin{definition}[Positive marginal distinction floor on joint extensions]
+\label{def:positive-joint-extension-floor}
+The finite physical regime has positive marginal floor $\floor>0$ when every
+jointly realizable new-class extension satisfies
+\[
+  \kappa_U\!\left(S\cup\{[a]_U\}\right)-\kappa_U(S)
+  \ge \floor
+\]
+for all $S,S\cup\{[a]_U\}\in\mathfrak J_U$ with
+$[a]_U\notin\operatorname{cl}_U(S)$.
+In APF language this is the exact formal content of A2 no-excess realization
+plus the positive tested-distinction floor on newly committed operational
+content.  It is not a claim about selecting among different physical
+endpoints.
+\end{definition}
+
+\begin{lemma}[A2 distinction-increment lemma --- typed form]
+\label{lem:a2-distinction-increment}
+If $S,S\cup\{[a]_U\}\in\mathfrak J_U$ and
+$[a]_U\notin\operatorname{cl}_U(S)$, then
+\[
+  \kappa_U\!\left(S\cup\{[a]_U\}\right)
+  \ge \kappa_U(S)+\floor.
+\]
+\end{lemma}
+
+\begin{proof}
+This is Definition~\ref{def:positive-joint-extension-floor} applied to a new
+jointly realizable class extension.  A2 enters through the use of no-excess
+minimum joint cost $\kappa_U$; no outcome-selection theorem is invoked.
+\end{proof}
+
+\begin{theorem}[Finite Operational Basis Theorem --- joint-extension form]
+\label{thm:finite-operational-basis}
+Let $U$ satisfy:
+\begin{enumerate}
+\item finite available capacity $C_U<\infty$;
+\item the joint-realizability and minimum-attainment package of
+Definition~\ref{def:joint-realizability-system};
+\item finite joint extension, Assumption~\ref{ass:finite-joint-extension};
+\item positive marginal floor $\floor>0$ on every new jointly realizable
+extension, Definition~\ref{def:positive-joint-extension-floor}; and
+\item closure under admissible deterministic lossless postprocessing.
+\end{enumerate}
+Then there exists $B_U\in\mathfrak J_U$ such that
+\[
+  \operatorname{cl}_U(B_U)=\mathcal A_U,
+  \qquad
+  |B_U|\le\left\lfloor\frac{C_U}{\floor}\right\rfloor.
+\]
+After deleting closure-redundant members, $B_U$ is inclusion-minimal and is a
+finite complete operational basis.
+\end{theorem}
+
+\begin{proof}
+Set $S_0=\varnothing$.  If
+$\operatorname{cl}_U(S_k)\neq\mathcal A_U$, finite joint extension supplies a
+new class $[a_{k+1}]_U$ for which
+$S_{k+1}:=S_k\cup\{[a_{k+1}]_U\}\in\mathfrak J_U$.  The typed distinction
+increment lemma gives
+\[
+  \kappa_U(S_{k+1})\ge\kappa_U(S_k)+\floor,
+\]
+and induction yields $\kappa_U(S_k)\ge k\floor$.  Every
+$S_k\in\mathfrak J_U$ has an admissible joint realization, so
+$\kappa_U(S_k)\le C_U$.  Therefore
+\[
+  k\le\left\lfloor\frac{C_U}{\floor}\right\rfloor,
+\]
+and the extension process must terminate with complete closure.  Downward
+closure of $\mathfrak J_U$ allows closure-redundant members to be deleted while
+remaining jointly realizable.
+\end{proof}
+
+\begin{corollary}[Finite compatible minimum joint realization]
+\label{cor:finite-minimal-realization}
+Under the hypotheses of Theorem~\ref{thm:finite-operational-basis}, let
+$B_U=\{[a_1]_U,\ldots,[a_N]_U\}$ be a finite complete operational basis.  Then
+there exists one no-excess minimum joint realization
+\[
+  r_{B_U}\in\mathcal R_U(B_U),
+  \qquad
+  \Cost_U(r_{B_U})=\kappa_U(B_U),
+\]
+and admissible deterministic lossless projections
+\[
+  \pi_i(r_{B_U})\in[a_i]_U,
+  \qquad i=1,\ldots,N.
+\]
+The projections form a finite \emph{compatible} realization family because
+they descend from one joint carrier, and the carrier is complete up to
+admissible deterministic lossless postprocessing.  No claim that independently
+chosen classwise minima are mutually compatible is made.
+\end{corollary}
+
+\begin{proof}
+Minimum attainment for $B_U\in\mathfrak J_U$ supplies $r_{B_U}$.  Because it is
+a joint realization, each basis class is recovered by an admissible lossless
+projection.  Completeness follows from
+$\operatorname{cl}_U(B_U)=\mathcal A_U$; the cardinality bound is inherited from
+Theorem~\ref{thm:finite-operational-basis}.
+\end{proof}
+
+\begin{proposition}[Finite atom-cover instantiation]
+\label{prop:finite-atom-cover-instantiation}
+Let $\Omega_U$ be a finite admitted atom set and let
+$\mathcal A_U\subseteq\mathcal P(\Omega_U)$ be a finite family of
+operational classes whose union is $\Omega_U$.  Put
+\[
+  \mathfrak J_U:=\mathcal P_{\rm fin}(\mathcal A_U),
+\]
+represent the joint carrier of $S\in\mathfrak J_U$ by
+$\bigcup_{A\in S}A$, define closure by subset recovery from that union, and
+assign exact no-excess cost
+\[
+  \kappa_U(S)=\floor\left|\bigcup_{A\in S}A\right|.
+\]
+If the full atom content is admissible,
+$\floor|\Omega_U|\le C_U$, then every hypothesis of
+Theorem~\ref{thm:finite-operational-basis} holds.
+\end{proposition}
+
+\begin{proof}
+Downward closure of $\mathfrak J_U$ is immediate.  The union carrier realizes
+every class in $S$ by deterministic subset projection, attains the displayed
+minimum, and has closure equal to all classes contained in its atom union.
+Because every subunion lies in $\Omega_U$, full-content admissibility makes
+every $S\in\mathfrak J_U$ jointly admissible.  If the closure of $S$ is
+incomplete, some class $A\in\mathcal A_U$ is not contained in the current
+union; adjoining it remains in $\mathfrak J_U$ and adds at least one atom, so
+the exact marginal cost is at least $\floor$.  Thus finite joint extension,
+minimum attainment, closure invariance, and the positive extension floor all
+hold.  This is the restricted model certified by APF-Engine checks
+\texttt{T\_finite\_operational\_basis\_scope\_contract},
+\texttt{T\_finite\_operational\_basis}, and
+\texttt{T\_finite\_minimal\_joint\_realization\_atom\_cover}.
+\end{proof}
+
+\begin{audit}[Engine and theorem scope]
+The finite atom-cover proposition is an exact model instantiation, not a proof
+that arbitrary physical operational closures possess finite joint extension.
+The general theorem is proved conditionally on the explicitly named
+joint-realizability package.  The Engine must export the restricted model and
+the open general bridge as separate Interface Engine inputs.
+\end{audit}
+
+
+\begin{warning}[Scope of the finite basis theorem]\label{warn:finite-basis-scope}
+The theorem proves finite generation of \emph{operational distinction content} on a closed finite interface.  It does not imply that each realization has finitely many terminal values, that the physical state space is finite, or that the resulting finite family already generates a smooth differential structure.  Precision-refinement towers and finite smooth generation remain downstream representation questions.
+\end{warning}
+
+\paragraph{BW (cost-spectrum non-degeneracy) derived from MD via cost-spectrum grading.}
+
+BW says: the cost spectrum on tested distinctions is non-degenerate; different distinctions cost different amounts at scale $\eps$.
+
+\begin{lemma}[BW from MD]\label{lem:bw}
+In a finite physical regime with positive marginal floor $\floor$, the cost spectrum on tested distinctions has resolution at least $\floor$.  Two configurations $S, S'$ are distinguishable by cost (related by adding a tested distinction) only if $|\Cost_\G(S) - \Cost_\G(S')| \ge \floor$.
+\end{lemma}
+\begin{proof}
+Suppose $|\Cost_\G(S) - \Cost_\G(S')| < \floor$ and that $S' = S \otimes D$ for some tested distinction $D$.  Then $\Cost_\G(S') - \Cost_\G(S) = \Cost_\G(S \otimes D) - \Cost_\G(S) \ge \floor$ by definition of the marginal distinction floor (\S 3, finite physical regime).  This contradicts the supposition.  Therefore configurations with $|\Cost_\G(S) - \Cost_\G(S')| < \floor$ cannot be related by adding a tested distinction; they fall in the same $\floor$-bucket of the cost spectrum.  The cost spectrum is graded by $\floor$, with resolution at the marginal floor scale.
+\end{proof}
+
+BW is the cost-resolution reading of MD.  The same structural commitment that gives MD a positive value (the marginal floor) also grades the cost spectrum at scale $\floor$, and that grading \emph{is} BW.  No additional commitment beyond MD is required.
+
+\paragraph{Compression summary.}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.18\textwidth}p{0.30\textwidth}X}
+\toprule
+\textbf{PLEC feature} & \textbf{Status in continuation calculus} & \textbf{What it requires}\\
+\midrule
+A1 (capacity bound) & Regime hypothesis & $C_\G < \infty$ as part of finite-physical-regime\\
+MD (positive floor) & Regime hypothesis + derived tested/gauge cleavage & $\floor > 0$ + continuation-calculus tested/gauge split\\
+No-excess realization & \textbf{Derived} (Lemma~\ref{lem:no-excess}) & cost-as-infimum + no-waste for a fixed continuation\\
+Finite operational basis & \textbf{Conditional} (Theorem~\ref{thm:finite-operational-basis}) & finite joint extension/amalgamation + minimum attainment + closure invariance + positive marginal floor + finite capacity; the finite atom-cover instantiation (Proposition~\ref{prop:finite-atom-cover-instantiation}) is an exact model witness\\
+Finite compatible minimum joint realization & \textbf{Conditional} (Corollary~\ref{cor:finite-minimal-realization}) & one shared minimum joint carrier; atom-cover instantiation certified by the Engine; independently chosen classwise minima are not asserted compatible\\
+BW (non-degenerate spectrum) & \textbf{Derived from MD} (Lemma~\ref{lem:bw}) & marginal-floor cost-spectrum grading\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+The four PLEC features reduce at the language layer to one continuation primitive ($\G\entails_C D\goes E$), one capacity-monotonicity axiom (Assumption~\ref{ass:cap-mono}), and the finite-physical-regime hypothesis (which packages A1's $C_\G<\infty$ and MD's $\floor>0$).  From these, the no-excess form of A2 and the marginal-floor grading statement are derived.  The finite operational-basis theorem is a further conditional interface theorem: it additionally requires the explicitly named joint-realizability, minimum-attainment, closure-invariance, and finite-extension package.  Its compatible-joint-realization corollary inherits those conditions.  Outcome selection remains a dynamics question.
+
+This is the precise foundational compression claimed here.  The continuation primitive, capacity monotonicity, and the finite-physical-regime hypothesis supply the general language and its no-excess/marginal-grading consequences.  Finite basis existence is not folded into that irreducible package; it is exported only on interfaces that close the finite joint-extension regime gate, with the finite atom-cover model serving as an exact certified instantiation.  Other downstream selection, representation, geometric, and empirical claims retain their separately named gates.
+
+\section{Continuation words and records}
+
+\begin{definition}[Continuation word]
+A continuation word is a typed chain
+\[
+        W=(D_0\goes D_1\goes\cdots\goes D_n)
+\]
+whose links are admissible in the relevant contexts and capacity windows.  Concatenation is defined only when the target type of one word matches the source type of the next.  Incompatible concatenations are undefined, not false.
+\end{definition}
+
+\begin{definition}[Record representation]
+A record representation of tested continuation behavior assigns record operations to tested words and preserves tested marginals, compatible concatenations, and contextual equivalences.  A Boolean record representation is one whose record algebra is commutative.
+\end{definition}
+
+\begin{definition}[Sep and IJC in continuation language]
+A tested context lies in \(\Sep\) when its tested continuation behavior admits a faithful Boolean record representation.  It lies in \(\IJC\) when no faithful Boolean record representation preserves the tested continuation behavior.
+\end{definition}
+
+\begin{principle}[Quantum order as continuation order]
+Quantum noncommutativity is the represented bookkeeping of order-sensitive finite continuation.  In primitive terms, the obstruction appears when continuation words \(D;E\) and \(E;D\) are not equivalent under tested admissible continuations.
+\end{principle}
+
+This is not yet the Hilbert-space theorem.  It is the bridge discipline: if tested continuation behavior cannot be faithfully Booleanized, commutative records are insufficient.  The Hilbert--Born representation layer requires additional positivity, reciprocal calibration, stable-sector, and composite-closure gates.
+
+\section{Recruitment: the spatial realization of continuation}
+
+The primitive judgment says a continuation is admissible.  It does not yet say where the continuation burden is carried.  Recruitment supplies that spatial realization.
+
+\begin{definition}[Recruitment substrate]
+A recruitment substrate \(\Sigma\) for a context \(\G\) is a support over which enforcement burden can be distributed.  Points of \(\Sigma\) may be spatial, modal, graph-theoretic, interface-local, or geometric, depending on the regime.
+\end{definition}
+
+\begin{definition}[Recruitment profile]
+Given an admissible continuation \(\G\entails_C D\goes E\), a recruitment profile is a nonnegative distribution
+\[
+        \phi_{D\to E}:\Sigma\to\R_{\ge0},
+        \qquad
+        \int_\Sigma \phi_{D\to E}(x)\,dx=1,
+\]
+interpreted as the fraction of continuation burden carried by substrate near \(x\).
+\end{definition}
+
+\begin{definition}[Recruitment cost functional]
+In the near-equilibrium substrate regime, the general recruitment cost functional has the structural form
+\[
+\Erec[D,E,\phi]
+=
+\int_\Sigma \phi(x)\,\varepsilon_{\rm local}(x;D,E)\,dx
++
+\iint_{\Sigma\times\Sigma}\phi(x)I_{\rm int}(x,x';D,E,S_{\rm subst})\phi(x')\,dx\,dx'.
+\]
+The first term is local continuation burden.  The second term is cooperative or conflicting substrate interaction.
+\end{definition}
+
+\begin{principle}[Recruitment by cost selection]
+For a fixed admissible continuation, the equilibrium recruitment profile is selected by minimizing \(\Erec\) subject to normalization, positivity, and resolution constraints.  The selected profile is denoted \(\phi^{\rm eq}_{D\to E}\).
+\end{principle}
+
+\begin{principle}[Fields as recruitment profiles]
+A field is the equilibrium substrate profile of an admissible continuation.  Fields are therefore not primitive APF objects.  They are spatial or modal representations of finite continuability.
+\end{principle}
+
+In this reading, the electromagnetic field of a charge, the polarization field of a dielectric, the Debye screening profile of a plasma, the Casimir boundary profile, and the gravitational field of a stress-energy anchor are substrate-specific equilibrium recruitment profiles.  The specific equations belong to the substrate theory.  The APF unification is structural: fields are how continuations are carried.
+
+\section{Radiation and branch-conditioned held anchors}
+
+\begin{definition}[Recruitment mismatch]
+For a locally varying anchor or continuation demand, define
+\[
+        \mu(x,t)=\phi(x,t)-\phi^{\rm eq}_{D(t)\to E(t)}(x).
+\]
+A nonzero \(\mu\) measures failure of the substrate representation to track the equilibrium recruitment profile under the chosen temporal reading.
+\end{definition}
+
+\begin{principle}[Radiation as cost discharge]
+Radiation is cost discharge from recruitment mismatch.  The detailed rate law is substrate specific and requires a near-equilibrium kernel, recruitment time scale, and represented mode-energy dictionary.
+\end{principle}
+
+\begin{definition}[Branch-conditioned held anchor: primitive form]
+A \emph{branch-conditioned held anchor} is a held continuation profile whose admissible recruitment support depends on which co-available continuation branch is retained, and for which no faithful factorization into independent anchor and substrate continuation profiles preserves all tested joint continuations.
+\end{definition}
+
+\begin{principle}[Branch-conditioned anchors and IJC]
+When the substrate and anchor continuation profiles cannot be specified independently while preserving the tested joint continuation structure, the held profile lies in the irreducibly joint constrained branch.  This statement is prior to Hilbert notation.
+\end{principle}
+
+\begin{remark}[Represented Hilbert form]
+After the Paper~5 quantum-representation layers close, a branch-conditioned held anchor may be represented as
+\[
+        |\Psi\rangle=\sum_n c_n\,|\phi_n\rangle_{\rm sub}\otimes|n\rangle_{\rm anchor}.
+\]
+The ket notation is a downstream representation of the primitive nonfactorizing held profile, not its definition.
+\end{remark}
+
+\begin{principle}[Decoherence, record formation, and collapse]
+Decoherence is suppression of accessible cross-profile continuation, often represented by decreasing overlaps between branch-conditioned recruitment profiles.  Record formation is the irreversible booking of a tested distinction in \(\Rec\).  Collapse, in the Paper~37 sense, is the record-forming class transition \(\mathsf Q:\Held\to\Rec\).  These three notions must not be identified merely because they often occur in the same physical episode.
+\end{principle}
+
+\section{Entropy, time, action, and saturation}
+
+The continuation language distinguishes structural possibility from selected dynamics.  It also gives compact definitions for entropy, time, action, and saturation.
+
+\begin{definition}[Continuation-profile coarsening]
+A continuation \(D\goes E\) is a coarsening when
+\[
+        \Cont_\G(E)\subsetneq \Cont_\G(D)
+\]
+up to tested contextual equivalence.  It is irreversible at capacity \(C\) when no admissible continuation returns \(E\) to the identity-class of \(D\) within the same context and budget window.
+\end{definition}
+
+\begin{principle}[Entropy]
+Entropy is irreversible coarsening of continuation profiles.  Ledger entropy is the capacity measure of that coarsening.
+\end{principle}
+
+\begin{principle}[Time]
+The physical arrow of time is the preorder generated by irreversible continuation commitments:
+\[
+        D_0\goes D_1\goes D_2\goes\cdots .
+\]
+Time is not mere change.  It is non-invertible continuability order.
+\end{principle}
+
+\begin{definition}[Continuation action]
+For a continuation word \(W=(D_0\goes\cdots\goes D_n)\), define the continuation action
+\[
+        \mathcal A_\G(W)
+        =
+        \sum_i \Cost_\G(D_i\goes D_{i+1})
+        +
+        \sum_i \Delta_\G(D_i,D_{i+1}).
+\]
+Dynamics, when variational, selects or weights admissible words by this accumulated continuation burden.
+\end{definition}
+
+\begin{definition}[Saturation]
+A context is saturated relative to an enforced distinction \(D\) when some continuation of \(D\) remains admissible, but no independent refinement can be co-continued:
+\[
+        \G\entails_C D\goes E,
+        \qquad
+        \G\nVdash_C (D\otimes R)\goes(E\otimes R')
+\]
+for every independent tested refinement \(R\).  Full saturation excludes all independent co-continuations; partial saturation excludes only a constrained family.
+\end{definition}
+
+\section{Gauge, conservation, and geometry}
+
+\begin{principle}[Gauge as profile-preserving freedom]
+Gauge transformations are relabelings that preserve tested continuation and recruitment profiles:
+\[
+        \G\entails_C D\goes E
+        \Longleftrightarrow
+        \G\entails_C gD\goes gE,
+        \qquad
+        \phi_{gD\to gE}\sim_\G g\phi_{D\to E}.
+\]
+Thus gauge is not added redundancy.  It is invariance of finite continuability under admissible relabeling.
+\end{principle}
+
+\begin{principle}[Conservation]
+A conserved distinction is a zero-cost identity-class continuation in the relevant regime.  In represented algebraic form, zero-cost central distinctions are expected to lie in the center of the record algebra, and the gauge group appears as an automorphism group preserving that central structure:
+\[
+        \mathrm{Gauge}(\G)\subseteq \Aut(\Alg_\G;Z(\Alg_\G)).
+\]
+The algebraic form is conditional on the representation gates; the continuation-profile form is the primitive reading.
+\end{principle}
+
+\begin{principle}[Geometry as recruitment cost]
+Geometry is the regularized cost structure of carrying comparison, localization, and transport continuations.  A directed cost distance has the generic form
+\[
+        d^+_\G(x,y)=\inf\{\Cost_\G(K):K\text{ carries a comparison continuation }x\goes y\}.
+\]
+A metric or Lorentzian representation exists only when the relevant separation, locality, smoothness, and signature certificates close.
+\end{principle}
+
+\begin{principle}[Gravity as recruitment backreaction]
+Gravity is the continuum representation of committed continuation load changing the cost kernel for future comparison continuations.  Equivalently: gravity is recruitment backreaction.  This structural reading does not derive the numerical value of \(G\); it interprets \(G^{-1}\) as geometric-substrate cost curvature once SI units are chosen.
+\end{principle}
+
+\subsection{Comparison continuation, operationally}
+
+The principles above leave \emph{comparison continuation} as a slogan.  It costs almost nothing to make the slogan more operational, and the operational form is what enables a leading-order GR derivation.
+
+\begin{definition}[Comparison continuation, operational form]
+A comparison continuation $K$ from $x$ to $y$ in context $\G$ is a substrate operation that establishes ``$x$ and $y$ are distinguishable points in the same physical region'' by transport of a probe distinction.  Its cost decomposes as
+\[
+        \Cost_\G(K) \;=\; \Cost_{\rm transport}(K) \;+\; \Cost_{\rm identity}(K) \;+\; \Cost_{\rm corr}(K),
+\]
+covering the substrate's work to (i) move the probe from $x$ to $y$, (ii) maintain the probe's identity-class against substrate noise during transit, and (iii) establish endpoint correspondence.  The directed cost distance $d^+_\G(x,y)$ is the infimum of $\Cost_\G(K)$ over admissible such operations.
+\end{definition}
+
+\begin{principle}[Cost-curvature response to recruitment load]
+At leading order in the linear-response regime around an unloaded substrate, the cost-curvature $K(x)$ for time-direction comparison continuations responds linearly to local recruitment density:
+\[
+        K(x) \;=\; K_0\,\big(1 - \alpha\,\rho_{\rm rec}(x)\big),
+\]
+with $K_0$ the unloaded cost-curvature, $\rho_{\rm rec}(x)$ the local recruitment density carried by the substrate at $x$, and $\alpha$ a substrate-specific coupling constant.  The coupling $\alpha$ is calibrated by Newton's constant in physical units; the framework treats $G$ as substrate-specific input (Paper~25 \S 7), not as a derived quantity.
+\end{principle}
+
+\subsection{Paper 9 handoff: response geometry and the weak-field program}
+
+The earlier redshift worked example is now superseded by Paper~9's typed response-geometry analysis.  Paper~9 is the source of record for:
+\begin{enumerate}
+\item response-null quotienting and the pullback process gauge;
+\item intrinsic response distance and the one-homogeneous/two-homogeneous cost fork;
+\item physical-ledger calibration;
+\item the comparison-response anchor;
+\item the separation of positive cost geometry from signed causal geometry;
+\item the weak-field trace--volume obstruction \(P_{\rm tr}K^{-1}J=0\).
+\end{enumerate}
+The present paper supplies only the continuation grammar used by that construction.  It does not independently derive redshift, Lorentzian signature, spacetime dimension, or the Einstein equations.
+
+\begin{audit}[Geometry branch type discipline]
+A held comparison profile, a represented response process, a committed record, a positive implementation-cost gauge, and a signed causal interval are different types.  Paper~9 may compare or anchor them through explicit theorems, but none is identified by notation alone.
+\end{audit}
+
+\section{The Hilbert--Born representation handoff}
+
+The continuation language clarifies what Hilbert space is doing in APF.  It is not the primitive arena and it is not reconstructed in this language paper.  Paper~10 supplies the continuation grammar, held-profile type, and universal held continuation lift.  Paper~5 is the source of record for the exact finite quantum representation theorem.
+
+\begin{gate}[Current Paper 5 theorem spine]
+A finite tested IJC held context admits the Paper~5 representation only when the following layers close:
+\begin{enumerate}
+\item \textbf{Represented continuation algebra.} Typed continuation words modulo strong contextual equivalence act faithfully on a finite complete held-profile space \(\Vh\), generating a represented process algebra \(\Th\).
+\item \textbf{Ledger adjoint and positive realization.} Admissible reversal, the faithful ledger pairing, and reversed-loop realization give the real finite \(C^*\)-structure and its positive cone.
+\item \textbf{Local held-profile orientation.} An elementary occupied coherent comparison has a complete rank-two represented profile carrier.  Record-free reversible loops act effectively and isometrically, with nontrivial path-connected image \(SO(2)\cong S^1\).
+\item \textbf{Global natural orientation.} Closed-world-complete continuation identity removes orientation monodromy, so the local circles transport naturally across the coherent held component, uniquely up to one simultaneous global reversal.
+\item \textbf{Probabilities and complete processes.} The natural quarter-turn complex-enriches the held category; the positive trace pairing gives Born probabilities, and ancilla-stable positivity gives completely positive processes and instruments.
+\end{enumerate}
+\end{gate}
+
+\begin{definition}[Corpus-wide type ledger]
+For a held profile \(H\), write
+\[
+        \Vh=\text{complete held profile space},\qquad
+        \Th=\text{represented process algebra},
+\]
+\[
+        \Ah=\text{observable/effect algebra},\qquad
+        \mathsf Q(H)=\text{committed record image}.
+\]
+These objects may be linked by representation and duality theorems, but they are not interchangeable.
+\end{definition}
+
+Under the Paper~5 hypotheses the held process and effect structures have finite complex matrix sectors and probabilities take the Born form
+\[
+        p(E|\rho)=\Tr(\rho E),
+\]
+while admissible transformations are represented by completely positive maps.  This is a downstream representation theorem, not an axiom of the continuation calculus.
+
+\begin{audit}[What Paper 10 contributes]
+Paper~10 proves the universal held-profile quotient and, in the first-order smooth branch, its first-jet representation.  It does not independently prove physical circle holonomy, global orientation, complex matrix classification, the Born rule, or complete positivity.  Those claims must cite Paper~5.
+\end{audit}
+
+\section{Crystal placement: scaffolding, geometry, content, cross-cutting}
+
+Paper 20's crystal partition becomes conceptually transparent in the continuation-first language.  It is not merely a theorem-bank taxonomy.  It is the four natural roles of finite continuability.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.22\textwidth}X}
+\toprule
+\textbf{Crystal role} & \textbf{Continuation-first meaning}\\
+\midrule
+Scaffolding & Rules of continuability: judgments, equivalence, cost, finite floors, typed words, and branch tests.\\
+Geometry & How continuation is carried: recruitment profiles, comparison costs, transport, locality, metric representation.\\
+Content & What continuation preserves: charges, sectors, records, branch labels, conserved distinctions, gauge-invariant content.\\
+Cross-cutting & Where preserved content constrains how continuation is carried, or where carrying structure changes what can be preserved.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{principle}[Crystal partition from continuability]
+The geometry/content split is the two natural projections of finite continuability:
+\[
+        \boxed{\text{Geometry} = \text{how continuation is carried}},
+        \qquad
+        \boxed{\text{Content} = \text{what continuation preserves}}.
+\]
+Cross-cutting nodes are precisely those in which preserving content and carrying continuation are mutually constraining.
+\end{principle}
+
+This explains why fields, radiation, quantum anchors, gauge, geometry, and cosmological backgrounds are not isolated APF extensions.  They are cross-cutting because they couple what must continue to how the substrate carries that continuation.
+
+\section{The theorem-tree discipline}
+
+The language closes some primitives, but not every theorem.  The correct discipline is to tag each claim by status.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{p{0.18\textwidth}X}
+\toprule
+\textbf{Status} & \textbf{Meaning}\\
+\midrule
+\Status{D} Definition & Introduced as language or notation.\\
+\Status{S} Structural rule & Required for the continuation calculus to function.\\
+\Status{R} Derived result & Proved from prior definitions/rules/gates.\\
+\Status{G} Conditional gate & True only when an explicit regime condition closes.\\
+\Status{C} Certificate & Requires classification, computation, reduction to known physics, or formal witness.\\
+\Status{E} Empirical target & Requires experimental comparison or observational test.\\
+\Status{B} Boundary & Outside the current domain or not internally derivable.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{audit}[What the language solves]
+The continuation-first language solves the organization of the theorem tree.  It does not automatically solve every leaf.  Each branch must still provide a proof, gate closure, classification certificate, or empirical test.
+\end{audit}
+
+\begin{center}
+\begin{longtable}{p{0.29\textwidth}p{0.18\textwidth}p{0.43\textwidth}}
+\toprule
+\textbf{Claim} & \textbf{Status} & \textbf{Reason}\\
+\midrule
+Primitive continuation judgment & \Status{D/S} & Bedrock grammar.\\
+Enforcement as identity-class continuation & \Status{R} & Definition plus continuation equivalence.\\
+Cost as infimum over continuations & \Status{D/R} & Derived cost functional once capacity order is given.\\
+Finite BCD bound & \Status{R/G} & Requires finite capacity and positive floor.\\
+A1 (capacity bound) & \Status{S} & Regime hypothesis: half of the finite-physical-regime definition.\\
+MD (positive cost floor) & \Status{S/R} & Value is regime hypothesis; tested/gauge cleavage derived from continuation primitives.\\
+No-excess realization & \Status{R/G} & Derived from cost-as-infimum + no-waste for a fixed realized continuation (Lemma~\ref{lem:no-excess}); endpoint selection is separate.\\
+Finite operational basis (general form) & \Status{R/G} & Derived once the named finite joint-extension, minimum-attainment, closure-invariance, and positive marginal-extension-floor package closes (Theorem~\ref{thm:finite-operational-basis}).\\
+Finite atom-cover instantiation & \Status{C} & Exact executable model certificate for the restricted atom-cover regime (Proposition~\ref{prop:finite-atom-cover-instantiation}).\\
+Finite compatible minimum joint realization & \Status{R/G} & One shared minimum joint carrier realizes the complete basis; independently chosen classwise minima are not asserted compatible (Corollary~\ref{cor:finite-minimal-realization}).\\
+BW (cost-spectrum non-degeneracy) & \Status{R} & Derived from MD via marginal-floor cost-spectrum grading (Lemma~\ref{lem:bw}).\\
+Fields as recruitment profiles & \Status{D/G} & Structural definition; substrate reductions certify cases.\\
+Radiation master equation & \Status{G/C} & Requires near-equilibrium substrate and mode kernels.\\
+Branch-conditioned held anchors & \Status{D/G} & Primitive as nonfactorizing held recruitment; Hilbert notation requires Paper~5 representation.\\
+Decoherence as profile orthogonalization & \Status{G/C} & Requires overlap estimates and record-stability criteria.\\
+Gauge as profile automorphism & \Status{D/G} & Primitive as profile invariance; algebraic groups require certificates.\\
+Geometry as recruitment cost & \Status{G/C} & Requires locality, smoothness, signature, and metric representation.\\
+Gravity as backreaction & \Status{G/C} & Structural reading; Einstein-form dynamics require separate closure.\\
+Response geometry and redshift & \Status{I/G} & Paper~9 is the source of record; this paper supplies only continuation grammar.\\
+Standard Model group/content & \Status{C} & Classification theorem, not automatic from notation.\\
+Cosmological fractions & \Status{C/E} & Requires channel partition plus empirical comparison.\\
+DCE \(1/Q\) prediction & \Status{E} & Experimental discriminating target.\\
+Newton's constant numerical value & \Status{B} & Dimensionful conversion, not derived internally.\\
+Far-from-equilibrium cosmogenesis & \Status{B} & Outside first-order recruitment architecture.\\
+\bottomrule
+\end{longtable}
+\end{center}
+
+\begin{audit}[Canonical dependency boundary]
+Paper~10 is upstream of Paper~5 and Paper~9 for continuation grammar, held-profile identity, the universal held continuation lift, and finite operational-basis/minimal-realization closure.  Paper~5 is upstream of Paper~10 only as a cited representation theorem.  Paper~9 consumes the same language objects for response and comparison geometry but does not inherit Paper~5's quantum orientation as a gravitational trace or causal-signature theorem.
+\end{audit}
+
+\section{Classical and free-mark limits}
+
+The Spencer--Brown calculus is recovered when continuation burden is removed from the mark layer.  Formally, this is the regime in which the admissibility bound becomes vacuous for the expressions under consideration:
+\[
+        C_\G/\floor\to\infty.
+\]
+Then all finite tested mark expressions become admissible, and the forgetful map discards cost, recruitment, and continuation constraints, leaving pure form.
+
+\begin{principle}[Free mark as limiting case]
+Classical free form is not the foundation of physics but a limit of finite continuability in which the burden of maintaining marks is ignored or becomes negligible for the tested regime.
+\end{principle}
+
+Classical physics similarly appears when continuation profiles factor Booleanly and record operations commute at the tested resolution:
+\[
+        \Cont(D\otimes E)\cong \Cont(D)\times\Cont(E),
+        \qquad
+        D;E\sim_\G E;D.
+\]
+Quantum form appears when finite continuation is order-sensitive and cannot be faithfully represented by Boolean records.
+
+\section{Conclusion}
+
+The simplest APF statement is now:
+
+\begin{quote}
+Physics is the calculus of finite admissible continuation of distinction.
+\end{quote}
+
+The primitive judgment is
+\[
+        \G\entails_C D\goes E.
+\]
+From it, enforceability becomes identity-class continuation, cost becomes the least burden required for continuation, and BCD becomes the discrete positive-floor specialization.  Recruitment profiles describe where the burden is carried; fields are equilibrium profiles; radiation is failed adiabatic recruitment; quantum anchors are branch-conditioned recruitment structures; geometry is the cost structure of carrying comparison continuations; gauge is continuation-profile invariance; entropy is irreversible profile coarsening; and dynamics is selection among admissible continuation words.
+
+This is a unifying language, not a license to overclaim.  The downstream APF branches still require certificates.  But they now have the same form: identify the relevant distinctions, describe their admissible continuations, determine how those continuations are carried, compute or bound their cost, and certify the representation or empirical consequence.
+
+\begin{center}
+\fbox{\begin{minipage}{0.86\textwidth}
+\centering
+\textbf{Final compression.}\\[3pt]
+Distinctions become physical by finite admissible continuation.\\
+Fields are how continuation is carried.\\
+Dynamics selects among admissible continuations.\\
+Geometry is the cost structure of carrying them.\\
+Quantum theory is the Paper~5 representation of order-sensitive held continuation after the orientation, positivity, probability, and complete-process gates close.
+\end{minipage}}
+\end{center}
+
+\end{document}

@@ -113,14 +113,14 @@ A rigorous existence and uniqueness theorem for the PLEC selector: given $\mathc
 A theorem analogous to the direct method of the calculus of variations, with APF-specific coercivity / lower-semicontinuity analogues.
 
 ### Paper 6 status
-Listed as Project C.1 in Paper 6 v2.0-PLEC Appendix C. `check_Regime_R` (v7.9) formalizes the regime in which PLEC is well-posed but does not fully prove existence + uniqueness in general.
+Listed as Project C.1 in Paper 6 v2.0-PLEC Appendix C. `check_Regime_R` (v24.3.427) formalizes the regime in which PLEC is well-posed but does not fully prove existence + uniqueness in general.
 
 ---
 
 ## 6. Formal regime-exit theorem
 
 ### What's stated
-The five-type regime-exit taxonomy (Types I–V) is formalized as bank checks in `apf/plec.py` (v7.9). Each type has an executable witness.
+The five-type regime-exit taxonomy (Types I–V) is formalized as bank checks in `apf/plec.py` (v24.3.427). Each type has an executable witness.
 
 ### What's open
 A unified theorem tying each regime exit to a precise PLEC-hypothesis breakdown. Currently the taxonomy is structural: each Type is demonstrated on a specific witness. A general theorem of the form "if PLEC hypothesis $H_i$ fails, the corresponding exit is of Type $i$" would upgrade the taxonomy from vocabulary to machinery.

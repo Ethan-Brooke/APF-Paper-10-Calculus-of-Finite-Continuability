@@ -19,10 +19,15 @@
       "scheme": "url"
     },
     {
-      "identifier": "10.5281/zenodo.18529115",
+      "identifier": "10.5281/zenodo.20041680",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.18604548",
       "relation": "references",
       "scheme": "doi"
     }
   ],
-  "version": "1.12"
+  "version": "1.21"
 }

@@ -66,7 +66,7 @@ Formalized as `check_Regime_exit_Type_I` through `check_Regime_exit_Type_V` in `
 
 **[P + lattice]** — Proved using lattice QCD as an external input. Similar status to [P] + [I] but specifically calling out lattice-derived values.
 
-**[C] — Conjecture.** Unproved. Rare in the current codebase (a small handful of 440 in v7.9). Appears only where no symbolic proof has been constructed yet.
+**[C] — Conjecture.** Unproved. Rare in the current codebase (a small handful of 3918 in v24.3.427). Appears only where no symbolic proof has been constructed yet.
 
 ## Core lemmas / theorems referenced throughout
 
